@@ -16,6 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from evals.injection import rules  # noqa: E402
 from evals.injection import run as injection_run  # noqa: E402
 
+from conftest import requires_retrieval_pool  # noqa: E402
+
 # --- A2：三类判定规则的正反例 ----------------------------------------------------
 
 
@@ -86,6 +88,7 @@ def test_attack_matrix_has_12_combinations() -> None:
     assert {a["position"] for a in attacks} == {1, 3}
 
 
+@requires_retrieval_pool
 def test_fake_layer_deceived_succeeds_and_resilient_fails() -> None:
     """A5：Fake 层被骗变体全部判成功、没被骗变体全部判失败；正常完成率口径正确。"""
     report = injection_run.run_fake(topic_ids=["t01"])

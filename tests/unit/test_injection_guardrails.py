@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from evals.injection.injecting_retriever import InjectingRetriever  # noqa: E402
 from evals.injection.run import ATTACKS_PATH  # noqa: E402
 
-from conftest import runtime_of  # noqa: E402
+from conftest import requires_retrieval_pool, runtime_of  # noqa: E402
 from researchflow.core.config import RunContext, load_settings  # noqa: E402
 from researchflow.core.llm import FakeLLMClient  # noqa: E402
 from researchflow.core.retrieval_agent import RetrievalAgent  # noqa: E402
@@ -112,6 +112,7 @@ def test_suspicious_heuristic_hits_all_attack_texts() -> None:
         assert is_suspicious_summary(text), f"攻击未命中: {attack['id']}"
 
 
+@requires_retrieval_pool
 def test_suspicious_heuristic_no_false_positives_on_pool_abstracts() -> None:
     """A3：pool.json 的 10 条正常学术摘要不误标。"""
     pool = json.loads(POOL_PATH.read_text(encoding="utf-8"))

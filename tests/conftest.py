@@ -35,6 +35,15 @@ if str(PROJECT_ROOT / "src") not in sys.path:
 if str(Path(__file__).parent) not in sys.path:
     sys.path.insert(0, str(Path(__file__).parent))
 
+# evals/retrieval/pool.json 是本地跑 build_pool 生成的检索候选池（.gitignore 里），
+# 公开仓库不附带。依赖它的测试在文件不存在时跳过，而不是报 FileNotFoundError。
+RETRIEVAL_POOL_PATH = PROJECT_ROOT / "evals" / "retrieval" / "pool.json"
+requires_retrieval_pool = pytest.mark.skipif(
+    not RETRIEVAL_POOL_PATH.exists(),
+    reason="evals/retrieval/pool.json not found (gitignored; generate it with "
+    "`uv run python -m evals.retrieval.build_pool --confirm-real-calls`)",
+)
+
 
 def _stub_refs() -> list[LiteratureRef]:
     """替身检索器的固定两条文献；`ref_id` 带 `stub:` 前缀，便于和本地实现区分。"""

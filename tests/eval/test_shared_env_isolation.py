@@ -20,6 +20,7 @@ from evals import _env as evals_env  # noqa: E402
 from evals.citation import run as citation_run  # noqa: E402
 from evals.retrieval import rerank_eval  # noqa: E402
 
+from conftest import requires_retrieval_pool  # noqa: E402
 from researchflow.core import config as config_mod  # noqa: E402
 from researchflow.core.embedding import HashEmbedder  # noqa: E402
 from researchflow.core.schemas import DraftContent  # noqa: E402
@@ -75,6 +76,7 @@ class _StubLLM:
 # --- citation 入口 -------------------------------------------------------------
 
 
+@requires_retrieval_pool
 def test_citation_real_shell_override_wins_over_env(monkeypatch, tmp_path, capsys):
     root = _make_project(tmp_path)
     _patch_env_loader(monkeypatch, root, {"RF_LLM_MODEL": "model-b"})
@@ -95,6 +97,7 @@ def test_citation_real_shell_override_wins_over_env(monkeypatch, tmp_path, capsy
     assert _StubLLM.captured and _StubLLM.captured[0].llm.model == "model-b"
 
 
+@requires_retrieval_pool
 def test_citation_real_reads_env_without_override(monkeypatch, tmp_path, capsys):
     root = _make_project(tmp_path)
     _patch_env_loader(monkeypatch, root, {})

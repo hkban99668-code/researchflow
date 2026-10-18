@@ -15,6 +15,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from evals.citation import run as citation_run  # noqa: E402
 
+from conftest import requires_retrieval_pool  # noqa: E402
+
 
 def test_citation_eval_fake_summary():
     """A5：拦截率 100%、误杀率 0%、幻觉引用率等于合计 invalid/total。"""
@@ -63,6 +65,7 @@ def test_citation_eval_case_judgments_individually():
         assert record["actual_invalid"] == 0, record["id"]
 
 
+@requires_retrieval_pool
 def test_citation_eval_real_layer_preview_gates(capsys):
     """A7：`--layer real` 不带 --confirm-real-calls 只预演（退出码 2），不发请求。"""
     exit_code = citation_run.main(["--layer", "real"])
