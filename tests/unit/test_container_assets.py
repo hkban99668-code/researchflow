@@ -73,7 +73,7 @@ def test_ci_runs_container_smoke_script():
 
 def test_readme_documents_container_workflow():
     """README 容器化一节给出起服务、demo、真实模式与持久化说明。"""
-    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    readme = (ROOT / "README.zh-CN.md").read_text(encoding="utf-8")
     for token in (
         "### 3.8 容器化",
         "docker compose up -d",

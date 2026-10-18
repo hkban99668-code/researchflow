@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="470" rx="14" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+  </defs>
+  <text x="32" y="40" font-size="20" font-weight="700" fill="#0f172a">ResearchFlow: LangGraph research pipeline</text>
+  <text x="32" y="62" font-size="13" fill="#475569">Every step is a graph node; every artifact is written to runs/&lt;run_id&gt;/ with a sha256 checksum</text>
+
+  <!-- entry points -->
+  <g font-size="12" fill="#0f172a">
+    <rect x="32" y="86" width="150" height="34" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/><text x="107" y="108" text-anchor="middle">CLI  (run / resume)</text>
+    <rect x="196" y="86" width="150" height="34" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/><text x="271" y="108" text-anchor="middle">FastAPI + SSE</text>
+    <rect x="360" y="86" width="150" height="34" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/><text x="435" y="108" text-anchor="middle">MCP server (stdio)</text>
+    <rect x="524" y="86" width="150" height="34" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/><text x="599" y="108" text-anchor="middle">Docker Compose</text>
+  </g>
+  <line x1="353" y1="122" x2="353" y2="150" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- pipeline row -->
+  <g font-size="12" text-anchor="middle">
+    <rect x="32" y="156" width="118" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+    <text x="91" y="182" font-weight="700" fill="#075985">1 Retrieve</text><text x="91" y="200" fill="#0f172a">Retrieval agent</text><text x="91" y="215" fill="#0f172a">OpenAlex + rerank</text>
+
+    <rect x="164" y="156" width="118" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+    <text x="223" y="182" font-weight="700" fill="#075985">2 Question</text><text x="223" y="200" fill="#0f172a">LLM, Pydantic</text><text x="223" y="215" fill="#0f172a">structured output</text>
+
+    <rect x="296" y="156" width="118" height="70" rx="10" fill="#fef3c7" stroke="#d97706"/>
+    <text x="355" y="182" font-weight="700" fill="#92400e">3 Clean + Review</text><text x="355" y="200" fill="#0f172a">Pandera checks</text><text x="355" y="215" fill="#0f172a">human approval</text>
+
+    <rect x="428" y="156" width="118" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+    <text x="487" y="182" font-weight="700" fill="#075985">4 Compute</text><text x="487" y="200" fill="#0f172a">scikit-learn</text><text x="487" y="215" fill="#0f172a">fixed seed</text>
+
+    <rect x="560" y="156" width="118" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+    <text x="619" y="182" font-weight="700" fill="#075985">5 Chart</text><text x="619" y="200" fill="#0f172a">matplotlib</text><text x="619" y="215" fill="#0f172a">fixed template</text>
+
+    <rect x="692" y="156" width="118" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+    <text x="751" y="182" font-weight="700" fill="#075985">6 Draft</text><text x="751" y="200" fill="#0f172a">grounded writing</text><text x="751" y="215" fill="#0f172a">cites ref_ids only</text>
+
+    <rect x="824" y="156" width="104" height="70" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="876" y="182" font-weight="700" fill="#166534">7 Validate</text><text x="876" y="200" fill="#0f172a">YAML rules</text><text x="876" y="215" fill="#0f172a">citation check</text>
+  </g>
+  <g stroke="#64748b" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="150" y1="191" x2="162" y2="191"/><line x1="282" y1="191" x2="294" y2="191"/><line x1="414" y1="191" x2="426" y2="191"/>
+    <line x1="546" y1="191" x2="558" y2="191"/><line x1="678" y1="191" x2="690" y2="191"/><line x1="810" y1="191" x2="822" y2="191"/>
+  </g>
+
+  <!-- HITL note -->
+  <text x="288" y="246" font-size="11" text-anchor="end" fill="#92400e">interrupt() pauses here;</text><text x="288" y="260" font-size="11" text-anchor="end" fill="#92400e">resume in a new process</text>
+
+  <!-- attribution loop -->
+  <rect x="560" y="286" width="368" height="72" rx="10" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="744" y="312" font-size="13" font-weight="700" text-anchor="middle" fill="#5b21b6">Attribution agent (on failure)</text>
+  <text x="744" y="331" font-size="12" text-anchor="middle" fill="#0f172a">finds which step caused a failed check, then either</text>
+  <text x="744" y="347" font-size="12" text-anchor="middle" fill="#0f172a">re-runs from that step (bounded) or escalates to a human</text>
+  <path d="M876,228 L876,284" stroke="#7c3aed" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M560,322 L380,322 L380,230" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5 4" fill="none" marker-end="url(#a)"/>
+  <text x="470" y="315" font-size="11" text-anchor="middle" fill="#5b21b6">backtrack</text>
+
+  <!-- outputs -->
+  <rect x="32" y="286" width="300" height="148" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="48" y="310" font-size="13" font-weight="700" fill="#0f172a">runs/&lt;run_id&gt;/</text>
+  <g font-size="12" fill="#334155" font-family="SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="48" y="332">manifest.json   artifacts + sha256</text>
+    <text x="48" y="350">events.jsonl    one event per line</text>
+    <text x="48" y="368">cleaned_data.csv  compute_result</text>
+    <text x="48" y="386">chart.png  draft.md</text>
+    <text x="48" y="404">validation_report</text>
+    <text x="48" y="422">checkpoint.sqlite</text>
+  </g>
+  <text x="560" y="386" font-size="12" fill="#475569">Also: OTLP tracing with token and cost tracking,</text>
+  <text x="560" y="404" font-size="12" fill="#475569">a prompt-injection guard on retrieved text,</text>
+  <text x="560" y="422" font-size="12" fill="#475569">and a Fake LLM mode for deterministic runs</text>
+  <text x="560" y="440" font-size="12" fill="#475569">without an API key.</text>
+</svg>
