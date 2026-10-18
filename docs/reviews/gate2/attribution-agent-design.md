@@ -2,7 +2,7 @@
 
 - 日期：2026-10-10
 - 状态：**待 gu 确认**，确认后拆成 T-014、T-015 两张卡
-- 依据：`resume-pivot-plan.md` §3.2 R-4；Eval v1 的结果（T-011）；真实冒烟（`gate1/smoke-20261010.md`）；`issues-log.md` B16、C3、C4、C7
+- 依据：项目改造方案（R-4 归因回溯 Agent）；Eval v1 的结果（T-011）；真实冒烟（`gate1/smoke-20261010.md`）；`issues-log.md` B16、C3、C4、C7
 
 ---
 
@@ -25,7 +25,7 @@ Eval v1 已经给出答案：
 - **节点报错 → 规则处理，不调 LLM。** 错误码和 `backtrack_to` 已经说明了原因，调模型只会多花钱、多一份不确定性。
 - **⑦ 校验不通过 → Agent 处理。** 校验失败只是症状，`owner_step` 只说明"哪个节点负责这一项"，不说明"问题出在哪"。r2 低，可能是数据里有离群值（回到 ③ 能修），也可能是 y 整列都是噪声（谁也修不了）。区分这两种情况需要看数据，这才是 Agent 的价值所在。
 
-面试时可以这样讲：规则优先、模型兜底；模型只在规则判断不了的地方出场。
+设计原则：规则优先、模型兜底；模型只在规则判断不了的地方出场。
 
 ## 2. 图的变化
 
@@ -42,7 +42,7 @@ validation ──(通过)──────────────────�
 - `route_next` 改为：`termination.kind == "error"` 时去 `attribute`，其他终止（rejected、empty）照旧去 END。
 - 检索为空（empty）暂不进 `attribute`，留给以后的检索 Agent（R-5）。
 - 回溯时清掉 `termination` 和 `error`，把 patch 写进参数，`attempt` 加 1。全局回溯次数超过 `max_total_backtracks`（默认 2）就以 `budget_exhausted` 结束。
-- **回溯到 `data_prepare` 会重新经过 `data_review` 的人工审核。** 数据变了，人必须重新审，这是 T-007 的设计自然带来的效果，面试时可以说明 HITL 和 Agent 是怎么配合的。
+- **回溯到 `data_prepare` 会重新经过 `data_review` 的人工审核。** 数据变了，人必须重新审，这是 T-007 的设计自然带来的效果，也说明了 HITL 和 Agent 是怎么配合的。
 
 ## 3. 让"归因对了"也能真正恢复
 

@@ -95,19 +95,19 @@ Tracing 的 OTLP 导出直接用主依赖 `httpx` 拼 OTLP/HTTP JSON，不再有
 
 ## 3. 安装与启动
 
-以下命令的工作目录均为仓库根目录 `researchflow-agent/`。
+以下命令的工作目录均为仓库根目录 `researchflow/`。
 
 ### 3.1 获取代码
 
 ```bash
-git clone <仓库地址> researchflow-agent
-cd researchflow-agent
+git clone https://github.com/hkban99668-code/researchflow.git
+cd researchflow
 ```
 
 若已在本仓库目录中，直接进入：
 
 ```bash
-cd researchflow-agent
+cd researchflow
 ```
 
 ### 3.2 安装依赖
@@ -226,7 +226,7 @@ docker compose -f docker-compose.yml -f docker-compose.real.yml up -d
 ## 4. 项目结构
 
 ```text
-researchflow-agent/
+researchflow/
 ├── pyproject.toml                  # 依赖、脚本入口、ruff/pytest/mypy 配置
 ├── uv.lock                         # 锁定依赖（CI 强制校验）
 ├── .python-version                 # 固定 Python 3.11
@@ -518,7 +518,7 @@ owner_steps:               # 每条检查归哪个节点负责（键是检查名
 
 ## 7. 使用示例
 
-以下示例均在 `researchflow-agent/` 目录执行，且默认无 API Key（Fake 模式）。
+以下示例均在 `researchflow/` 目录执行，且默认无 API Key（Fake 模式）。
 
 ### 7.1 交互式运行（含一次人工审核）
 
@@ -748,7 +748,7 @@ uv run researchflow mcp --allow-exec  # 额外暴露 exec 工具
     "researchflow": {
       "command": "uv",
       "args": ["run", "researchflow", "mcp"],
-      "cwd": "/绝对路径/researchflow-agent"
+      "cwd": "/绝对路径/researchflow"
     }
   }
 }

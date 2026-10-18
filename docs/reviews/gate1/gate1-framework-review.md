@@ -1,9 +1,9 @@
 # ResearchFlow Gate 1 框架评审：优化项与 Gate 3 扩展性
 
-- 评审范围：`researchflow-agent/` 全部 `src/`（约 1500 行）、README §1/§3.5–5/§9/§10、`configs/`、设计方案中 Gate 2/3 边界条目
+- 评审范围：`researchflow/` 全部 `src/`（约 1500 行）、README §1/§3.5–5/§9/§10、`configs/`、设计方案中 Gate 2/3 边界条目
 - 方式：只读，未运行测试，未改代码
 - 依赖版本（`uv.lock`）：langgraph 1.2.12、langgraph-checkpoint 4.2.0、pydantic 2.13.5
-- 行号均相对 `researchflow-agent/src/researchflow/`
+- 行号均相对 `src/researchflow/`
 
 ## 结论
 
@@ -271,7 +271,7 @@ P1-7（Retriever）不设第 3 轮用例。它属于 Gate 3 的范围，只需�
 **存放位置**：仓库内 `docs/reviews/gate1/`（代码实现 agent 的工作目录就是仓库根，放在这里它才读得到）
 
 ```
-researchflow-agent/docs/reviews/gate1/
+researchflow/docs/reviews/gate1/
 ├── gate1-framework-review.md   ← 本评审文件（标准来源）
 ├── TEMPLATE.md                 ← 结果模板
 ├── round1-YYYYMMDD.md          ← 每轮一份，复制模板填写

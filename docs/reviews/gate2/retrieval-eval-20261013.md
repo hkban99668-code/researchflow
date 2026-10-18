@@ -3,7 +3,7 @@
 - 候选池：20 个课题，3 种方法（课题英文原文检索 / 关键词检索 / 检索 Agent），合并后 270 条候选，冻结在 `evals/retrieval/pool.json`
 - 检索 Agent：deepseek-v4-flash-0731，经百炼；对照组用课题的英文表述检索
 - 相关性标注：gu 决定改用模型当评委。两个评委 qwen3.6-flash-2026-04-16、qwen3.5-flash-2026-02-23 独立判断，只看课题、标题、摘要，规则与人工标注说明相同；关闭思考模式（`enable_thinking: false`）。故意不用 deepseek 当评委，避免自己评自己。
-- 结果文件：`/Users/gu/CodeBuddy/20260921235524/researchflow-agent/evals/retrieval/labels_judge.csv`（每行两个评委的标签、理由和是否一致）
+- 结果文件：`evals/retrieval/labels_judge.csv`（每行两个评委的标签、理由和是否一致）
 
 ## 评委一致性
 
@@ -29,7 +29,7 @@
 - **Recall@10 低是条数不对等造成的**，不是 Agent 找得差：Agent 最多只选 6 条，对照组每种取 10 条。所以只比较 @5 才公平（T-024 审查已指出，这次评测只按 @5 下结论）。
 - **宽松口径下差距几乎消失**，MRR 三者都是 1.0。原因是候选里 93% 都相关，评委又比较宽松，"挑出相关的"这件事本身难度不高。要让检索评测有区分度，需要更难的课题（跨领域、术语不标准、中文表述和英文惯用说法差别大），或者更严格的相关性标准（例如"能直接作为这个课题的核心参考文献"）。
 
-## 局限（写简历时必须带上）
+## 局限（引用这些数字时必须带上）
 
 - 标签来自模型评委，不是人工；两个评委同属 qwen 家族，独立性有限；一致率 87.8%。
 - 每种方法只跑了一次；20 个课题由 Claude 拟定，gu 确认。
@@ -41,7 +41,7 @@
 
 ## 换不同家族的评委复评（2026-10-13 夜）
 
-为了去掉"两个评委都是 qwen"这条局限，用两个与被评模型（deepseek）、旧评委（qwen）都不同家族的模型重新打标：谷歌 gemini-3.8-flash、智谱 GLM-5.2-Fast（经 commandcode；glm-5.3-flash 不支持 json_schema，换成同家族 5.2-Fast）。规则、提示词、候选池都不变。结果文件 `/Users/gu/CodeBuddy/20260921235524/researchflow-agent/evals/retrieval/labels_judge_xfam.csv`，严格/宽松两份标签 `labels_judge_xfam_strict.csv`、`labels_judge_xfam_lenient.csv`。
+为了去掉"两个评委都是 qwen"这条局限，用两个与被评模型（deepseek）、旧评委（qwen）都不同家族的模型重新打标：谷歌 gemini-3.8-flash、智谱 GLM-5.2-Fast（经 commandcode；glm-5.3-flash 不支持 json_schema，换成同家族 5.2-Fast）。规则、提示词、候选池都不变。结果文件 `evals/retrieval/labels_judge_xfam.csv`，严格/宽松两份标签 `labels_judge_xfam_strict.csv`、`labels_judge_xfam_lenient.csv`。
 
 **评委一致性**
 
@@ -102,7 +102,7 @@
 - 提升的来源是看得见的：Agent 把口语中文改写成领域英文术语再检索（例如把"标签里混进了错的"改写成 learning with noisy labels，把"只有正样本"改写成 PU learning）；对照组直译口语，搜到的是不相关文献。也就是说这里测的是"改写成标准术语"这一步的价值，而不是 Agent 比检索引擎强。
 - Recall@10 与 Precision@5 仍有条数不对等：Agent 最多选 6 条，只用 @5 下结论。
 
-**局限（写简历必须带）**
+**局限（引用这些数字时必须带上）**
 - 标签来自两个模型评委，不是人工；评委只看标题和摘要。
 - 课题由 Claude 拟定，且是按"口语 vs 术语"这个 Agent 擅长的方向设计的，所以结论是"在术语距离大的课题上收益大"，不能外推到一般课题；简单课题上收益不显著。
 - 每种方法跑一次；排除 1 个课题（Agent 失败）；h15 Agent 空手而归说明稳定性还有问题。
