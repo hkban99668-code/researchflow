@@ -1,0 +1,828 @@
+# Eval 用例清单（手写，期望标签在这里）。故障名见 evals/faults.py。
+#
+# 期望标签在运行之前写定：跑出来对不上就如实报告，不能回头改标签让它对上。
+# - group: single_step | cross_step | human | clean
+# - expected.termination: ok | error | escalated | rejected | empty | validation_failed | budget_exhausted
+# - expected.error_code: 可选；expected.target_step: 图节点名 / "human" / null（clean 组）
+#
+# split 分配规则（T-015）：cross_step 与 human 两组各自按 id 字典序排序，奇数位进 dev、
+# 偶数位进 test（这样两份里每类故障都有）；其余组一律 test（它们不调用 Agent，放哪边不影响）。
+# dev 用于调提示词，test 只用于报告最终数字（调提示词时不看 test）。
+#
+# T-018 扩充：cross_step 与 human 各 18 条（原 6 + 新 12），合计 36 条，dev / test 各 18。
+# 新增故障的 id 前缀保证排序在原有 id 之后，原有 12 条的 split 不变：
+# - cross_step 新增 F-OUT-MISS-*（y_outliers_one_feature_missing）、F-OUT-NOISE-*（y_outliers_with_noise）；
+# - human 新增 F-YNOISE-*（y_outliers_heavy_noise）、F-YNONLIN-*（nonlinear_target）、F-YPART-*（y_outliers_partial）。
+# 所有 cross_step / human 用例的标签都经 evals/label_check.py 实际核验过（tests/eval/test_label_check.py）。
+
+- id: F-CLEAN-01
+  fault: clean
+  params: {}
+  seed: 1
+  group: clean
+  split: test
+  expected:
+    termination: ok
+    target_step: null
+  note: 原样复制，完整链路跑通
+
+- id: F-CLEAN-02
+  fault: clean
+  params: {}
+  seed: 2
+  group: clean
+  split: test
+  expected:
+    termination: ok
+    target_step: null
+  note: 不同种子，行为应与 F-CLEAN-01 一致
+
+- id: F-DUP-01
+  fault: duplicate_rows
+  params: {rows: 3}
+  seed: 3
+  group: clean
+  split: test
+  expected:
+    termination: ok
+    target_step: null
+  note: 复制 3 行，去重后通过
+
+- id: F-DUP-02
+  fault: duplicate_rows
+  params: {rows: 6}
+  seed: 4
+  group: clean
+  split: test
+  expected:
+    termination: ok
+    target_step: null
+  note: 复制 6 行，去重后通过
+
+- id: F-MISS-01
+  fault: high_missing
+  params: {column: x2, rate: 0.3}
+  seed: 101
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 缺失率 0.3 超过 max_missing_rate 0.05，③ 直接拦下
+
+- id: F-MISS-02
+  fault: high_missing
+  params: {column: x3, rate: 0.4}
+  seed: 102
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 缺失率 0.4 超过阈值
+
+- id: F-MISS-03
+  fault: high_missing
+  params: {column: x1, rate: 0.2}
+  seed: 103
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 缺失率 0.2 超过阈值
+
+- id: F-DROP-01
+  fault: drop_column
+  params: {column: x2}
+  seed: 104
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 删掉必需列 x2，③ 报缺少必需列
+
+- id: F-DROP-02
+  fault: drop_column
+  params: {column: x3}
+  seed: 105
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 删掉必需列 x3
+
+- id: F-RENAME-01
+  fault: rename_column
+  params: {column: x2, new_name: x2_renamed}
+  seed: 106
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 改列名等价于缺列，③ 报缺少必需列
+
+- id: F-RENAME-02
+  fault: rename_column
+  params: {column: x1, new_name: x1_renamed}
+  seed: 107
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 改列名等价于缺列
+
+- id: F-RANGE-01
+  fault: x_out_of_range
+  params: {column: x1, value: 100.0, count: 5}
+  seed: 108
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: x1 少量值改到 100，超出 ranges.x1 上界 10
+
+- id: F-RANGE-02
+  fault: x_out_of_range
+  params: {column: x2, value: -50.0, count: 6}
+  seed: 109
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: x2 少量值改到 -50，低于 ranges.x2 下界 -10
+
+- id: F-RANGE-03
+  fault: x_out_of_range
+  params: {column: x3, value: 99.0, count: 4}
+  seed: 110
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: x3 少量值改到 99，超出 ranges.x3 上界 5
+
+- id: F-ROWS-01
+  fault: too_few_rows
+  params: {rows: 10}
+  seed: 111
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 只留 10 行，低于 min_rows 30
+
+- id: F-ROWS-02
+  fault: too_few_rows
+  params: {rows: 5}
+  seed: 112
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: 只留 5 行，低于 min_rows 30
+
+- id: F-TYPE-01
+  fault: type_pollution
+  params: {column: x1, rate: 0.6}
+  seed: 113
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: x1 混入 60% 字符串，数值化后成为缺失并丢弃（61→24 行），样本行数不足
+
+- id: F-TYPE-02
+  fault: type_pollution
+  params: {column: x2, rate: 0.7}
+  seed: 114
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-003
+    target_step: data_prepare
+  note: x2 混入 70% 字符串，数值化后成为缺失并丢弃（61→19 行），样本行数不足
+
+- id: F-ALGO-01
+  fault: unknown_algorithm
+  params: {algorithm: ridge}
+  seed: 115
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-004
+    target_step: compute
+  note: algorithm 改为未登记的 ridge，④ 抛 RF-004
+
+- id: F-ALGO-02
+  fault: unknown_algorithm
+  params: {algorithm: lasso}
+  seed: 116
+  group: single_step
+  split: test
+  expected:
+    termination: escalated
+    error_code: RF-004
+    target_step: compute
+  note: algorithm 改为未登记的 lasso
+
+- id: F-EMPTY-01
+  fault: empty_retrieval
+  params: {}
+  seed: 117
+  group: single_step
+  split: test
+  expected:
+    termination: empty
+    target_step: retrieval
+  note: 课题改成本地语料完全不命中的题目，① 返回空
+
+- id: F-EMPTY-02
+  fault: empty_retrieval
+  params: {topic_text: 火星大气层的量子纠缠测量}
+  seed: 118
+  group: single_step
+  split: test
+  expected:
+    termination: empty
+    target_step: retrieval
+  note: 另一不命中题目，① 返回空
+
+- id: F-OUT-01
+  fault: y_outliers
+  params: {factor: 20.0, count: 8}
+  seed: 201
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: ③ 不查 y 的范围，放行；④ 正常算；⑦ r2 掉到 0.8 下。症状在 compute，根因在 data_prepare
+
+- id: F-OUT-02
+  fault: y_outliers
+  params: {factor: 30.0, count: 10}
+  seed: 202
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更极端的离群值，r2 更差
+
+- id: F-OUT-03
+  fault: y_outliers
+  params: {factor: 15.0, count: 12}
+  seed: 203
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更多离群点，r2 低于 0.8
+
+- id: F-OUT-04
+  fault: y_outliers
+  params: {factor: 50.0, count: 2}
+  seed: 207
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 离群值更少但更极端（仅 2 个点放大 50 倍），症状在 compute、根因在 data_prepare；回到 ③ 加 y 的离群值裁剪即可恢复
+
+- id: F-OUT-05
+  fault: y_outliers_offset
+  params: {offset: 40.0, count: 6}
+  seed: 208
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 6 个 y 值向同一方向（上）平移 40，只往一个方向偏的离群值；回到 ③ 加 y 的离群值裁剪即可恢复 r2
+
+- id: F-OUT-06
+  fault: y_outliers_offset
+  params: {offset: -35.0, count: 6}
+  seed: 209
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 6 个 y 值向同一方向（下）平移 35，另一个方向的一侧偏离群值；回到 ③ 加 y 的离群值裁剪即可恢复 r2
+
+- id: F-NOISE-01
+  fault: y_noise
+  params: {scale: 30.0}
+  seed: 204
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 每一行 y 都加 std=30 高斯噪声，特征与目标的真实关系已被噪声淹没，任何清洗都无法恢复，正确动作是转人工（与 y_shuffled 同类）
+
+- id: F-NOISE-02
+  fault: y_noise
+  params: {scale: 20.0}
+  seed: 205
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 每一行 y 都加 std=20 高斯噪声，关系被淹没，回到 data_prepare 无任何清洗可恢复，应转人工
+
+- id: F-NOISE-03
+  fault: y_noise
+  params: {scale: 40.0}
+  seed: 206
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 每一行 y 都加 std=40 高斯噪声，关系被淹没，无清洗策略可恢复，应转人工
+
+- id: F-SHUFFLE-01
+  fault: y_shuffled
+  params: {}
+  seed: 301
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: y 整列打乱，特征与目标无关系，正确动作是转人工
+
+- id: F-SHUFFLE-02
+  fault: y_shuffled
+  params: {}
+  seed: 302
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 不同种子的打乱
+
+- id: F-SHUFFLE-03
+  fault: y_shuffled
+  params: {}
+  seed: 303
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 不同种子的打乱
+
+# --------------------------------------------------------------------------- #
+# T-018 新增：混合故障（离群值 + 噪声/缺失）与"更聪明规则也修不好"的用例。    #
+# 标签均经 label_check 核验：cross_step 可修、human 不可修。                     #
+# --------------------------------------------------------------------------- #
+
+- id: F-OUT-NOISE-01
+  fault: y_outliers_with_noise
+  params: {factor: 20.0, count: 8, noise_scale: 1.0}
+  seed: 601
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 少量 y 极端值 + 轻噪声；去极端值后 r2 恢复，回到 ③ 可修
+
+- id: F-OUT-NOISE-02
+  fault: y_outliers_with_noise
+  params: {factor: 20.0, count: 8, noise_scale: 2.0}
+  seed: 609
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 噪声略大但仍可修
+
+- id: F-OUT-NOISE-03
+  fault: y_outliers_with_noise
+  params: {factor: 30.0, count: 6, noise_scale: 1.5}
+  seed: 612
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更极端的少量离群值 + 轻噪声
+
+- id: F-OUT-NOISE-04
+  fault: y_outliers_with_noise
+  params: {factor: 15.0, count: 10, noise_scale: 1.0}
+  seed: 615
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更多离群点 + 轻噪声
+
+- id: F-OUT-NOISE-05
+  fault: y_outliers_with_noise
+  params: {factor: 25.0, count: 8, noise_scale: 0.5}
+  seed: 618
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 噪声最小，接近纯离群值
+
+- id: F-OUT-NOISE-06
+  fault: y_outliers_with_noise
+  params: {factor: 20.0, count: 6, noise_scale: 2.0}
+  seed: 621
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更少离群点 + 中等噪声
+
+- id: F-OUT-MISS-01
+  fault: y_outliers_one_feature_missing
+  params: {factor: 20.0, count: 8, column: x1, missing_count: 1}
+  seed: 602
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 离群值 + x1 少量缺失（缺失率低于阈值，③ 放行）
+
+- id: F-OUT-MISS-02
+  fault: y_outliers_one_feature_missing
+  params: {factor: 20.0, count: 8, column: x2, missing_count: 1}
+  seed: 603
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 离群值 + x2 少量缺失
+
+- id: F-OUT-MISS-03
+  fault: y_outliers_one_feature_missing
+  params: {factor: 15.0, count: 10, column: x3, missing_count: 1}
+  seed: 605
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更多离群点 + x3 少量缺失
+
+- id: F-OUT-MISS-04
+  fault: y_outliers_one_feature_missing
+  params: {factor: 30.0, count: 6, column: x1, missing_count: 1}
+  seed: 608
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更极端离群值 + x1 少量缺失
+
+- id: F-OUT-MISS-05
+  fault: y_outliers_one_feature_missing
+  params: {factor: 20.0, count: 10, column: x2, missing_count: 1}
+  seed: 611
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 更多离群点 + x2 少量缺失
+
+- id: F-OUT-MISS-06
+  fault: y_outliers_one_feature_missing
+  params: {factor: 25.0, count: 8, column: x1, missing_count: 1}
+  seed: 614
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  note: 中等离群值 + x1 少量缺失
+
+- id: F-YNOISE-01
+  fault: y_outliers_heavy_noise
+  params: {factor: 20.0, count: 8, noise_scale: 30.0}
+  seed: 600
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 离群值 + 大幅噪声，去极端值后 r2 仍远低于 0.8，应转人工
+
+- id: F-YNOISE-02
+  fault: y_outliers_heavy_noise
+  params: {factor: 20.0, count: 8, noise_scale: 40.0}
+  seed: 601
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 噪声更大，关系被淹没，应转人工
+
+- id: F-YNOISE-03
+  fault: y_outliers_heavy_noise
+  params: {factor: 15.0, count: 10, noise_scale: 30.0}
+  seed: 602
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 更多离群点 + 大幅噪声，应转人工
+
+- id: F-YNOISE-04
+  fault: y_outliers_heavy_noise
+  params: {factor: 25.0, count: 8, noise_scale: 35.0}
+  seed: 603
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 更极端离群值 + 大幅噪声，应转人工
+
+- id: F-YNONLIN-01
+  fault: nonlinear_target
+  params: {feature: x2, noise_scale: 1.0}
+  seed: 600
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: y 改成 x2 的平方（对称，与特征几乎零线性相关），线性模型拟合不了，应转人工
+
+- id: F-YNONLIN-02
+  fault: nonlinear_target
+  params: {feature: x2, noise_scale: 3.0}
+  seed: 601
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 平方关系 + 较大噪声，应转人工
+
+- id: F-YNONLIN-03
+  fault: nonlinear_target
+  params: {feature: x2, noise_scale: 2.0}
+  seed: 602
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 平方关系 + 中等噪声，应转人工
+
+- id: F-YNONLIN-04
+  fault: nonlinear_target
+  params: {feature: x2, noise_scale: 0.5}
+  seed: 603
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 平方关系 + 最小噪声，仍修不好（白名单没有换模型的参数），应转人工
+
+- id: F-YPART-01
+  fault: y_outliers_partial
+  params: {factor: 100.0, count: 30}
+  seed: 600
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 极端值约占一半样本，IQR 只能去掉一小部分，r2 仍低于 0.8，应转人工
+
+- id: F-YPART-02
+  fault: y_outliers_partial
+  params: {factor: 50.0, count: 35}
+  seed: 601
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 极端值更多，任何裁剪都救不回，应转人工
+
+- id: F-YPART-03
+  fault: y_outliers_partial
+  params: {factor: 100.0, count: 35}
+  seed: 602
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 极端值最多，应转人工
+
+- id: F-YPART-04
+  fault: y_outliers_partial
+  params: {factor: 50.0, count: 30}
+  seed: 603
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  note: 极端值约占一半样本，应转人工
+
+
+# --------------------------------------------------------------------------- #
+# T-019 新增：多种修法与陷阱用例。expected_fix 是期望的正确修法；human 组为 null。 #
+# 标签均经 label_check 核验：exp_target 用 log 修、k_choice_trap 用 iqr k=3 修、      #
+# exp_target_with_outliers 无法修。corrupted_feature 因样本数据结构无法构造（见报告）。#
+# id 前缀排序在原有 id 之后，原有用例的 split 不变。                                   #
+# --------------------------------------------------------------------------- #
+
+- id: F-XEXP-01
+  fault: exp_target
+  params: {noise_scale: 0.05}
+  seed: 700
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: compute
+  expected_fix: {target_step: compute, patch: {target_transform: log}}
+  note: y 改成特征线性组合的指数，线性模型拟合不了；回到 compute 用 log 变换可恢复
+
+- id: F-XEXP-02
+  fault: exp_target
+  params: {noise_scale: 0.05}
+  seed: 701
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: compute
+  expected_fix: {target_step: compute, patch: {target_transform: log}}
+  note: 不同种子，指数关系同样需 log 变换
+
+- id: F-XEXP-03
+  fault: exp_target
+  params: {noise_scale: 0.08}
+  seed: 702
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: compute
+  expected_fix: {target_step: compute, patch: {target_transform: log}}
+  note: 乘性噪声略大，log 后仍可恢复
+
+- id: F-XEXP-04
+  fault: exp_target
+  params: {noise_scale: 0.08}
+  seed: 703
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: compute
+  expected_fix: {target_step: compute, patch: {target_transform: log}}
+  note: 不同种子，指数关系同样需 log 变换
+
+- id: F-XKTRAP-01
+  fault: k_choice_trap
+  params: {rows: 36, n_extreme: 4, n_mild: 3}
+  seed: 43
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  expected_fix: {target_step: data_prepare, patch: {y_outlier_strategy: iqr, y_outlier_k: 3.0}}
+  note: 样本接近 min_rows，k=1.5 误删正常样本导致行数低于 min_rows；k=3 只去极端值
+
+- id: F-XKTRAP-02
+  fault: k_choice_trap
+  params: {rows: 36, n_extreme: 4, n_mild: 3}
+  seed: 119
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  expected_fix: {target_step: data_prepare, patch: {y_outlier_strategy: iqr, y_outlier_k: 3.0}}
+  note: 不同种子，同样只有 k=3 能修
+
+- id: F-XKTRAP-03
+  fault: k_choice_trap
+  params: {rows: 36, n_extreme: 4, n_mild: 3}
+  seed: 176
+  group: cross_step
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  expected_fix: {target_step: data_prepare, patch: {y_outlier_strategy: iqr, y_outlier_k: 3.0}}
+  note: 不同种子，k=1.5 会掉到 min_rows 以下
+
+- id: F-XKTRAP-04
+  fault: k_choice_trap
+  params: {rows: 36, n_extreme: 4, n_mild: 3}
+  seed: 412
+  group: cross_step
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: data_prepare
+  expected_fix: {target_step: data_prepare, patch: {y_outlier_strategy: iqr, y_outlier_k: 3.0}}
+  note: 不同种子，只有 k=3 能修
+
+- id: F-ZEXP-01
+  fault: exp_target_with_outliers
+  params: {noise_scale: 0.05, nonpositive_count: 5}
+  seed: 701
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  expected_fix: null
+  note: 指数关系 + 少量非正值：log 因 y≤0 抛 RF-004，iqr 也去不掉非正值（在栅栏内），应转人工
+
+- id: F-ZEXP-02
+  fault: exp_target_with_outliers
+  params: {noise_scale: 0.05, nonpositive_count: 5}
+  seed: 702
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  expected_fix: null
+  note: 不同种子，同样无法用单一修法（或两次组合）修复
+
+- id: F-ZEXP-03
+  fault: exp_target_with_outliers
+  params: {noise_scale: 0.08, nonpositive_count: 5}
+  seed: 703
+  group: human
+  split: dev
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  expected_fix: null
+  note: 噪声略大 + 非正值，应转人工
+
+- id: F-ZEXP-04
+  fault: exp_target_with_outliers
+  params: {noise_scale: 0.08, nonpositive_count: 5}
+  seed: 704
+  group: human
+  split: test
+  expected:
+    termination: budget_exhausted
+    target_step: human
+  expected_fix: null
+  note: 不同种子，同样无法修复
+

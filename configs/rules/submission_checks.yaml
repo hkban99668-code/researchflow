@@ -1,0 +1,21 @@
+# ⑦ 提交前硬规则
+metric_thresholds:
+  r2: { min: 0.8 }
+required_sections: ["背景", "方法", "结果", "局限"]
+min_draft_chars: 200
+required_artifacts: [cleaned_data, chart, draft]
+forbidden_tokens: ["TODO", "待补充", "lorem"]
+min_rows: 30
+# 每条检查归哪个节点负责（P1-8）：键是完整检查名或冒号前的前缀，值是图里的节点名。
+owner_steps:
+  metric: compute          # metric:r2 等
+  section: writing
+  draft_min_chars: writing  # 检查名是 draft_min_chars（不是字段名 min_draft_chars）
+  forbidden_tokens: writing
+  min_rows: data_prepare
+  artifact:cleaned_data: data_review
+  artifact:chart: chart
+  artifact:draft: writing
+  variables_in_dataset: extraction
+  citations_subset: writing   # 引用必须来自本次检索结果（T-029），写草稿的 ⑥ 负责
+  citation_has_claim: writing

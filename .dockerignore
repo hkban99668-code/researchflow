@@ -1,0 +1,38 @@
+# 密钥绝不进构建上下文（也不进镜像）
+.env
+.env*
+*.key
+secrets/
+
+# 运行产物与数据：容器里用命名卷，不要把宿主机历史带进镜像
+runs/
+.cache/
+data/raw/
+data/cache/
+*.db
+*.sqlite3
+*.parquet
+
+# 环境与工具缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# 版本库与编辑器
+.git/
+.github/
+.idea/
+.vscode/
+.DS_Store
+
+# 与运行无关、会拖慢构建的上下文
+tests/
+docs/
+.collab/
+.claude/
+evals/reports/

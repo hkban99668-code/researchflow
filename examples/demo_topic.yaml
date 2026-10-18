@@ -1,0 +1,12 @@
+topic: "科研数据质量与线性回归可复现性评估"
+
+dataset:
+  path: examples/sample_dataset.csv
+  target: y
+  features: [x1, x2, x3]
+
+param_set:
+  algorithm: linear_regression
+  seed: 42
+  params:
+    test_size: 0.25

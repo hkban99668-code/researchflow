@@ -1,0 +1,23 @@
+# 可选覆盖文件：接真实模型（T-035）。
+#
+#   docker compose -f docker-compose.yml -f docker-compose.real.yml up -d
+#
+# 前提：仓库根目录有 .env（已被 .gitignore / .dockerignore 排除，只作为运行时
+# 环境变量注入容器，不会打进镜像）。本文件是唯一会读取 .env 的入口；默认
+# docker-compose.yml 不读 .env，零密钥也能跑。
+#
+# 注意：
+# - 下面显式打开 RF_API_ALLOW_REAL=1，POST /runs 的 mode=real 才会被接受；
+#   这会产生真实费用，确认预算后再用。
+# - .env 里需要 RF_LLM_API_KEY（以及按需 RF_LLM_BASE_URL / RF_LLM_MODEL）。
+# - RF_LLM_MODE=real 是服务进程的默认模式，但不影响已记录为 fake 的历史 run
+#   的 resume（恢复模式以 run_meta.json 为准）。
+
+services:
+  api:
+    env_file:
+      - .env
+    environment:
+      RF_LLM_MODE: real
+      RF_LOAD_DOTENV: "0"
+      RF_API_ALLOW_REAL: "1"

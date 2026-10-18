@@ -1,0 +1,271 @@
+topic_id,ref_id,title,judge_a,judge_b,agree,consensus,reason_a,reason_b
+t01,openalex:W4312614263,THE EFFECT OF MISSING DATA IMPUTATION METHODS ON GENERALIZABILITY THEORY G AND PHİ COEFFICIENTS,0,0,1,0,课题关注回归系数偏差，文献关注信度分析G和Phi系数，研究目标不同。,文献研究信度系数，而非回归系数估计偏差。
+t01,openalex:W2136953071,"Bias and Precision of the “Multiple Imputation, Then Deletion” Method for Dealing With Missing Outcome Data",1,1,1,1,标题直接涉及缺失值插补方法的偏差，与课题高度相关。,文献探讨插补方法对偏差的影响，与课题高度相关。
+t01,openalex:W2607507174,Missing data and multiple imputation in clinical epidemiological research,1,1,1,1,文献探讨临床研究中缺失值多重插补，直接关联课题关注的插补方法及其对估计的影响。,文献综述缺失值类型及多重插补，直接关联回归系数估计偏差。
+t01,openalex:W2899843281,Data from: Using multiple imputation to estimate missing data in meta-regression,1,1,1,1,多重插补是缺失值处理核心方法，直接影响回归系数估计，高度相关。,文献探讨元回归中缺失值插补方法，与课题高度相关。
+t01,openalex:W4410618650,Logistic Regression Analysis Based on Multiple Imputation under Random Missing Covariates,1,1,1,1,研究缺失协变量插补对回归参数估计的影响，与课题高度契合。,文献研究协变量缺失下的多重插补法，直接关联课题核心。
+t01,openalex:W4253699692,The Performance of the Full Information Maximum Likelihood Estimator in Multiple Regression Models with Missing Data,1,1,1,1,研究缺失数据下回归系数偏差，直接契合课题核心。,标题与摘要均直接研究缺失数据下回归系数偏差，完全契合课题。
+t01,openalex:W3109682927,Missing Data in Clinical Research: A Tutorial on Multiple Imputation,1,1,1,1,文献聚焦多重插补法，直接关联缺失值处理对回归分析的影响。,文献介绍缺失值插补方法，与课题直接相关。
+t01,openalex:W2904561288,A comparison of multiple imputation methods for missing data in longitudinal studies,1,1,1,1,文献比较多种缺失值插补方法，直接涉及插补对估计的影响。,文献探讨缺失值插补方法，与课题核心内容直接相关。
+t01,openalex:W2951837249,Missing Value Imputation Approach for Mass Spectrometry-based Metabolomics Data,1,1,1,1,研究缺失值插补方法对数据分析的影响，与课题高度相关。,研究缺失值插补方法对数据分析的影响，与课题高度相关。
+t01,openalex:W2808622828,From predictive methods to missing data imputation: an optimization approach,1,1,1,1,文献提出缺失值插补方法，与课题关注的插补方法直接相关。,文献提出缺失值插补框架，与课题核心内容直接相关。
+t01,openalex:W2143721482,Multiple Imputation for Missing Data: Fully Conditional Specification Versus Multivariate Normal Imputation,1,1,1,1,文献直接比较两种主流缺失值插补方法，与课题高度相关。,文献直接比较不同缺失值插补方法，与课题高度相关。
+t01,openalex:W7220268193,Imputation Methods for Multiple Regression with Missing Heteroscedastic Data,1,1,1,1,研究缺失值插补方法对回归分析的影响，与课题高度相关。,文献直接研究缺失值插补方法对回归分析的影响，与课题高度契合。
+t01,openalex:W2095642069,Using multiple imputation to estimate missing data in meta‐regression,1,1,1,1,研究缺失值插补对回归分析的影响，与课题直接相关。,文献探讨元回归中缺失值插补方法，与课题直接相关。
+t01,openalex:W2141019052,Comparison of imputation methods for missing laboratory data in medicine,1,1,1,1,研究直接比较插补方法对预测模型准确性的影响，与课题高度相关。,文献直接比较插补方法对预测模型准确性的影响，与课题高度相关。
+t01,openalex:W2227045532,Bias in regression coefficient estimates when assumptions for handling missing data are violated: a simulation study,1,1,1,1,标题直接涉及缺失值处理假设违反对回归系数估计偏差的影响，与课题高度契合。,文献直接研究缺失值处理方法对回归系数估计偏差的影响，与课题高度相关。
+t02,openalex:W1981883412,New Method for Outlier Diagnostics in Linear Regression,1,1,1,1,标题和摘要均直接针对线性回归中的离群值检测与稳健估计方法。,标题与摘要均直接针对线性回归离群值检测及稳健估计提出新方法。
+t02,openalex:W7160854197,Robust Linear Regression Estimation via Symlet Andrews Weighted Function for Outlier Detection,1,1,1,1,标题和摘要均明确针对线性回归中的离群值检测与稳健估计，高度契合课题。,文献提出基于Symlet Andrews加权函数的稳健线性回归方法以检测离群值。
+t02,openalex:W1509551117,"Multiple Outliers in Linear Regression: Advances in Detection Methods, Robust Estimation, and Variable Selection",1,1,1,1,标题与摘要均直接针对线性回归中的离群值检测与稳健估计，高度契合课题。,文献标题与摘要均直接针对线性回归中的离群值检测与稳健估计问题。
+t02,openalex:W4300842481,HIGH-DIMENSIONAL ROBUST REGRESSION AND OUTLIERS DETECTION WITH SLOPE,1,1,1,1,标题明确包含稳健回归与离群值检测，且摘要指出研究线性回归模型，与课题高度契合。,标题与摘要均明确涉及高维线性回归中的离群值检测与稳健估计。
+t02,openalex:W813296025,Robust Estimation and Outlier Detection,1,1,1,1,标题和摘要均涉及稳健估计与离群值检测，直接契合课题。,文献直接涉及稳健估计与离群点检测，契合课题核心。
+t02,openalex:W2871990290,Robust techniques for linear regression with multicollinearity and outliers,1,1,1,1,标题和摘要明确涉及线性回归中的离群值检测与稳健估计，高度契合课题。,标题和摘要明确涉及线性回归中的离群值检测与稳健估计。
+t02,openalex:W2773439306,High-dimensional robust regression and outliers detection with SLOPE,1,1,1,1,文献直接研究高维线性回归中的离群值检测与稳健估计，高度契合课题。,标题与摘要均明确涉及高维线性回归中的离群值检测与稳健估计。
+t02,openalex:W2048430744,Robust statistics for outlier detection,1,1,1,1,摘要明确提及线性回归的稳健估计与离群值检测，直接契合课题。,摘要明确提及线性回归中的稳健估计与离群值检测，直接相关。
+t02,openalex:W2069198866,Outlier detection and robust estimation in linear regression models with fixed group effects,1,1,1,1,标题摘要均直接涉及线性回归离群值检测与稳健估计，高度契合课题。,标题与摘要均直接涉及线性回归中的离群值检测与稳健估计。
+t02,openalex:W2954231689,Robust estimation and outlier detection based on linear regression model,1,1,1,1,标题和摘要均明确涉及线性回归中的离群值检测与稳健估计，高度相关。,标题与摘要均明确涉及线性回归中的离群值检测与稳健估计。
+t03,openalex:W2593072283,Converting scripts into reproducible workflow research objects,1,1,1,1,标题直接涉及将脚本转换为可复现工作流，与课题高度契合。,标题与摘要直接探讨将脚本转换为可复现工作流对象，高度契合课题。
+t03,openalex:W4407877295,Applying the FAIR Principles to computational workflows,1,1,1,1,文献直接探讨计算工作流的复现性与FAIR原则，与课题高度契合。,标题与摘要均直接探讨计算工作流的可复现性及FAIR原则。
+t03,openalex:W2607754550,Computational workflows for research students: towards a reproducible research,1,1,1,1,标题和摘要直接涉及计算工作流与可复现性研究，高度契合课题。,标题与摘要均直接探讨计算工作流与可复现性研究，高度契合课题。
+t03,openalex:W2995262684,A Reproducible Data Analysis Workflow,1,1,1,1,标题和摘要直接涉及可复现性工作流，与课题高度契合。,文献直接探讨基于R的可复现数据分析工作流，与课题高度契合。
+t03,openalex:W2567711320,Computational tools and workflows in metabolomics: An international survey highlights the opportunity for harmonisation through Galaxy,1,1,1,1,摘要提及计算工具与工作流，符合课题对可复现性及工作流工具的探讨。,文献探讨代谢组学工作流工具及标准化，与课题高度相关。
+t03,openalex:W2940208427,Reproducible Workflow on a Public Cloud for Computational Fluid Dynamics,1,1,1,1,标题和摘要明确涉及计算研究的可复现工作流及云工具，与课题高度契合。,标题与摘要均明确涉及计算研究的可复现性及工作流工具。
+t03,openalex:W2735997573,Computational workflows for research students,1,1,1,1,摘要明确提及可复现性定义及Docker工作流，直接契合课题。,摘要明确定义可复现研究并介绍工作流工具，与课题高度相关。
+t03,openalex:W3121485564,Using Jupyter for Reproducible Scientific Workflows,1,1,1,1,标题和摘要直接涉及使用Jupyter构建可复现的工作流，与课题高度契合。,标题与摘要直接探讨使用Jupyter实现可复现工作流，高度契合课题。
+t03,openalex:W2472803348,Jupyter Notebooks – a publishing format for reproducible computational workflows,1,1,1,1,标题和摘要直接讨论Jupyter Notebooks作为可复现计算工作流的发布格式，与课题高度契合。,文献直接探讨计算工作流的可复现性，与课题高度契合。
+t03,openalex:W3200776886,"Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers",1,0,0,,标题明确提及可复现分析流水线与工作流管理器，直接契合课题。,摘要为空，仅凭标题无法判断是否针对计算研究的可复现性与工作流工具。
+t03,openalex:W7133339677,"Enhancing Reproducibility in Computational Workflows : Linking Semantics, Metadata, and Ontologies",1,1,1,1,标题直接涉及计算工作流的可复现性，与课题高度契合。,标题与摘要均直接探讨计算工作流的可复现性，高度契合课题。
+t04,openalex:W4386113904,An Unbiased Predictor for Skewed Response Variable with Measurement Error in Covariate,1,1,1,1,摘要明确提及对响应变量进行对数变换，与课题直接相关。,文献研究对数变换处理偏态响应变量，与课题核心方法一致。
+t04,openalex:W4393905742,The impact of natural constraints in linear regression of log transformed response variables,1,1,1,1,标题直接涉及对数变换响应变量的线性回归，与课题高度契合。,文献探讨对数变换响应变量回归中自然约束的影响，与课题高度相关。
+t04,openalex:W2118523769,Modelling skewed data with many zeros: A simple approach combining ordinary and logistic regression,1,0,0,,标题涉及偏态数据建模，与课题直接相关。,摘要为空，仅凭标题无法判断是否涉及对数变换。
+t04,openalex:W4386064399,An Unbiased Predictor for Skewed Response Variable with Measurement Error in Covariate,1,1,1,1,摘要明确提及对数变换响应变量，与课题直接相关。,文献研究对数变换处理偏态响应变量，与课题高度契合。
+t04,openalex:W823496358,A Study on Statistical Forecasting Models of PM10 in Pohang Region by the Variable Transformation,1,1,1,1,摘要明确提及对偏态PM10数据进行对数变换以近似正态分布，与课题直接相关。,摘要明确提及对偏态分布的PM10数据进行对数变换以提升回归预测精度。
+t04,openalex:W2597354172,Standardizing effect size from linear regression models with log-transformed variables for meta-analysis,1,1,1,1,文献涉及对数变换在线性回归中的应用及效应量标准化，与课题直接相关。,文献探讨对数变换变量在回归模型中的应用及效应量标准化，与课题高度相关。
+t04,openalex:W4321599016,The Multivariate Skewed Log-Birnbaum–Saunders Distribution and Its Associated Regression Model,0,1,0,,文献聚焦多元分布与推断，未涉及对数变换在偏态回归中的具体应用。,文献提出基于对数变换的偏态回归模型，直接契合课题需求。
+t04,openalex:W2048078211,Bayesian skew-probit regression for binary response data,0,0,1,0,课题关注连续偏态变量的对数变换，文献研究二元响应变量，数据类型与核心方法均不匹配。,文献研究偏态链接函数处理二分类数据，非对数变换处理连续偏态响应变量。
+t04,openalex:W4304587379,Log-transformation of Independent Variables: Must We?,0,1,0,,文献研究自变量对数变换，课题关注响应变量，对象不同。,文献探讨自变量对数变换，与课题中响应变量变换场景不同。
+t04,openalex:W2124694383,Interval estimation of the mean response in a log‐regression model,1,1,1,1,文献直接研究对数变换后偏态数据的均值估计，与课题高度契合。,文献直接探讨对数变换后偏态数据的回归分析及均值估计，与课题高度相关。
+t05,openalex:W1931583310,Adaptive regression and model selection in data mining problems,1,1,1,1,标题含模型选择，摘要提及高维属性回归，与特征选择相关。,摘要提及处理大量属性变量，与特征选择及回归模型泛化能力直接相关。
+t05,openalex:W4308294451,Feature-space selection with banded ridge regression,0,1,0,,文献聚焦脑科学编码模型，非小样本回归泛化能力研究。,标题涉及特征选择与回归，摘要提及正则化线性回归，符合课题方向。
+t05,openalex:W4244091766,Feature selection to improve generalization of genetic programming for high-dimensional symbolic regression,1,1,1,1,研究特征选择对符号回归泛化能力的影响，与课题高度契合。,文献研究特征选择对高维符号回归泛化能力的影响，与课题高度契合。
+t05,openalex:W2940151662,On Estimating Model in Feature Selection With Cross-Validation,1,1,1,1,文献探讨特征选择中模型评估方法，直接关联课题核心环节。,文献探讨特征选择中模型评估方法，直接影响小样本回归泛化能力。
+t05,openalex:W4385394910,Prediction of bond strength of reinforced concrete structures based on feature selection and GWO-SVR model,0,0,1,0,摘要为空，仅凭标题无法判断是否研究小样本回归泛化能力。,摘要为空，仅凭标题无法判断研究问题是否匹配。
+t05,openalex:W4225877522,Generalization enhancement of artificial neural network for turbulence closure by feature selection,1,1,1,1,标题明确提及特征选择提升泛化能力，与课题高度契合。,文献研究特征选择对模型泛化能力的影响，与课题高度契合。
+t05,openalex:W4411461977,Research and Application of Oracle Properties and Algorithm Optimization of Non-Convex Penalties Based on High-Dimensional Lasso-Penalized Linear Regression,1,1,1,1,文献研究高维Lasso及非凸惩罚的特征选择方法，直接关联课题。,文献探讨高维回归中的特征选择与非凸惩罚，直接关联小样本泛化能力。
+t05,openalex:W4415735916,Multistage feature selection and stacked generalization model for cancer detection,0,0,1,0,文献聚焦分类任务与模型集成，未涉及小样本回归及泛化能力研究。,文献研究分类任务，课题为回归模型，且未明确涉及小样本泛化能力。
+t05,openalex:W4405853974,Improving Generalization of Genetic Programming for High-Dimensional Symbolic Regression with Shapley Value Based Feature Selection,1,1,1,1,文献研究特征选择提升高维符号回归泛化能力，与课题高度相关。,文献研究特征选择对高维符号回归泛化能力的影响，与课题高度契合。
+t05,openalex:W2925920795,"Evaluation of Regression Models: Model Assessment, Model Selection and Generalization Error",1,1,1,1,摘要涉及模型选择与泛化误差，直接关联课题核心概念。,摘要涉及模型选择与泛化误差，与研究课题直接相关。
+t05,openalex:W4289236186,Feature Selection,0,1,0,,摘要未提及小样本或泛化能力，仅讨论特征选择通用优势。,特征选择是提升小样本回归泛化能力的核心预处理策略。
+t05,openalex:W2145343783,Effect of finite sample size on feature selection and classification: A simulation study,1,1,1,1,标题和摘要均涉及小样本下的特征选择，与课题高度契合。,标题与摘要均探讨小样本对特征选择的影响，与研究课题高度契合。
+t06,openalex:W2950761565,A closer look at cross-validation for assessing the accuracy of gene regulatory networks and models,0,1,0,,文献聚焦基因网络CV假设，未比较交叉验证与留出法的偏差。,文献直接探讨交叉验证在模型评估中的适用性与偏差问题。
+t06,openalex:W2026449767,Bias and Equivalence in Cross-Cultural Research,0,0,1,0,文献研究跨文化数据偏差，非机器学习模型评估方法。,文献讨论跨文化研究偏差，与模型评估方法无关。
+t06,openalex:W3080427437,Uncertainty in Bayesian Leave-One-Out Cross-Validation Based Model Comparison,1,1,1,1,文献直接研究LOO-CV的偏差与不确定性，符合课题对模型评估方法比较的需求。,文献直接研究留出法交叉验证的偏差与不确定性，符合课题核心。
+t06,openalex:W2282749479,Model comparison and assessment by cross validation,1,1,1,1,文献直接比较不同交叉验证策略的偏差，与课题高度相关。,文献直接探讨交叉验证在模型评估与比较中的表现，高度契合课题。
+t06,openalex:W2105981176,Prediction error estimation: a comparison of resampling methods,1,1,1,1,标题直接比较重采样方法，涵盖交叉验证与留出法，符合课题需求。,标题直接比较重采样方法，与课题核心内容高度一致。
+t06,openalex:W2902240649,"Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning",1,1,1,1,摘要明确综述模型评估技术，涵盖交叉验证与留出法，对课题直接相关。,文献综述涵盖模型评估技术，直接涉及交叉验证与留出法比较。
+t06,openalex:W7125473564,The impact of K selection in K‑fold cross-validation on bias and variance in supervised learning models,1,1,1,1,文献直接研究K值对交叉验证偏差的影响，与课题高度相关。,文献直接研究K折交叉验证中参数选择对偏差的影响，与课题高度相关。
+t06,openalex:W1851360578,Bayesian leave-one-out cross-validation approximations for Gaussian latent variable models,1,1,1,1,文献直接研究留出法交叉验证，与课题中比较模型评估方法偏差高度相关。,文献直接研究留出法交叉验证的近似方法，与课题高度相关。
+t06,openalex:W3158993244,Cross-validation and permutations in MVPA: Validity of permutation strategies and power of cross-validation schemes,1,1,1,1,文献直接比较交叉验证与置换检验，涉及模型评估偏差与统计显著性。,文献直接探讨交叉验证策略的有效性与偏差控制，与课题高度相关。
+t06,openalex:W2746117291,Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation,1,1,1,1,文献直接研究交叉验证的偏差问题，与课题高度相关。,文献探讨交叉验证偏差修正，与课题直接相关。
+t06,openalex:W2589489396,Cross validation for the classical model of structured expert judgment,0,0,1,0,文献聚焦专家判断聚合，未涉及交叉验证与留出法的偏差比较。,文献聚焦专家判断模型，未涉及机器学习模型的交叉验证与留出法偏差比较。
+t06,openalex:W4416400077,Foundation for unbiased cross-validation of spatio-temporal models for Species Distribution Modeling,1,1,1,1,文献探讨交叉验证在时空模型中的偏差问题，直接契合课题中关于CV偏差比较的研究。,文献探讨交叉验证在时空模型中的偏差问题，与课题高度相关。
+t06,openalex:W4309048734,Cross validation for model selection: A review with examples from ecology,1,1,1,1,标题明确涉及交叉验证，摘要详述其作为模型选择方法的应用，与课题直接相关。,文献综述交叉验证在模型选择中的应用，与课题直接相关。
+t06,openalex:W1987315804,Cross-Validation and the Estimation of Conditional Probability Densities,0,0,1,0,文献聚焦非参数密度估计，未涉及交叉验证与留出法的偏差比较。,文献聚焦条件密度估计，未涉及交叉验证与留出法的偏差比较。
+t06,openalex:W7216567384,Model validation in machine learning: A scenario-based guide from hold-out splits to nested group cross-validation in biomedical and applied research,1,1,1,1,摘要涵盖留出法与交叉验证，直接涉及课题核心评估方法。,摘要涵盖留出法与交叉验证，直接涉及模型评估偏差比较。
+t06,openalex:W4400375914,Is Cross-Validation the Gold Standard to Evaluate Model Performance?,1,1,1,1,标题直接质疑交叉验证，摘要对比其与留出法偏差，契合课题。,文献直接探讨交叉验证的评估性能，与课题核心高度相关。
+t06,openalex:W4409076245,Being Aware of Data Leakage and Cross‐Validation Scaling in Chemometric Model Validation,1,1,1,1,文献探讨交叉验证偏差及数据泄露，直接关联课题中的模型评估偏差比较。,文献直接探讨交叉验证与留出法的偏差及数据泄露问题，高度相关。
+t07,openalex:W4385965972,Hierarchical Uncertainty Estimation for Medical Image Segmentation Networks,1,1,1,1,标题和摘要均直接针对医学影像分割的不确定性估计，高度相关。,标题与摘要均直接针对医学影像分割网络的不确定性估计方法。
+t07,openalex:W2807409681,On the Effect of Inter-observer Variability for a Reliable Estimation of Uncertainty of Medical Image Segmentation,1,0,0,,标题直接涉及医学影像分割的不确定性估计，与课题高度契合。,摘要为空，仅凭标题无法判断研究问题是否匹配。
+t07,openalex:W3093568609,Estimating uncertainty in deep learning for reporting confidence to clinicians in medical image segmentation and diseases detection,1,1,1,1,标题直接涉及深度学习医学影像分割的不确定性估计，与课题完全匹配。,标题与摘要均明确探讨深度学习医学影像分割中的不确定性估计。
+t07,openalex:W2887976372,Aleatoric uncertainty estimation with test-time augmentation for medical image segmentation with convolutional neural networks,1,1,1,1,标题和摘要直接涉及医学影像分割中的不确定性估计，与课题高度契合。,标题和摘要均直接涉及医学影像分割中的不确定性估计方法。
+t07,openalex:W3048802707,Variability and reproducibility in deep learning for medical image segmentation,1,1,1,1,标题直接涉及深度学习医学影像分割的可重复性与变异性，与不确定性估计高度相关。,标题与摘要均探讨深度学习医学影像分割的可变性与复现性，直接关联不确定性估计。
+t07,openalex:W4223925428,Layer Ensembles: A Single-Pass Uncertainty Estimation in Deep Learning for Segmentation,1,0,0,,标题明确提及分割任务中的不确定性估计，与课题高度契合。,摘要为空，仅凭标题无法判断具体研究问题与课题的匹配度。
+t07,openalex:W4396679531,Investigate Uncertainty Estimation in Transfer Learning Based Active Learning for Medical Image Segmentation,1,1,1,1,标题直接涉及医学影像分割的不确定性估计，符合课题核心。,标题与摘要均明确涉及医学影像分割中的不确定性估计研究。
+t07,openalex:W4206693420,Medical image segmentation using deep learning: A survey,1,0,0,,综述涵盖深度学习分割，包含不确定性估计相关技术，对写综述有参考价值。,摘要未提及不确定性估计，仅泛论分割技术综述。
+t07,openalex:W2903349397,Test-time augmentation with uncertainty estimation for deep learning-based medical image segmentation,1,1,1,1,标题和摘要均直接涉及深度学习医学影像分割的不确定性估计。,标题和摘要均直接涉及深度学习医学影像分割的不确定性估计。
+t07,openalex:W2956121863,Assessing Reliability and Challenges of Uncertainty Estimations for Medical Image Segmentation,1,0,0,,标题直接针对医学影像分割的不确定性估计，与课题高度契合。,摘要为空，仅凭标题无法判断研究内容是否相关。
+t07,openalex:W7117454812,应用证据深度学习的可信医学影像分析方法综述,1,1,1,1,综述证据深度学习在医学影像中的不确定性量化，直接相关。,文献综述证据深度学习在医学影像中的不确定性量化，与课题高度契合。
+t08,openalex:W4392449489,PrivacyAsst: Safeguarding User Privacy in Tool-Using Large Language Model Agents,1,1,1,1,文献直接研究工具调用LLM智能体的隐私保护，属于该课题核心范畴。,文献直接研究大语言模型工具调用智能体的隐私保护，与课题高度相关。
+t08,openalex:W4393065402,A survey on large language model based autonomous agents,1,1,1,1,标题明确为LLM智能体综述，直接覆盖课题核心内容。,文献综述大语言模型智能体，与课题高度契合。
+t08,openalex:W7107865320,Synergistic minds: A collaborative multi-agent framework for integrated AI tool development using diverse large language models,1,1,1,1,文献提出多智能体框架协同开发AI工具，直接涉及LLM工具调用与智能体架构。,文献提出多智能体框架协同开发AI工具，与课题高度契合。
+t08,openalex:W4415250036,MALLM: Multi-Agent Large Language Models Framework,1,1,1,1,文献提出多智能体框架，直接涉及课题中的智能体架构设计。,文献提出多智能体框架，直接涉及大模型工具调用与智能体协作研究。
+t08,openalex:W7161276830,From Text to Voice: A Reproducible and Verifiable Framework for Evaluating Tool Calling LLM Agents,1,1,1,1,文献直接评估大模型工具调用智能体，与课题高度契合。,文献聚焦大语言模型工具调用评估框架，与课题高度契合。
+t08,openalex:W4396723768,Augmenting large language models with chemistry tools,1,1,1,1,文献展示了LLM通过集成工具构建智能体解决专业领域问题的具体实践，与课题高度契合。,文献构建了基于大模型的化学智能体框架并集成工具调用，与课题高度契合。
+t08,openalex:W7148396897,Agentic Tool Use in Large Language Models,1,1,1,1,标题与摘要直接探讨LLM工具调用及智能体范式，高度契合课题。,标题与摘要均直接探讨大模型工具调用及智能体范式，高度契合课题。
+t08,openalex:W7106801026,MALLM: Multi-Agent Large Language Models Framework,1,1,1,1,该文献提出多智能体框架，直接涉及课题中的智能体架构设计。,标题明确提及多智能体框架，摘要涉及工具使用与评估，高度契合课题。
+t08,openalex:W4385681800,TPTU: Large Language Model-based AI Agents for Task Planning and Tool Usage,1,1,1,1,标题明确包含LLM智能体、任务规划与工具使用，直接契合课题。,标题与摘要明确涉及LLM智能体、任务规划及工具调用，高度契合课题。
+t08,openalex:W7168281372,Agentic AI: From Large Language Models to Autonomous Tool-Using Agents,1,1,1,1,标题摘要明确涵盖LLM工具调用与智能体框架，高度契合课题。,文献综述大语言模型与工具使用智能体，直接契合课题。
+t08,openalex:W7211886490,"An Agentic Ai Framework For Autonomous Reasoning, Tool Selection, And Task Execution Using Large Language Models",1,1,1,1,标题和摘要直接涉及LLM智能体框架、工具选择及任务执行，与课题高度契合。,标题与摘要明确涉及大语言模型、智能体框架及工具调用，高度契合课题。
+t08,openalex:W4413901613,Synergistic minds: A collaborative multi-agent framework for integrated AI tool development using diverse large language models,1,1,1,1,文献涉及多智能体框架与LLM协作，直接契合课题核心。,文献提出多智能体框架协同开发工具，与课题高度契合。
+t08,openalex:W7118468219,From language to action: a review of large language models as autonomous agents and tool users,1,1,1,1,标题与摘要均直接涵盖LLM作为智能体及工具使用者的综述，高度契合课题。,标题与摘要明确涵盖大语言模型作为智能体及工具调用的综述，高度相关。
+t09,openalex:W4404782968,Synchronous Faithfulness Monitoring for Trustworthy Retrieval-Augmented Generation,1,1,1,1,文献直接针对RAG生成内容的忠实度监测，与课题高度契合。,文献提出同步忠实度监控方法，直接针对检索增强生成的引用忠实度问题。
+t09,openalex:W7170071173,VERICITE: Evaluating Sentence-Level Citation Faithfulness in Retrieval-Augmented Medical Question Answering,1,1,1,1,标题直接涉及RAG引用忠实度评估，与课题高度契合。,文献直接评估RAG中的引用忠实度，与课题高度契合。
+t09,openalex:W7166843029,VERICITE: Evaluating Sentence-Level Citation Faithfulness in Retrieval-Augmented Medical Question Answering,1,1,1,1,文献直接评估RAG中的引用忠实度，与课题完全一致。,文献直接针对RAG中的引用忠实度评估提出框架，与课题高度契合。
+t09,openalex:W4410929991,Retrieval-Augmented Generation (RAG),0,0,1,0,摘要仅讨论企业员工对信息检索系统的不满，未涉及RAG引用忠实度评估。,摘要仅讨论企业信息检索系统，未涉及RAG中的引用忠实度评估。
+t09,openalex:W7164647591,Cybersecurity RAG: Retrieval-Augmented Generation with Custom Faithfulness Metrics,1,0,0,,标题明确提及自定义忠实度指标，直接契合引用忠实度评估课题。,摘要为空，仅凭标题无法判断是否针对引用忠实度评估。
+t09,openalex:W4401042808,ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems,1,1,1,1,标题明确提及RAG系统评估框架，与课题高度相关。,标题明确提及RAG系统评估框架，与课题高度契合。
+t09,openalex:W4399911099,Synchronous Faithfulness Monitoring for Trustworthy Retrieval-Augmented Generation,1,1,1,1,标题和摘要均直接涉及RAG生成内容的忠实度监测与评估。,标题与摘要均直接探讨检索增强生成中的忠实度监测问题，高度相关。
+t09,openalex:W7131290545,Explainable Retrieval-Augmented Generation Framework for Evidence-Aligned and Faithful Legal Reasoning,1,0,0,,标题明确涉及RAG框架下的忠实度评估，与课题高度契合。,摘要为空，仅凭标题无法判断与课题的具体关联。
+t09,openalex:W4412673546,Correctness is not Faithfulness in Retrieval Augmented Generation Attributions,1,1,1,1,标题和摘要直接讨论RAG引用忠实度评估，与课题完全一致。,文献直接探讨RAG中引用忠实度评估，与课题高度契合。
+t09,openalex:W4406771321,Evaluation of Retrieval-Augmented Generation: A Survey,1,0,0,,标题涵盖RAG评估综述，虽摘要为空但主题高度契合。,摘要为空，仅凭标题无法判断是否涉及引用忠实度评估。
+t09,openalex:W7163701660,Aion-BibleQA: Evaluating Retrieval and Citation Faithfulness in Verse-Grounded Bible RAG Systems,1,1,1,1,标题和摘要直接涉及RAG系统中的引用忠实度评估，与课题高度契合。,文献标题与摘要均直接涉及RAG系统中的引用忠实度评估，与研究课题高度契合。
+t10,openalex:W3158733382,Mitigating Political Bias in Language Models through Reinforced Calibration,1,1,1,1,研究LLM偏差校准，与课题大模型作为评委的偏差与校准直接相关。,文献研究大模型政治偏差及校准方法，与课题高度相关。
+t10,openalex:W4401042444,A Survey of Confidence Estimation and Calibration in Large Language Models,1,1,1,1,LLM校准直接涉及其作为评委时的偏差控制，与课题高度相关。,该综述涵盖LLM置信度与校准，直接关联评委偏差校正研究。
+t10,openalex:W4378770815,Large Language Models are not Fair Evaluators,1,1,1,1,摘要直接揭示LLM作为评委的系统性偏差，与课题高度契合。,文献直接研究大模型作为评委时的系统性偏差，与课题高度契合。
+t10,openalex:W4414899380,Framework for bias evaluation in large language models in healthcare settings,1,0,0,,标题明确涉及LLM偏差评估，与课题核心高度契合。,摘要为空，仅凭标题无法判断与课题相关。
+t10,openalex:W7160934772,Two Ways to De-Bias an LLM-as-a-Judge: A Continuous-Score Comparison of Hierarchical Bayesian Calibration and Neural-ODE Score Transport,1,1,1,1,文献直接研究LLM-as-a-Judge的偏差校准方法，与课题高度相关。,文献直接探讨LLM作为评委的偏差问题及校准方法，与课题高度契合。
+t10,openalex:W7221354610,"Does positional bias in LLM-as-judge evaluation, and its calibration fix, hold for open-weight judges?",1,1,1,1,研究LLM评委的位置偏差及校准，直接契合课题。,研究大模型评委的位置偏差及校准，与课题高度契合。
+t10,openalex:W7220134105,Bias-Aware LLM-as-a-Judge with Position-Invariant Pairwise Evaluation and Confidence Calibration,1,1,1,1,标题直接涉及LLM评委偏差与校准，摘要证实研究其位置偏见和置信度校准。,文献直接研究LLM评委的位置偏差与置信度校准，与课题高度契合。
+t10,openalex:W4414037079,Contrastive Cross-Lingual Calibration for Large Language Models,1,1,1,1,研究LLM概率校准，与课题中模型校准直接相关。,文献提出跨语言校准框架，直接解决大模型概率估计偏差问题。
+t10,openalex:W4383605161,A Survey on Evaluation of Large Language Models,1,1,1,1,LLM评估综述涵盖评委机制，与偏差校准研究直接相关。,该综述涵盖大模型评估，包含作为评委的偏差与校准等核心议题。
+t10,openalex:W4404823333,Mitigating the Bias of Large Language Model Evaluation,1,0,0,,标题直接涉及LLM评估偏差，与课题高度契合。,摘要为空，仅凭标题无法判断具体研究内容是否匹配课题。
+t10,openalex:W4320003957,Holistic Evaluation of Language Models,0,0,1,0,文献侧重模型能力评估框架，未涉及LLM作为评委的偏差与校准问题。,摘要未涉及LLM作为评委的偏差与校准问题。
+t10,openalex:W7212924736,Can We Trust LLM Judges: A Study of Capability-Dependent Biases and Multi-Judge Ensemble for Bias Calibration,1,1,1,1,标题直接研究LLM评委偏差及校准，与课题完全一致。,研究大语言模型评委偏差及校准方法，与课题高度契合。
+t10,openalex:W7160858152,Bias and Uncertainty in LLM-as-a-Judge Estimation,1,1,1,1,标题摘要直接探讨LLM-as-a-Judge的偏差与校准问题，高度契合课题。,标题与摘要直接探讨LLM评委的偏差及校准问题，高度契合课题。
+t10,openalex:W4403420208,Testing and Evaluation of Health Care Applications of Large Language Models,0,0,1,0,文献聚焦医疗领域LLM评估，未涉及评委偏差与校准机制。,文献聚焦医疗应用评估，未涉及大模型作为评委的偏差与校准问题。
+t10,openalex:W4404986534,A Survey on LLM-as-a-Judge,1,1,1,1,文献综述直接探讨LLM作为评委的机制，涵盖偏差与校准等核心议题。,文献综述LLM作为评委的评估，直接涉及偏差与校准问题。
+t10,openalex:W4412072325,Framework for bias evaluation in large language models in healthcare settings,1,1,1,1,文献涉及LLM偏差评估与校准框架，直接契合课题核心。,文献提出评估大模型偏差的框架，与课题高度契合。
+t10,openalex:W4403784450,Mitigating the Bias of Large Language Model Evaluation,1,1,1,1,摘要直接研究LLM评委的偏差问题，与课题高度契合。,文献直接研究大语言模型作为评委的偏差问题，与课题高度契合。
+t11,openalex:W4412107749,Toward Scalable Human-in-the-Loop Annotation Error Detection with Label Noise-Aware Training,1,1,1,1,标题涉及人机协同标注错误检测，直接对应课题核心。,研究人机协同下的标注错误检测，直接契合课题质量控制需求。
+t11,openalex:W3211248688,Improving Medical Data Annotation Including Humans in the Machine Learning Loop,1,1,1,1,标题明确提及改善医疗数据标注及人机协作，与课题高度契合。,标题明确提及人机协同与数据标注，符合课题核心要素。
+t11,openalex:W3198086559,Will AI Replace the Humans in the Loop?,1,1,1,1,摘要强调人机协作优于替代，直接契合人机协同质量控制课题。,摘要探讨人机协同在数据标注中的作用，与课题高度契合。
+t11,openalex:W7160537298,Keeping Humans in the Loop: Human-Centered Automated Annotation with Generative AI,1,1,1,1,标题明确提及人机协同自动化标注，与课题核心高度契合。,文献探讨生成式AI辅助下的人机协同标注，直接契合课题。
+t11,openalex:W7167350403,Human In the Loop Challenges for Quality Annotation of Pre-Cancer Lesions in Clinical Oral Images,1,1,1,1,文献探讨人机协同标注中的质量挑战，与课题直接相关。,文献探讨人机协同（HITL）在数据标注质量控制中的应用，与课题高度契合。
+t11,openalex:W7166831667,BNLP: A Text Annotation Platform for Quality Control of LLM-Generated Annotations,1,1,1,1,文献提出人机协同标注平台，直接解决LLM生成数据的质量控制问题。,文献提出结合LLM与人工协作的标注平台，直接解决人机协同质量控制问题。
+t11,openalex:W2765213949,Techniques for Quality Control in Applications that Use Crowdsourced Input,1,1,1,1,摘要涉及众包输入的质量控制，与人机协同数据标注直接相关。,标题与摘要均明确涉及众包输入的质量控制，与研究课题高度契合。
+t11,openalex:W4402509116,A Human-in-the-Loop Method for Annotation of Events in Biomedical Signals,1,1,1,1,标题明确提及人机协同标注方法，与课题核心概念直接相关。,提出人机协同算法优化生物信号标注效率，与课题高度契合。
+t11,openalex:W4411120843,Keeping Humans in the Loop: Human-Centered Automated Annotation with Generative AI,1,1,1,1,标题与摘要均涉及人机协同自动化标注及质量控制框架。,文献探讨人机协同的自动化标注框架，直接契合课题。
+t11,openalex:W4404982430,Enhancing Text Quality with Human-Machine Collaboration: A Refinement Approach,1,0,0,,标题明确提及人机协同与文本质量优化，契合课题核心。,摘要为空，仅凭标题无法判断是否涉及数据标注质量控制。
+t11,openalex:W7212177902,Designing Classifact: Towards a Transparent and Secure Platform for Stakeholder-in-the-Loop Data Annotation,1,1,1,1,文献探讨利益相关者参与的数据标注平台设计，直接涉及人机协同与质量控制。,标题明确提及利益相关者参与的数据标注，与课题高度契合。
+t11,openalex:W4396670276,Human-in-the-loop technical document annotation :,1,1,1,1,标题含人机协同，摘要涉及ML辅助人工标注，契合课题。,研究人机协同辅助文本标注，直接契合课题核心。
+t11,openalex:W4285304018,Web Engineering with Human-in-the-Loop,0,0,1,0,摘要为空，仅凭标题无法判断与数据标注质量控制的具体关联。,摘要为空，仅凭标题无法判断与数据标注质量控制的具体关联。
+t11,openalex:W7159972949,LabelBOT: A Human-in-the-Loop Classification Assistance in the BIIGLE Image Annotation Tool,1,1,1,1,文献提出人机协同标注工具，直接涉及质量控制与辅助机制。,文献提出人机协同工具解决标注质量与一致性难题，直接契合课题。
+t11,openalex:W4313030344,Mitigating Observation Biases in Crowdsourced Label Aggregation,1,1,1,1,研究众包标注中的偏差与质量控制，直接契合人机协同数据标注课题。,摘要聚焦众包标注中的偏差与质量控制，直接契合课题。
+t11,openalex:W7163216946,Data Collection for Training Quality-Control AI in Carpet Manufacturing,0,0,1,0,该文献聚焦工业产品质检，非人机协同数据标注质量控制。,该文献聚焦工业质检，非人机协同数据标注质量控制。
+t11,openalex:W3197012690,Scalable Data Annotation Pipeline for High-Quality Large Speech Datasets Development,1,1,1,1,摘要明确提及人机协同标注及质量控制机制，与课题高度契合。,文献提出人机协同标注流程及质量控制机制，与课题高度契合。
+t11,openalex:W4412527284,Urban Flood Monitoring Via Synthetic Data Generation and Human-in-The-Loop Annotation Refinement,1,0,0,,标题含Human-in-The-Loop Annotation Refinement，直接涉及人机协同标注质量控制。,摘要为空，仅凭标题无法判断是否涉及数据标注质量控制。
+t11,openalex:W4389945730,Estimating Link Confidence for Human-in-the-Loop Table Annotation,1,1,1,1,标题含Human-in-the-Loop，摘要涉及人机交互标注，直接契合课题。,文献研究人机协同下的表格标注质量与链接置信度估计，直接相关。
+t12,openalex:W3113352959,Facilitating harmonized data quality assessments. A data quality framework for observational health research data collections with software implementations in R,1,1,1,1,文献提出数据质量评估框架及指标，与课题高度契合。,文献提出数据质量评估框架及指标，与课题高度契合。
+t12,openalex:W2046915831,Utility-driven assessment of data quality,1,1,1,1,标题和摘要直接讨论数据质量评估，与课题高度契合。,文献探讨数据质量评估指标与业务情境的关联，直接契合课题。
+t12,openalex:W4312000335,An Advanced Big Data Quality Framework Based on Weighted Metrics,1,1,1,1,标题和摘要均直接涉及大数据质量框架与指标，与研究课题高度契合。,文献提出基于加权指标的大数据质量框架，与课题高度契合。
+t12,openalex:W2040141351,A framework for photo-quality assessment and enhancement based on visual aesthetics,0,0,1,0,该文献聚焦图像美学与编辑，非数据质量评估框架。,该文献聚焦摄影美学与图像增强，非通用数据质量评估框架。
+t12,openalex:W2204572244,Metrics-Driven Framework for LOD Quality Assessment,1,0,0,,标题明确涉及LOD质量评估框架与指标，与课题高度契合。,摘要为空，仅凭标题无法判断与课题的具体关联。
+t12,openalex:W163324474,Luzzu -- A Framework for Linked Data Quality Assessment,1,1,1,1,标题明确提及数据质量评估框架，与课题高度契合。,文献提出数据质量评估框架，直接契合课题关于评估框架与指标的研究。
+t12,openalex:W2522801388,何为大数据质量评估框架--《Measurement Data Quality for Ongoing Improvement》,1,1,1,1,标题直接提及大数据质量评估框架，摘要涉及数据质量定义与清洗，与课题高度契合。,标题与摘要均直接探讨大数据质量评估框架，与研究课题高度契合。
+t12,openalex:W1814600568,Luzzu Quality Metric Language -- A DSL for Linked Data Quality Assessment,1,1,1,1,文献提出数据质量评估框架及指标语言，与课题高度契合。,文献提出针对关联数据的评估框架与指标语言，直接契合课题。
+t12,openalex:W2535189740,Luzzu—A Methodology and Framework for Linked Data Quality Assessment,1,1,1,1,标题明确提及数据质量评估框架，与课题高度契合。,文献提出关联数据质量评估的方法与框架，直接契合课题。
+t12,openalex:W2785061420,Requirements for Data Quality Metrics,1,1,1,1,标题直接涉及数据质量指标要求，与课题高度契合。,文献直接探讨数据质量评估指标的要求，与课题高度契合。
+t12,openalex:W4417250952,A Multidimensional Framework for Data Quality Assessment in Heart Failure: Integrating IEEE 2801-2022 and Fairness Metrics,1,1,1,1,文献提出针对特定领域的数据质量评估框架，包含指标与标准整合，对课题有直接参考价值。,文献构建了数据质量评估框架并引入公平性指标，与课题高度契合。
+t12,openalex:W7126194350,A robust multi-metric integration framework for automated quality assessment of spectral data: application to laser desorption/ionization mass spectrometry,0,0,1,0,摘要为空，仅凭标题无法判断与通用数据质量评估框架的关联。,摘要为空，仅凭标题无法判断是否与数据质量评估框架相关。
+t12,openalex:W935072310,The Challenges of Data Quality and Data Quality Assessment in the Big Data Era,1,1,1,1,标题与摘要直接涉及大数据环境下的数据质量评估框架与挑战，高度契合课题。,标题与摘要均直接探讨大数据时代的数据质量评估框架与挑战。
+t13,openalex:W2945790622,Auto-sklearn: Efficient and Robust Automated Machine Learning,1,1,1,1,摘要明确提及使用贝叶斯优化进行超参数设置，直接相关。,文献直接探讨AutoML中的超参数设置与贝叶斯优化方法。
+t13,openalex:W2908974255,Automated Machine Learning,1,1,1,1,AutoML涵盖超参数优化，综述性文献对研究该课题具有高度参考价值。,该书全面综述AutoML方法，包含超参数优化等核心内容。
+t13,openalex:W3172545305,Automated Feature Engineering and Hyperparameter optimization for Machine Learning,1,1,1,1,标题明确包含超参数优化，摘要指出其自动化可提升模型性能，与课题直接相关。,标题明确包含超参数优化，且摘要提及该主题对模型性能至关重要。
+t13,openalex:W2967663220,Hyperparameter Optimization for Machine Learning Models Based on Bayesian Optimization,1,0,0,,标题直接包含课题核心关键词，明确涉及贝叶斯优化方法。,摘要为空，仅凭标题无法判断具体研究内容是否匹配。
+t13,openalex:W3023525966,Sherpa: Robust hyperparameter optimization for machine learning,1,1,1,1,标题和摘要直接涉及机器学习超参数优化，与课题高度契合。,标题和摘要均明确涉及机器学习超参数优化，与课题高度契合。
+t13,openalex:W3045371493,TBM performance prediction with Bayesian optimization and automated machine learning,1,0,0,,标题明确包含自动化机器学习和贝叶斯优化，直接涉及超参数优化方法。,摘要为空，仅凭标题无法判断其超参数优化方法是否与课题相关。
+t13,openalex:W4387746080,AutoML: A systematic review on automated machine learning with neural architecture search,1,1,1,1,AutoML综述涵盖神经架构搜索，属超参数优化核心范畴。,综述涵盖神经架构搜索，属超参数优化核心方法。
+t13,openalex:W2182361439,Efficient and robust automated machine learning,1,1,1,1,摘要明确提及使用贝叶斯优化进行AutoML超参数设置，与课题直接相关。,摘要明确提及AutoML及超参数设置，与课题高度契合。
+t13,openalex:W3024879108,Hyperparameter tuning methods in automated machine learning,1,1,1,1,标题和摘要均直接讨论自动化机器学习中的超参数优化方法，与课题完全一致。,文献标题与摘要均直接综述自动化机器学习中的超参数优化方法。
+t13,openalex:W7204268574,A Reproducible Method for Automated Hyperparameter Tuning Using Bayesian Optimization Across Multiple Machine Learning Algorithms,1,0,0,,标题直接涉及自动化超参数优化，与课题高度契合。,摘要为空，仅凭标题无法判断具体研究内容是否匹配。
+t13,openalex:W4211116959,Hyperparameter Optimization,1,1,1,1,摘要明确讨论AutoML中的超参数优化方法，与课题完全一致。,摘要明确提及AutoML与超参数优化，直接覆盖课题核心。
+t13,openalex:W2966284335,AutoML: A survey of the state-of-the-art,1,0,0,,标题明确为AutoML综述，涵盖超参数优化等核心内容，对文献综述极具参考价值。,摘要为空，仅凭标题无法判断具体内容与超参数优化的相关性。
+t14,openalex:W3217174898,Time Series Anomaly Detection for Smart Grids: A Survey,1,1,1,1,标题明确为时间序列异常检测综述，符合课题需求。,标题明确为时间序列异常检测综述，符合课题需求。
+t14,openalex:W2766183090,A survey of research on anomaly detection for time series,1,1,1,1,标题和摘要均明确表明这是关于时间序列异常检测的综述，与课题完全一致。,标题与摘要均明确表明是关于时间序列异常检测的综述，完全匹配课题。
+t14,openalex:W7210267948,Survey on Time-Series Data Anomaly Detection Methods,1,1,1,1,标题和摘要均明确表明是时间序列异常检测方法的综述，与课题完全一致。,标题与摘要均明确表明是时间序列异常检测的综述，完全契合课题。
+t14,openalex:W4402056503,Deep Learning for Time Series Anomaly Detection: A Survey,1,1,1,1,标题明确为时间序列异常检测的综述，完全契合课题需求。,标题与摘要均明确针对时间序列异常检测的深度学习综述，完全契合课题。
+t14,openalex:W4410028579,Graph Anomaly Detection in Time Series: A Survey,1,1,1,1,标题明确为时间序列异常检测综述，直接契合课题需求。,标题与摘要均明确针对时间序列异常检测的图方法综述，高度相关。
+t14,openalex:W3004207920,Anomaly Detection for IoT Time-Series Data: A Survey,1,1,1,1,标题明确为IoT时间序列异常检测综述，直接覆盖课题核心内容。,该文献是物联网时间序列异常检测的综述，与课题高度相关。
+t14,openalex:W3005893373,A Review on Outlier/Anomaly Detection in Time Series Data,1,1,1,1,标题和摘要均明确针对时间序列异常检测综述，与课题高度契合。,标题与摘要均明确表明该文献是关于时间序列异常检测的综述。
+t14,openalex:W4401567681,"A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection",1,1,1,1,标题明确包含时间序列异常检测综述，直接覆盖课题核心内容。,标题明确包含异常检测，且摘要确认涵盖该主题，对综述高度相关。
+t14,openalex:W7125768802,"A Survey of Large Language Models for Time Series Anomaly Detection: Methods, Challenges, and Future Directions",1,0,0,,标题明确为时间序列异常检测综述，直接匹配课题需求。,摘要为空，仅凭标题无法判断其具体内容与课题的关联度。
+t14,openalex:W4384263425,"A Comprehensive Survey of Deep Transfer Learning for Anomaly Detection in Industrial Time Series: Methods, Applications, and Directions",1,1,1,1,标题明确为工业时间序列异常检测综述，与课题高度契合。,标题明确为工业时间序列异常检测综述，与课题高度契合。
+t14,openalex:W4390494339,"A Comprehensive Survey of Deep Transfer Learning for Anomaly Detection in Industrial Time Series: Methods, Applications, and Directions",1,1,1,1,标题明确为工业时间序列异常检测的综述，与课题高度契合。,标题明确为异常检测综述，且聚焦时间序列领域，符合课题需求。
+t14,openalex:W4385947727,A Survey of Time Series Anomaly Detection Methods in the AIOps Domain,1,1,1,1,标题明确为时间序列异常检测综述，直接匹配课题需求。,标题与课题高度契合，摘要明确表明是时间序列异常检测的综述。
+t14,openalex:W4412434710,Deep anomaly detection for time series: A survey,1,1,1,1,标题和摘要均明确针对时间序列异常检测的深度学习综述，与课题高度契合。,标题与摘要均明确表明该文献是关于时间序列异常检测的综述。
+t15,openalex:W7219104411,Propensity Score Matching for Causal Inference: Comparing Classical and Bayesian Approaches,1,1,1,1,标题直接包含课题关键词，摘要涉及倾向得分匹配方法比较，高度相关。,标题与摘要均直接探讨倾向得分匹配在因果推断中的应用。
+t15,openalex:W3159134710,Uncertain Neighbors: Bayesian Propensity Score Matching For Causal Inference,1,1,1,1,标题和摘要均直接涉及倾向得分匹配在因果推断中的应用，高度相关。,文献标题和摘要均直接探讨倾向得分匹配在因果推断中的应用。
+t15,openalex:W4281756720,A Critical Review of Propensity Score Matching in Causal Inference,1,1,1,1,标题直接包含课题关键词，摘要确认其综述倾向得分匹配方法。,标题与摘要均直接讨论倾向得分匹配在因果推断中的应用，高度相关。
+t15,openalex:W4412828429,To Bootstrap or Not in Economic Modeling: The Impact Of Propensity Score Matching within Causal Inference Framework,1,0,0,,标题明确提及倾向得分匹配在因果推断中的应用，与课题高度相关。,摘要为空，仅凭标题无法判断具体研究问题是否匹配。
+t15,openalex:W7161636107,Propensity Score Matching to Control for Consumer Bank Churn: A Case of Causal Inference,1,1,1,1,标题明确提及使用倾向得分匹配进行因果推断，与课题直接相关。,文献标题与摘要均明确探讨倾向得分匹配在因果推断中的应用。
+t15,openalex:W2154570063,Combining group-based trajectory modeling and propensity score matching for causal inferences in nonexperimental longitudinal data.,1,1,1,1,标题明确提及结合倾向得分匹配进行因果推断，直接相关。,标题明确提及结合倾向得分匹配进行因果推断，与课题高度相关。
+t15,openalex:W632250180,Causal Inference Using Propensity Score Matching in Clustered Data,1,1,1,1,标题直接包含课题关键词，摘要讨论多层数据中的倾向得分匹配，高度相关。,文献直接研究倾向得分匹配在分层数据中的因果推断方法，与课题高度相关。
+t15,openalex:W3116292542,Comparison of Cardinality Matching and Propensity Score Matching for Causal Inference in Observational Research,1,1,1,1,标题直接比较倾向得分匹配与基数匹配，属于该课题核心内容。,标题与摘要直接对比倾向得分匹配，符合课题需求。
+t15,openalex:W2403391702,Propensity score matching for causal inference with relational data,1,1,1,1,文献直接探讨倾向得分匹配在关系数据中的因果推断应用，与课题高度相关。,标题和摘要均明确讨论倾向得分匹配在因果推断中的应用。
+t15,openalex:W7109678121,pymatchit-causal: Propensity Score Matching and Causal Inference in Python,1,1,1,1,标题和摘要明确提及倾向得分匹配及因果推断，与课题完全一致。,标题和摘要明确涉及倾向得分匹配与因果推断，直接相关。
+t15,openalex:W2894814486,Propensity score matching and causal inference,1,0,0,,标题直接包含课题关键词，明确涉及倾向得分匹配与因果推断。,摘要为空，仅凭标题无法判断具体研究内容是否匹配课题。
+t15,openalex:W4296363906,A Critical Review of Propensity Score Matching in Causal Inference,1,1,1,1,标题直接表明综述倾向得分匹配，与课题完全一致。,标题与摘要均直接探讨倾向得分匹配在因果推断中的应用。
+t15,openalex:W2981709251,Improving Causal Inference in Observational Studies: Propensity Score Matching,1,0,0,,标题直接包含课题关键词，明确涉及倾向得分匹配在因果推断中的应用。,摘要为空，仅凭标题无法判断具体研究内容是否符合课题。
+t16,openalex:W2275632435,p-Curve and p-Hacking in Observational Research,1,1,1,1,标题直接包含p-hacking，摘要讨论观测研究中p曲线与操纵的关系，高度契合课题。,标题与摘要直接探讨p值操纵及p-curve，与研究课题高度契合。
+t16,openalex:W4409667333,"The impact of P-hacking on ""Redefine statistical significance""",1,1,1,1,文献直接分析P-hacking对统计显著性定义的影响，与课题高度相关。,文献直接分析P值操纵对统计显著性重新定义的影响，与课题高度相关。
+t16,openalex:W7161942633,p-hacking inflates Type I error rates in the error statistical approach but not in the formal inference approach,1,1,1,1,文献直接探讨p-hacking对I类错误率的影响，与课题高度相关。,文献直接探讨p值操纵对统计推断的影响，与课题高度相关。
+t16,openalex:W3107222118,"Analysis goals, error‐cost sensitivity, and analysis hacking: Essential considerations in hypothesis testing and multiple comparisons",1,1,1,1,标题和摘要直接涉及多重比较及p值操纵问题，与课题高度相关。,标题和摘要均直接讨论假设检验、多重比较及P值操纵问题。
+t16,openalex:W3010945647,"Statistical significance: p value, 0.05 threshold, and applications to radiomics—reasons for a conservative approach",1,1,1,1,文献讨论p值滥用及阈值争议，与课题直接相关。,文献讨论p值滥用、阈值设定及保守方法，与课题高度相关。
+t16,openalex:W2804510032,"Determinants of reporting cybercrime: A comparison between identity theft, consumer fraud, and hacking",0,0,1,0,文献研究网络犯罪报案行为，与统计显著性检验及p值操纵无关。,研究主题为网络犯罪报案行为，与统计显著性检验无关。
+t16,openalex:W3194528064,Facts and Fictions About Handling Multiple Comparisons,1,1,1,1,标题和摘要均直接讨论多重比较问题，与课题高度相关。,标题与摘要均直接讨论多重比较问题，与研究课题高度相关。
+t16,openalex:W2792490709,P‐Hacking in Headache Research,1,1,1,1,标题直接涉及P值操纵（P-Hacking），与课题核心高度相关。,标题直接涉及P值操纵，摘要讨论统计危机与可重复性，高度相关。
+t16,openalex:W7131731351,p-Hacking Inflates Type I Error Rates in the Error Statistical Approach but not in the Formal Inference Approach,1,1,1,1,文献直接探讨p值操纵对I类错误率的影响，与课题高度契合。,文献直接探讨p值操纵对第一类错误率的影响，与课题高度相关。
+t16,openalex:W7131706303,p-Hacking Inflates Type I Error Rates in the Error Statistical Approach but not in the Formal Inference Approach,1,1,1,1,文献直接探讨p值操纵对I类错误率的影响，与课题高度契合。,文献直接探讨p值操纵对统计推断的影响，与课题高度相关。
+t16,openalex:W3189633508,"Statistical Significance, p -Values, and the Reporting of Uncertainty",1,1,1,1,标题摘要直接讨论p值争议与报告问题，符合课题对p值操纵及统计显著性的关注。,标题与摘要直接讨论p值争议及报告问题，与研究课题高度相关。
+t16,openalex:W4396668396,Critical Values Robust to P-Hacking,1,1,1,1,文献直接研究p-hacking及稳健临界值，与课题高度相关。,文献直接针对p值操纵提出稳健临界值，与课题高度相关。
+t16,openalex:W7131097367,p-hacking inflates Type I error rates in the error statistical approach but not in the formal inference approach,1,1,1,1,文献直接探讨p-hacking对I类错误率的影响，与课题高度相关。,文献直接探讨p值操纵对统计推断的影响，与课题高度相关。
+t16,openalex:W2035159480,"Multiple Comparisons, Explained",1,1,1,1,标题直接涉及多重比较，摘要讨论统计推断基础，与课题高度相关。,标题直接涉及多重比较，摘要讨论统计推断基础，与课题高度相关。
+t16,openalex:W3177993741,On The Nineteenth-century Origins Of Significance Testing And P-hacking,1,0,0,,标题直接涉及p-hacking，与课题高度相关。,摘要为空，仅凭标题无法判断与课题的具体相关性。
+t16,openalex:W7131083892,p-hacking inflates Type I error rates in the error statistical approach but not in the formal inference approach,1,1,1,1,文献直接探讨p-hacking对I类错误率的影响，与课题高度相关。,文献直接探讨p值操纵对统计推断的影响，与课题高度相关。
+t17,openalex:W7159829472,A Reproducibility Study of LLM-Based Query Reformulation,1,1,1,1,标题直接涉及LLM查询改写，与课题高度相关。,标题和摘要均直接涉及LLM在查询改写与扩展方面的研究。
+t17,openalex:W7164828678,ADORE: Iterative Query Expansion with Retrieval-Grounded Relevance Feedback,1,1,1,1,标题摘要直接涉及检索中的查询扩展技术，与课题高度契合。,文献提出基于检索反馈的迭代查询扩展方法，直接契合课题。
+t17,openalex:W4409277695,A Survey of Techniques for Improving Information Retrieval through Query Expansion,1,1,1,1,文献标题与摘要均直接针对查询扩展技术进行综述，与研究课题高度契合。,文献标题与摘要均直接探讨信息检索中的查询扩展技术，与研究课题高度契合。
+t17,openalex:W7131779936,A Dual-Query Reformulation Architecture for Temporal and Non-Temporal Information Retrieval,1,1,1,1,文献涉及查询重构，直接关联课题中的查询改写技术。,标题明确提及查询改写，且摘要涉及检索系统架构，与课题高度相关。
+t17,openalex:W7106676899,Generative Query Expansion with Multilingual LLMs for Cross-Lingual Information Retrieval,1,1,1,1,标题摘要直接涉及查询扩展技术，与课题高度相关。,文献直接探讨基于LLM的查询扩展技术，与课题高度契合。
+t17,openalex:W327114777,Hybrid Query Expansion on Ontology Graph in Biomedical Information Retrieval,1,1,1,1,标题明确提及查询扩展，且应用于生物医学检索，符合课题领域。,标题明确提及混合查询扩展，且应用于信息检索场景。
+t17,openalex:W3134468011,A fuzzy ontology framework in information retrieval using semantic query expansion,1,1,1,1,标题明确提及语义查询扩展，与课题直接相关。,标题和摘要均明确涉及信息检索中的语义查询扩展技术。
+t17,openalex:W3082593050,A Post-Analysis of Query Reformulation Methods for Clinical Trials Retrieval.,1,1,1,1,摘要明确提及评估查询扩展方法在临床试验检索中的效果，与课题直接相关。,文献直接评估查询扩展方法在临床检索中的效果，与课题高度相关。
+t17,openalex:W2786146603,Query expansion using MeSH terms for dataset retrieval: OHSU at the bioCADDIE 2016 dataset retrieval challenge,1,1,1,1,文献直接研究利用MeSH术语进行查询扩展以提升数据集检索效果，与课题高度相关。,该文献研究利用MeSH词进行查询扩展以提升数据集检索效果，与课题高度相关。
+t17,openalex:W3202944045,Simple but Effective Knowledge-Based Query Reformulations for Precision Medicine Retrieval,1,1,1,1,标题明确提及查询改写，摘要涉及利用知识扩展查询以缩小语义鸿沟，与课题高度契合。,标题与摘要明确提及查询改写和扩展技术，直接契合课题。
+t17,openalex:W2802054634,The research of query expansion based on medical terms reweighting in medical information retrieval,1,1,1,1,标题明确提及查询扩展与改写，且摘要涉及检索意图，符合课题方向。,文献研究基于术语重赋权的查询改写，直接契合课题核心。
+t17,openalex:W4391646735,Query Refinement into Information Retrieval Systems,1,1,1,1,摘要明确涵盖查询扩展与改写，直接契合课题。,摘要明确涵盖查询扩展与改写，直接契合课题核心内容。
+t17,openalex:W2053249223,On the query reformulation technique for effective MEDLINE document retrieval,1,0,0,,标题明确提及查询改写技术用于文献检索，与课题高度相关。,摘要为空，仅凭标题无法判断与课题的具体关联。
+t17,openalex:W2955714298,An Analysis of Query Reformulation Techniques for Precision Medicine,1,1,1,1,摘要明确提及评估查询扩展技术，与课题直接相关。,摘要明确提及评估查询扩展技术，与课题直接相关。
+t17,openalex:W7219831151,Mapping Research Trends of Query Expansion in Information Retrieval: A Bibliometric Analysis,1,1,1,1,文献直接研究信息检索中的查询扩展趋势，与课题高度相关。,文献直接分析检索中查询扩展的研究趋势，与课题高度相关。
+t18,openalex:W7167165144,"Improving Information Retrieval in Swedish Clinical Documentation : A Comparison of Semantic, Lexical and Hybrid Retrieval",1,1,1,1,标题明确对比语义、词汇及混合检索，直接契合课题核心。,标题和摘要明确对比了语义（稠密）、词汇（BM25）及混合检索效果。
+t18,openalex:W4387846582,Anserini Gets Dense Retrieval: Integration of Lucene's HNSW Indexes,1,1,1,1,文献涉及BM25与稠密向量检索的集成实现，直接支撑混合检索研究。,该文献介绍支持BM25与稠密检索的混合工具，直接契合课题需求。
+t18,openalex:W7124704799,Tabular Question Answering System Based on Hybrid Retrieval,1,1,1,1,标题明确提及混合检索，摘要对比稀疏与稠密检索，直接相关。,标题明确提及混合检索，摘要对比了稀疏与稠密检索在表格数据中的表现。
+t18,openalex:W7163212862,Rethinking Retrieval: A Hybrid Contextual Pipeline for Open-Domain QA with LLMs,1,1,1,1,摘要明确提及结合BM25和稠密向量，直接涉及混合检索效果。,文献提出结合BM25与稠密向量的混合检索方案，直接契合课题。
+t18,openalex:W3211670924,Simple and Effective Unsupervised Redundancy Elimination to Compress Dense Vectors for Passage Retrieval,0,0,1,0,文献聚焦向量压缩与存储优化，未涉及稠密向量与BM25的混合检索效果研究。,文献聚焦向量压缩，未涉及稠密与BM25混合检索效果研究。
+t18,openalex:W4406421103,Hybrid Question-Answering System: A FAISS and BM25 Approach for Extracting Information from Technical Document,1,1,1,1,文献直接研究FAISS稠密向量与BM25的混合检索，与课题完全一致。,文献直接研究FAISS与BM25混合检索，与课题高度契合。
+t18,openalex:W7163576638,Reliable Biomedical RAG with Answerability-Aware Hybrid Retrieval,1,1,1,1,摘要明确提及结合稀疏BM25与稠密检索，直接对应课题核心内容。,文献研究BM25与稠密向量混合检索，直接契合课题。
+t18,openalex:W7218502506,A Hybrid Search Engine Combining Classical Information Retrieval with Pluggable Semantic Search,1,1,1,1,标题和摘要明确提及结合BM25与稠密向量搜索的混合检索引擎，直接相关。,文献直接实现并对比了BM25与稠密向量混合检索，高度契合课题。
+t18,openalex:W7172439268,Do Static Embeddings Add Value to Hybrid Dutch Retrieval?,1,1,1,1,研究静态嵌入与BM25混合检索效果，直接契合课题。,研究静态嵌入与BM25混合检索效果，直接契合课题。
+t18,openalex:W7213660675,Explainable Hybrid Document Retrieval for Amharic: Integrating BM25 and XLM‐R,1,1,1,1,文献研究BM25与稠密检索的混合机制，符合课题核心内容。,文献研究BM25与稠密检索混合，符合课题核心方向。
+t18,openalex:W7125609776,Medical RAG: Hybrid Retrieval & Re-Ranking,1,1,1,1,标题明确提及混合检索，摘要指出结合稠密与稀疏方法，直接契合课题。,摘要明确提及结合稠密与稀疏检索的混合策略，与课题高度契合。
+t18,openalex:W7123319356,A COMPARATIVE STUDY OF INFORMATION RETRIEVAL MODELS: BM25 VERSUS HYBRID RETRIEVAL ON THE CRANFIELD COLLECTION,1,1,1,1,标题和摘要直接对比BM25与混合检索效果，高度契合课题。,标题与摘要直接对比BM25与混合检索，完全契合课题。
+t18,openalex:W7166887547,clulab-retrieval at SemEval-2026 Task 8: A Comparative Analysis of Dense Retrievers and HyDE for Multi-Turn Conversational Retrieval,0,1,0,,研究聚焦对话检索与HyDE，未涉及BM25混合检索效果。,文献直接对比稠密检索与混合策略，符合课题核心研究内容。
+t18,openalex:W7162951259,Hybrid Retrieval with BM25 and Dense Vectors for Code Generation on HumanEval,1,1,1,1,标题直接涉及BM25与稠密向量混合检索，符合课题核心内容。,标题与摘要明确研究BM25与稠密向量混合检索，直接相关。
+t19,openalex:W4413191760,Interpreting BERT Using LIME and SHAP,1,1,1,1,标题直接对比LIME和SHAP在BERT上的应用，符合课题需求。,文献直接比较LIME与SHAP在BERT模型上的应用，高度契合课题。
+t19,openalex:W4416088758,Machine learning prediction model for medical environment comfort based on SHAP and LIME interpretability analysis,1,1,1,1,标题明确提及基于SHAP和LIME的可解释性分析，符合课题对两种方法的比较需求。,文献标题明确提及SHAP与LIME，符合课题对两种方法比较的需求。
+t19,openalex:W4413769996,Interpreting BERT Using LIME and SHAP,1,1,1,1,标题直接对比LIME和SHAP在BERT上的应用，符合课题需求。,标题与摘要直接比较LIME和SHAP在BERT模型中的解释性应用。
+t19,openalex:W4413293015,Interpreting BERT Using LIME and SHAP,1,0,0,,标题直接涉及SHAP与LIME在BERT上的应用，符合课题比较需求。,摘要为空，仅凭标题无法判断具体研究问题与课题的匹配度。
+t19,openalex:W4379197104,Machine learning explainability in nasopharyngeal cancer survival using LIME and SHAP,1,1,1,1,标题摘要明确提及使用LIME和SHAP进行模型解释，符合课题比较需求。,标题与摘要均明确涉及SHAP与LIME在机器学习中的可解释性应用。
+t19,openalex:W7131725983,Interpretable machine learning for chronic kidney disease prediction: Insights from SHAP and LIME analyses,1,1,1,1,文献直接对比SHAP与LIME在CKD预测中的可解释性应用，符合课题需求。,文献直接应用并比较了SHAP与LIME方法，符合课题需求。
+t19,openalex:W4393992045,Interpreting artificial intelligence models: a systematic review on the application of LIME and SHAP in Alzheimer’s disease detection,1,1,1,1,文献综述LIME和SHAP在阿尔茨海默病检测中的应用，直接比较两者。,文献系统综述LIME与SHAP在医疗领域的应用，直接比较两者方法。
+t19,openalex:W4379056866,Explainable AI for Retinoblastoma Diagnosis: Interpreting Deep Learning Models with LIME and SHAP,1,1,1,1,标题明确对比LIME和SHAP，符合课题对两种方法比较的需求。,文献直接比较LIME与SHAP在深度学习模型中的可解释性应用。
+t19,openalex:W4412684261,A Comparative Study of SHAP and LIME: Interpreting Black-Box Machine Learning Models,1,1,1,1,标题直接比较SHAP与LIME，摘要提及对比两种解释技术，高度相关。,标题与摘要均直接比较SHAP与LIME，完全契合课题。
+t19,openalex:W4391929666,"Explainable Predictive Maintenance of Rotating Machines Using LIME, SHAP, PDP, ICE",1,1,1,1,标题明确包含SHAP与LIME，且涉及可解释性方法比较，符合课题需求。,标题明确包含SHAP与LIME，且用于可解释性分析，符合课题需求。
+t19,openalex:W4409915720,Comparison between both Methods of Explanations: LIME and SHAP,1,1,1,1,标题直接比较LIME和SHAP，符合课题对两种可解释性方法进行比较的需求。,标题直接对比LIME与SHAP，摘要讨论可解释性，符合课题需求。
+t19,openalex:W7221092721,Interpreting Machine Learning Predictions with SHAP and LIME for Transparent Decision Making,1,1,1,1,标题和摘要明确涉及SHAP与LIME的比较，直接契合课题。,标题和摘要明确提及SHAP与LIME的比较，直接契合课题。
+t19,openalex:W4400135851,A Perspective on Explainable Artificial Intelligence Methods: SHAP and LIME,1,1,1,1,标题和摘要直接讨论SHAP与LIME的比较，完全契合课题。,标题与摘要明确涉及SHAP与LIME的可解释性方法比较，高度相关。
+t19,openalex:W4391986380,Explainable AI for Intrusion Detection Systems: LIME and SHAP Applicability on Multi-Layer Perceptron,1,1,1,1,标题直接比较LIME和SHAP在MLP上的适用性，符合课题需求。,标题与摘要明确涉及SHAP与LIME在可解释性中的应用比较。
+t19,openalex:W4392909035,Understanding Model Predictions: A Comparative Analysis of SHAP and LIME on Various ML Algorithms,1,1,1,1,标题与摘要均直接比较SHAP和LIME，完全契合课题需求。,标题与摘要均明确表明研究直接比较SHAP与LIME方法，高度相关。
+t20,openalex:W2461087680,An Intercomparison of Sampling Methods for Uncertainty Quantification of Environmental Dynamic Models,0,1,0,,文献关注环境模型采样方法，未涉及小样本回归及不确定性量化。,文献探讨环境动态模型的不确定性量化方法，与课题核心主题直接相关。
+t20,openalex:W7204085814,Bayesian Residual Cascade for Uncertainty Quantification in Deep Regression,1,1,1,1,标题摘要直接涉及深度回归的不确定性量化，与课题高度契合。,标题与摘要均明确针对深度回归模型的不确定性量化，高度契合课题。
+t20,openalex:W3200767119,UNCERTAINTY QUANTIFICATION FOR DEEP LEARNING REGRESSION MODELS IN THE LOW DATA LIMIT,1,1,1,1,标题直接涵盖小样本回归模型的不确定性量化，与课题完全一致。,标题直接涵盖小样本回归模型不确定性量化，与课题完全匹配。
+t20,openalex:W2160578794,Sensitivity analysis and quantification of uncertainty for isotopic mixing relationships in carbon cycle research,0,0,1,0,摘要为空，仅凭标题无法判断与课题相关。,摘要为空，仅凭标题无法判断与课题相关。
+t20,openalex:W4281622204,COMPARISON OF UNCERTAINTY QUANTIFICATION METHODS FOR CNN-BASED REGRESSION,1,1,1,1,文献研究CNN回归的不确定性量化，与课题核心方法一致。,文献直接评估回归模型的不确定性量化方法，与课题高度契合。
+t20,openalex:W4402630039,Uncertainty quantification metrics for deep regression,1,1,1,1,摘要明确聚焦回归任务的不确定性量化指标，与课题高度契合。,文献聚焦回归任务的不确定性量化，与课题核心高度契合。
+t20,openalex:W3202787212,"Model-free Bootstrap and Conformal Prediction in Regression: Conditionality, Conjecture Testing, and Pertinent Prediction Intervals",1,1,1,1,摘要提及预测区间，属于回归不确定性量化范畴。,文献探讨回归预测区间构建，与不确定性量化直接相关。
+t20,openalex:W4293250286,Evaluation of a sampling approach for computationally efficient uncertainty quantification in regression learning models,1,1,1,1,标题明确提及回归模型的不确定性量化，与课题核心一致。,标题明确提及回归模型不确定性量化，与课题高度契合。
+t20,openalex:W4401499611,Evaluation methodology for disentangled uncertainty quantification on regression models,1,1,1,1,标题直接涉及回归模型不确定性量化，符合课题核心关键词。,文献聚焦回归模型不确定性量化，符合课题核心需求。
+t20,openalex:W2054150397,Meta-models for Structural Reliability and Uncertainty Quantification,1,0,0,,元模型常用于小样本下的高效不确定性量化，与课题高度契合。,文献聚焦结构可靠性与代理模型，未涉及小样本回归及不确定性量化。
+t20,openalex:W7165550079,Conformal Uncertainty Quantification across Molecular Foundation Models for Small-Sample Regression,1,1,1,1,标题明确包含小样本回归与不确定性量化，直接契合课题。,标题明确提及小样本回归与不确定性量化，直接契合课题。
+t20,openalex:W4280545185,Calibration after bootstrap for accurate uncertainty quantification in regression models,1,1,1,1,标题明确提及回归模型的不确定性量化，与课题高度契合。,文献探讨回归模型不确定性量化，与课题核心问题直接相关。
+t20,openalex:W4417098888,Bayesian Conformal Prediction via the Bayesian Bootstrap,1,1,1,1,文献涉及小样本下的不确定性量化，与课题高度契合。,文献提出贝叶斯共形预测方法，专门解决小样本下的不确定性量化问题。

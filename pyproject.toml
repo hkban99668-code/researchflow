@@ -1,0 +1,66 @@
+[project]
+name = "researchflow"
+version = "0.1.0"
+description = "Gate 1 MVP: 科研流程最小垂直切片（检索→问题提炼→数据清洗与审核→计算→图表→初稿→硬规则校验）"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "langgraph",
+    "pydantic>=2,<3",
+    "numpy>=1.26,<3",
+    "pandas>=2,<3",
+    "pandera[pandas]",
+    "scikit-learn",
+    "matplotlib",
+    "jinja2>=3,<4",
+    "pyyaml>=6,<7",
+    "python-dotenv>=1,<2",
+    "httpx>=0.27,<1",
+    "langgraph-checkpoint-sqlite>=3.1.1",
+    "mcp>=2.3.0",
+    "fastapi>=0.115,<1",
+    "uvicorn>=0.30,<1",
+]
+
+[project.scripts]
+researchflow = "researchflow.main:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+    "respx",
+    "jsonschema",  # 仅测试用：校验导出的 tool schema
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/researchflow"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+# docs/ 是评审与结果文档（Markdown），其中的代码示例不应被格式化改写
+# .collab/ 是任务卡/汇报/审查文档（Markdown），同理（代码块里的对齐注释不应被改写）
+extend-exclude = ["docs", ".collab"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "src:."
+packages = ["researchflow", "evals"]
+ignore_missing_imports = true
+warn_unused_ignores = false

@@ -1,0 +1,342 @@
+topic_id,ref_id,title,judge_a,judge_b,agree,consensus,reason_a,reason_b
+h01,openalex:W4293196679,Domain generalization in deep learning for contrast-enhanced imaging,1,1,1,1,探讨了深度学习在不同医疗中心对比成像上的领域泛化问题，与课题契合。,摘要明确探讨跨临床中心成像协议差异导致的深度学习域泛化问题。
+h01,openalex:W2581644226,"The changing political economy of hospitals : the emergence of the ""business model"" hospital",0,0,1,0,该文献研究医院政治经济学与商业模式变革，不涉及算法模型泛化问题。,研究医院产业政治经济学与商业模式，与机器学习模型跨医院泛化无关。
+h01,openalex:W2046804012,Performing well in financial management and quality of care: evidence from hospital process measures for treatment of cardiovascular disease,0,0,1,0,该文献研究医院财务管理与护理质量关系，不涉及模型跨院泛化问题。,研究医院财务绩效与治疗质量关系，不涉及模型跨医院泛化问题。
+h01,openalex:W2412862172,The Economic Consequences of Hospital Admissions,0,0,1,0,该文献研究住院的经济后果，与模型跨医院泛化能力无关。,研究住院经济后果，与模型跨医院泛化差无关。
+h01,openalex:W4388521370,A stochastic programming approach to perform hospital capacity assessments,0,0,1,0,该文研究医院承载力的运筹规划，与机器学习模型跨中心泛化无关。,文献研究医院容量随机规划评估，不涉及模型跨医院泛化变差问题。
+h01,openalex:W7133011785,Data-driven Modelling and Control of Hospital Blood Inventory,0,0,1,0,文献研究的是医院血液库存订购控制，非跨医院模型泛化或域迁移问题。,文献研究血液库存管理，未涉及模型跨医院泛化性能下降问题。
+h01,openalex:W3136873846,An empirical framework for domain generalization in clinical settings,1,1,1,1,该文献专门研究临床模型在新医院性能下降的领域泛化问题。,摘要探讨临床模型在未见医院上性能下降及泛化方法，高度契合课题。
+h01,openalex:W4410632526,Cross Domain Model Adaptation and Generalization,1,1,1,1,该文研究跨域自适应与泛化，直击分布差异导致的性能下降问题。,文献研究跨域模型自适应与泛化，直接解决模型在新分布上性能下降的问题，与课题核心一致。
+h01,openalex:W636032334,The experiences of affirmative action of a private hospital's staff members,0,0,1,0,该文献研究医院员工平权经历，与模型跨医院泛化无关。,文献研究的是医院员工平权行动经历，与医疗模型跨医院泛化性能无关。
+h01,openalex:W2016529175,Unnecessary hospital referral data,0,0,1,0,探讨医院转诊与资源分配政策，与模型跨医院泛化无关,摘要讨论医院转诊与资源分配，与模型跨医院泛化问题无关。
+h01,openalex:W4412619400,Domain Shift and Generalization Strategies for Foundation Models in Clinical Imaging,1,1,1,1,探讨临床影像模型在异质临床环境中的域偏移与泛化，与课题高度吻合。,该文献探讨基础模型在临床影像中的域偏移与泛化策略，涉及跨场景部署问题。
+h01,openalex:W4293762626,Is Construction Industry Still Performing Worse Than Other Industries?,0,0,1,0,该文献研究建筑业与其他行业的表现差异，与医疗模型跨院泛化无关。,文献研究建筑业跨行业表现比较，与AI模型跨医院泛化变差问题无关。
+h01,openalex:W3125022832,Bayesian Inference for Hospital Quality in a Selection Model,0,0,1,0,该文研究计量经济学中医院医疗质量的评估，非模型跨院泛化问题。,文献研究的是医院质量评估的统计选择偏差，与模型跨医院泛化性能下降无关。
+h01,openalex:W2166144489,Characteristics and Outcomes of America’s Lowest-Performing Hospitals,0,0,1,0,该文研究医院医疗质量与患者预后，不涉及模型的跨医院泛化问题。,研究医院AMI质量差异，非模型跨医院泛化问题
+h01,openalex:W2025721221,Booked inpatient admissions and hospital capacity: mathematical modelling study,0,0,1,0,该研究关注医院病床容量的数学建模，不涉及模型跨院泛化性问题。,文献研究医院床位容量的数学建模，不涉及AI模型跨医院泛化问题。
+h01,openalex:W2431312504,Modeling the Determinants of Hospital Mortality,0,0,1,0,该文研究影响医院死亡率的决定因素，非预测模型跨机构泛化问题。,研究医院死亡率影响因素，不涉及模型跨医院泛化问题
+h01,openalex:W7162083532,The limits of debiased clinical language models for cross-hospital generalization,1,1,1,1,该文献直接探讨临床语言模型在跨医院迁移时的泛化问题，与课题高度吻合。,文献探讨了临床语言模型在跨医院部署时公平性能的保持情况，与跨医院泛化下降问题直接相关。
+h01,openalex:W646859204,Predicting Hospital safety: A Comparison of Four Models,0,0,1,0,该文研究患者选择医院的模型，与模型跨医院泛化性无关。,摘要讨论的是用质量数据选择医院的预测模型，与模型跨医院泛化变差无关。
+h01,openalex:W2064951857,An Administrative Claims Model Suitable for Profiling Hospital Performance Based on 30-Day Mortality Rates Among Patients With an Acute Myocardial Infarction,0,0,1,0,该文献研究利用索赔数据评估各医院绩效，非跨医院模型泛化问题。,文献研究的是利用索赔数据评估医院表现，而非模型跨医院的泛化变差问题。
+h01,openalex:W3010598125,Predict patient deterioration in hospital's general ward,0,0,1,0,关注普通病房病情恶化预测，未涉及跨医院迁移与泛化问题。,摘要仅讨论病房内病情恶化预测，未涉及模型跨医院泛化或性能下降问题。
+h01,openalex:W46675840,A resource-dependence model of hospital contract management.,0,0,1,0,该文献研究医院管理与商业合同模式，与算法模型跨院泛化无关。,该文献研究医院管理合同的决定因素，与机器学习模型跨医院泛化性差无关。
+h01,openalex:W4221077687,Evaluation of domain generalization and adaptation on improving model robustness to temporal dataset shift in clinical medicine,1,1,1,1,该文研究临床模型在数据分布偏移下的领域泛化与自适应，与课题高度相关。,摘要探讨临床预测模型在数据集偏移下的鲁棒性，与跨机构模型泛化课题相关。
+h02,openalex:W3085273257,"The Effects of Sampling Frequency and Questionnaire Length on Perceived Burden, Compliance, and Careless Responding in Experience Sampling Data in a Student Population",0,0,1,0,文献研究问卷设计对不认真作答的影响，非数据识别与检出方法。,该文研究问卷长度和频率对草率作答的影响，而非如何检测草率作答者。
+h02,openalex:W2765131284,Assessing the Effects of Survey Instructions and Physical Attractiveness on Careless Responding in Online Surveys,0,1,0,,该文献研究不认真作答的影响因素，而非从数据中识别乱选的方法。,文献直接研究在线问卷中的不认真作答现象，与课题核心问题高度一致。
+h02,openalex:W3122136052,How Elastic Are Preferences for Redistribution? Evidence from Randomized Survey Experiments,0,0,1,0,该文献研究再分配偏好实验，未涉及问卷乱选或不认真作答的识别方法。,该文献研究再分配偏好，与问卷中不认真作答者的识别无关。
+h02,openalex:W4360992037,How to Run Surveys: A Guide to Creating Your Own Identifying Variation and Revealing the Invisible,0,0,1,0,文章是问卷设计与运行的通用指南，未涉及不认真作答者的识别与剔除。,该文献讲的是如何设计调查以创造识别性变异，与识别不认真作答者无关。
+h02,openalex:W3006290047,Reducing Careless Responding in Survey Research: The Effects of Honor Codes and Watchful Eyes,0,1,0,,该文献研究事前预防不认真作答，而非从数据中识别和筛除该类作答者。,同属问卷不认真作答研究，虽侧重数据收集前的预防，但摘要也提及检测与剔除，值得阅读。
+h02,openalex:W2475836684,Detecting careless respondents in web-based questionnaires: Which method to use?,1,1,1,1,该文献直接探讨了识别网络问卷中不认真作答者的方法与比较。,摘要直接讨论在网络问卷中检测不认真作答者的方法，与课题完全一致。
+h02,openalex:W4383216503,Did people really drink bleach to prevent COVID-19? A guide for protecting survey data against problematic respondents,1,1,1,1,该文探讨了如何识别与应对问卷中不认真和随机作答的问题受访者。,摘要探讨如何识别不认真或随机作答的问卷受访者，与课题直接相关。
+h02,openalex:W4411609206,Using Markov Chains to Detect Careless Responding in Survey Research,1,1,1,1,该研究探讨利用马尔可夫链检测问卷中的随意作答行为，与课题高度吻合。,文献专门探讨了在问卷数据中检测不认真作答的方法，与研究课题直接对应。
+h02,openalex:W4293870301,"Dealing with Careless Responding in Survey Data: Prevention, Identification, and Recommended Best Practices",1,1,1,1,该综述探讨了调查问卷中不认真作答的识别方法，与课题高度吻合。,文献综述了问卷中不认真作答的预防与识别，与课题完全一致。
+h02,openalex:W2273303312,Implementation of the forced answering option within online surveys: Do higher item response rates come at the expense of participation and answer quality?,0,1,0,,该文探讨强制回答设置对质量的影响，非识别不认真作答的方法。,探讨强制作答对问卷回答质量的影响，与不认真作答及数据质量筛选紧密相关。
+h03,openalex:W7203911671,Decomposing Wrong-Consensus Agreement in LLM Self-Consistency,0,0,1,0,该文研究大模型推理中的自我一致性错误，与训练标签噪声无关。,该文研究LLM推理自洽性中错误共识的分解，非训练标签噪声下的鲁棒学习。
+h03,openalex:W4391620743,"Data and Model Poisoning Backdoor Attacks on Wireless Federated Learning, and the Defense Mechanisms: A Comprehensive Survey",1,0,0,,涉及联邦学习中的数据投毒攻击与防御机制，与标签噪声及防偏高度相关。,文献聚焦无线联邦学习的后门攻击，非标签噪声鲁棒性。
+h03,openalex:W1553640569,Celebrity Endorsements in Non-Traditional Advertising: How the FTC Regulations Fail to Keep Up with the Kardashians,0,0,1,0,该文献研究名人广告代言与FTC监管，与机器学习标签噪声无关。,该文献研究名人代言与广告法规，与机器学习训练数据的标签噪声问题无关。
+h03,openalex:W7172536070,In-Context Collapse in Vision-Language Models and How to Mitigate it?,0,0,1,0,研究上下文学习中样本增多导致的性能崩溃，无关训练标签噪声。,研究的是上下文示例数量增加导致的精度下降，而非标签错误导致模型被带偏。
+h03,openalex:W3111657791,Multi-Objective Interpolation Training for Robustness to Label Noise,1,1,1,1,该研究探讨通过多目标插值训练增强模型对标签噪声的鲁棒性。,文献专门研究如何缓解模型记忆噪声标签，直接针对标签噪声鲁棒性。
+h03,openalex:W2963697299,Robust Loss Functions under Label Noise for Deep Neural Networks,1,1,1,1,该文献研究利用鲁棒损失函数降低深度学习中的标签噪声干扰。,研究标签噪声下深度神经网络的鲁棒损失函数，直接相关。
+h03,openalex:W2963735582,Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels,1,1,1,1,该文提出的Co-teaching方法专门解决含噪标签下模型的鲁棒训练问题。,文献研究使用噪声标签进行鲁棒深度学习训练，直接切中课题。
+h03,openalex:W7128026279,From Ambiguity to Action: A POMDP Perspective on Partial Multi-Label Ambiguity and Its Horizon-One Resolution,1,1,1,1,该文研究部分多标签学习中的标签消歧，防止候选噪声标签传播错误。,文献研究部分多标签学习中的标签消歧与错误传播，与防标签噪声带偏模型高度相关。
+h03,openalex:W4396914038,A View of How Language Models Will Transform Law,0,0,1,0,该文探讨大模型对法律行业结构的影响，与标签噪声学习无关。,该文讨论LLM对法律行业的影响，与训练数据标签噪声问题无关。
+h03,openalex:W4405182897,Alchemy: Data-Free Adversarial Training,0,0,1,0,该文献研究无数据对抗防御，非训练数据标签噪声问题。,文献研究无数据对抗训练防对抗攻击，与标签噪声防带偏无关。
+h03,openalex:W4389665180,PiCO+: Contrastive Label Disambiguation for Robust Partial Label Learning,1,1,1,1,该文研究候选标签集含噪声的问题，直接涉及标签错误时的鲁棒学习。,文献研究部分标签学习中真标签缺失的噪声问题，旨在消除歧义并减轻标签噪声影响，与课题高度相关。
+h03,openalex:W2981873476,Symmetric Cross Entropy for Robust Learning With Noisy Labels,1,1,1,1,针对噪声标签问题改进交叉熵损失函数以提高模型鲁棒性，高度契合课题。,摘要明确研究带噪标签下的深度学习鲁棒性问题，与课题直接相关。
+h03,openalex:W2967052791,Probabilistic End-To-End Noise Correction for Learning With Noisy Labels,1,1,1,1,该文研究含噪标签下更新网络与校正标签的框架，切合课题。,该文提出PENCIL框架解决带噪标签导致模型过拟合的问题，与课题直接相关。
+h03,openalex:W2774423163,Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning,0,0,1,0,该文献研究主动后门投毒攻击，而非应对标签错误的鲁棒训练方法。,文献研究恶意数据投毒的后门攻击，而非训练数据标签噪声的鲁棒性。
+h03,openalex:W3042609801,Learning From Noisy Labels With Deep Neural Networks: A Survey,1,1,1,1,该综述总结了深度学习中应对错误标签的鲁棒训练方法，与课题高度吻合。,文献正是关于深度神经网络从噪声标签中学习的综述，与课题完全契合。
+h03,openalex:W3177541758,A Novel Technique for Robust Training of Deep Networks With Multisource Weak Labeled Remote Sensing Data,1,1,1,1,该研究探讨在标签含错时如何对深度网络进行鲁棒训练。,摘要明确讨论训练标签有错时如何鲁棒训练深度网络，与课题直接相关。
+h03,openalex:W4226323522,A review: Data pre-processing and data augmentation techniques,0,0,1,0,该文为通用数据预处理和增强综述，未针对标签噪声学习展开。,该文聚焦通用数据预处理，未专门针对标签错误及模型抗噪问题。
+h04,openalex:W2020586031,Reducing reliance on inaccurate information,0,0,1,0,摘要为空且标题宽泛，无法判断与模型随时间退化相关。,摘要为空，仅凭标题无法判断与模型随时间预测性能下降相关
+h04,openalex:W4319996382,A Literature Review on Train Motion Model Calibration,0,0,1,0,该文综述列车物理运动模型的参数校准，与模型时序泛化退化无关。,该文研究列车运动模型参数校准，与预测模型随时间失效的问题无关。
+h04,openalex:W2759230403,Regions of Inaccurate Modeling for Robot Anomaly Detection and Model Correction,0,0,1,0,关注机器人特定场景下的建模误差检测与修正，非随时间衰退问题。,研究的是复杂环境中模型固有的不准确，而非时间推移导致的预测失效
+h04,openalex:W1831642737,Early Maternal Time Investment and Early Child Outcomes,0,0,1,0,该文献研究母亲时间投入与儿童发展的关系，与模型预测衰退无关。,文献研究母亲时间投入与儿童发展，与模型预测随时间失效无关。
+h04,openalex:W4386230019,Model Performance Prediction: A Meta-Learning Approach for Concept Drift Detection,1,1,1,1,标题聚焦概念漂移检测与性能预测，与课题核心问题高度契合。,标题明确涉及概念漂移检测，与模型随时间预测失效的课题直接相关。
+h04,openalex:W4220851938,From concept drift to model degradation: An overview on performance-aware drift detectors,1,1,1,1,该综述探讨了导致模型性能随时间下降的概念漂移及检测方法。,摘要研究概念漂移导致的模型性能下降，与课题完全一致。
+h04,openalex:W7150121874,An Adaptive Machine Learning Model for Heterogeneous Concept Drift Handling in Streaming Data,1,1,1,1,该文献研究数据分布随时间变化导致模型退化的概念漂移问题。,文献研究概念漂移导致模型退化，正是课题关注的预测变不准问题。
+h04,openalex:W2019849436,State-Space Analysis of Time-Varying Higher-Order Spike Correlation for Multiple Neural Spike Train Data,0,0,1,0,该文研究神经脉冲相关性分析，与模型时间漂移问题无关。,文献研究神经元放电相关性分析，与机器学习模型预测退化无关。
+h04,openalex:W2999750248,Real-Time Train Tracking from Distributed Acoustic Sensing Data,0,0,1,0,该文献研究基于光纤传感的列车追踪算法，与模型时序衰退无关。,文献研究基于声学传感的列车实时追踪，未涉及模型随时间预测变差的问题。
+h04,openalex:W4401341723,Predicting Selectivity with a Bifurcating Surface: Inaccurate Model or Inaccurate Statistics of Dynamics?,0,0,1,0,该文献研究化学反应动力学模拟，与模型时间漂移问题无关。,文献研究化学反应动力学模拟精度，与模型随时间退化无关。
+h04,openalex:W4281570308,Concept Drift Detection with Optimal Machine Learning Model for Data Classification,1,1,1,1,该文献研究的概念漂移正是导致模型随时间推移预测性能下降的核心问题。,文献探讨概念漂移导致模型性能下降，与课题高度相关。
+h04,openalex:W3187658556,Tiny Machine Learning for Concept Drift,1,1,1,1,标题直接针对概念漂移，即模型因环境随时间变化导致预测不准的问题。,标题直接研究概念漂移，正是模型随时间预测失效的问题，研究者会愿意阅读。
+h04,openalex:W4401416290,Task-Oriented Active Learning of Model Preconditions for Inaccurate Dynamics Models,0,0,1,0,该文研究动力学模型规划中的有效适用区域学习，无关时间分布漂移。,文献研究模型本身不准确时的主动学习，非时间推移导致的预测不准
+h04,openalex:W4416609953,Unveiling Drift in Machine Learning Models Integrating with Cybersecurity,1,1,1,1,该文献研究机器学习模型因数据随时间漂移导致的性能退化及检测技术。,该文献研究ML模型因历史数据随时间漂移导致性能下降及检测技术，直接相关。
+h04,openalex:W2059446119,Modified Early Warning Scores: inaccurate summation or inaccurate assignment of score?,0,0,1,0,该文探讨医疗评分的人工计算与打分误差，非模型随时间性能衰退。,研究医疗预警评分的准确性，非模型随时间推移的预测失效
+h04,openalex:W4403751234,Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling,0,0,1,0,文献研究离散扩散生成模型，与模型随时间性能衰退或数据漂移无关。,该文献研究掩码扩散模型的训练与采样机制，与模型随时间预测不准无关。
+h05,openalex:W3124822818,Phantoms Never Die: Living with Unreliable Population Data,0,0,1,0,文献研究人口死亡率数据质量与异常诊断，与多重假设检验问题无关。,文献研究人口数据可靠性评估，与多重检验导致结论不可靠无关。
+h05,openalex:W4399837706,Do More Details Always Introduce More Hallucinations in LVLM-based Image Captioning?,0,0,1,0,该文献研究视觉语言模型幻觉，与多重检验和显著性问题无关。,文献研究视觉语言模型的幻觉问题，与统计多重检验导致假阳性无关。
+h05,openalex:W2221762141,Why are initial estimates of productivity growth so unreliable?,0,0,1,0,文献讨论宏观生产率数据测量误差，与多重检验问题无关。,文献研究生产率估计的测量误差与修正，与多次检验导致的虚假显著性无关。
+h05,openalex:W1968580940,Preventive maintenance and the interval availability distribution of an unreliable production system,0,0,1,0,摘要为空且标题属于设备维护工程，与多重检验课题无关。,文献研究工业生产系统的预防性维护，与统计检验显著性无关。
+h05,openalex:W3107222118,"Analysis goals, error‐cost sensitivity, and analysis hacking: Essential considerations in hypothesis testing and multiple comparisons",1,1,1,1,文献探讨了多重比较、选择性报告及数据篡改对结论可靠性的影响。,文献讨论假设检验中多重比较与分析操纵问题，直接关乎多次检验导致不可靠结论的课题。
+h05,openalex:W4319600924,Big little lies: a compendium and simulation of p -hacking strategies,1,1,1,1,该文献系统研究了通过多次检验操纵显著性的p-hacking行为及后果。,文献探讨的p-hacking正是通过多次检验寻找显著结果的研究，与课题直接对应。
+h05,openalex:W2547503455,"Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid p-Hacking",1,1,1,1,文献直接探讨了通过多次分析获取显著结果（p-hacking）导致假阳性的问题。,摘要明确讨论利用研究自由度多次尝试以获得显著结果导致假阳性，正中课题核心。
+h05,openalex:W2061944412,Evolution of Stress Response in the Face of Unreliable Environmental Signals,0,0,1,0,该文献研究生物应激反应演化，与统计学多重检验问题无关。,文献探讨生物应激反应与环境信号，与统计检验中的多重比较假阳性无关。
+h05,openalex:W2905700088,Are bootstrapped cointegration test findings unreliable?,0,1,0,,该文献研究的是遗漏变量对自举协整检验的影响，非多重检验问题。,该文探讨局部系统设定搜索导致协整检验虚假显著，契合多次检验结论不可靠的主题。
+h05,openalex:W1520617112,The Unreliability of Output-Gap Estimates in Real Time,0,0,1,0,该文献研究宏观经济产出缺口估计，与多重检验及假阳性无关。,文献研究宏观经济产出缺口估计，与多重检验或p-hacking无关。
+h05,openalex:W4396977690,Impact of redefining statistical significance on P-hacking and false positive rates: An agent-based model,1,1,1,1,该文探讨P-hacking与假阳性率，契合多次检验导致结论不可靠的课题。,文献明确研究了P-hacking（多次检验寻找显著结果）导致的假阳性率问题，与课题高度契合。
+h05,openalex:W2035159480,"Multiple Comparisons, Explained",1,1,1,1,该文探讨多重比较问题及统计推断基础，与课题高度契合。,该文献探讨了多重比较及多次关联检验中的统计推断问题，直接契合课题。
+h05,openalex:W2156332695,Classification with correlated features: unreliability of feature ranking and solutions,0,0,1,0,该文研究相关特征下的分类特征排序不稳定性，非多重检验假阳性问题。,本文研究特征相关性导致排序不稳定，与多次检验导致显著结果不可靠的课题不同。
+h05,openalex:W2275632435,p-Curve and p-Hacking in Observational Research,1,1,1,1,该文探讨了通过反复检验凑显著结果（p-hacking）的现象及检测局限性。,文献研究观察性研究中的p-hacking，与课题核心问题一致。
+h05,openalex:W2785512924,Proactively detecting unreliable tests,0,0,1,0,文献研究的是软件工程的回归测试，而非统计学多重检验问题。,文献讨论的是软件回归测试的可靠性，与统计学多重检验导致的假阳性问题无关。
+h05,openalex:W4293116292,Exploratory hypothesis tests can be more compelling than confirmatory hypothesis tests,1,1,1,1,探讨探索性事后检验与验证性检验的可靠性与偏差问题，与课题密切相关。,文献探讨探索性检验与确认性检验的可靠性差异，正对应多次检验导致结论不可靠的课题。
+h06,openalex:W2104126672,Empirical comparison of four baseline covariate adjustment methods in analysis of continuous outcomes in randomized controlled trials,1,1,1,1,该文探讨了基线存在差异时如何调整协变量以准确比较处理效果的方法。,文献讨论RCT中基线协变量调整方法，与基线差异下公平比较处理效果直接相关
+h06,openalex:W2020480331,"Bias, precision and statistical power of analysis of covariance in the analysis of randomized trials with baseline imbalance: a simulation study",1,1,1,1,该研究探讨基线不平衡时比较组间效应的不同统计方法，与课题高度契合。,文献研究基线不平衡时不同分析方法的处理效应估计，与课题核心问题一致。
+h06,openalex:W3212147385,Evaluating Treatment Prioritization Rules via Rank-Weighted Average Treatment Effects,0,0,1,0,文献研究治疗优先级排序规则的评价，未涉及组间不均衡的偏倚消除。,文献关注治疗优先级规则的评估，而非解决实验组与对照组基线差异下的公平比较问题。
+h06,openalex:W2098590161,Systematic review of the long-term effects and economic consequences of treatments for obesity and implications for health improvement,0,0,1,0,该文献关注肥胖治疗效果与经济学系统评价，不涉及组间不平衡校正方法。,该文献研究肥胖治疗的长期效果，不涉及实验组与对照组基线差异的方法论。
+h06,openalex:W2767068410,Pitfalls when Estimating Treatment Effects Using Clustered Data,0,0,1,0,聚焦整群数据下处理效应的统计推断陷阱，未探讨组间不平衡的矫正。,文献讨论聚类数据标准误问题，而非实验组与对照组基线差异下的公平比较。
+h06,openalex:W2467482127,Difference-in-Differences Method in Comparative Effectiveness Research: Utility with Unbalanced Groups,1,1,1,1,该文献专门介绍利用双重差分法调整组间不平衡以比较处理效果。,文献探讨在不平衡组中使用DiD方法调整组间差异以估计处理效果，正合课题。
+h06,openalex:W2803832675,Statistical primer: propensity score matching and its alternatives†,1,1,1,1,倾向得分匹配正是解决组间基线不均时评估处理效果的核心方法。,摘要探讨用倾向得分法控制混杂因素，解决组间差异下的处理效应估计。
+h06,openalex:W1482194397,How the Timing of Grade Retention Affects Outcomes: Identification and Estimation of Time-Varying Treatment Effects,1,1,1,1,该文探讨存在未观测差异时时变处理效应的识别与估计方法，符合课题。,文献探讨了处理组和对照组存在不可观测差异时如何估计处理效应，直接切中课题。
+h06,openalex:W4386553935,"Group Threat and Social Control: Who, What, Where, and When",0,0,1,0,文献属于犯罪学群体威胁理论综述，与因果推断和组间比较方法无关。,属于犯罪学群体威胁理论综述，与因果推断或组间公平比较无关。
+h06,openalex:W2155163959,Matching Methods for Causal Inference: A Review and a Look Forward,1,1,1,1,综述了通过匹配使处理组与对照组特征均衡以消除偏差的方法。,文献综述了匹配方法，用于在观测数据中平衡处理组与对照组的协变量。
+h06,openalex:W2894006400,Estimating Group Effects Using Averages of Observables to Control for Sorting on Unobservables: School and Neighborhood Effects,1,1,1,1,该文探讨个体存在选择偏差时如何控制混杂以估计群体处理效应。,摘要直接处理了个体自选择导致的组间差异下估计群组处理效应的问题，与课题高度契合
+h06,openalex:W2138962284,Group-Average Observables as Controls for Sorting on Unobservables When Estimating Group Treatment Effects: the Case of School and Neighborhood Effects,1,1,1,1,该文献研究个体存在选择偏差时如何准确估计组处理效应的方法。,文献探讨个体基于可观测和未观测特征进行选择导致组间差异时如何估计群组处理效应，与课题高度相关。
+h06,openalex:W2154622689,Functional diversity of microglia – how heterogeneous are they to begin with?,0,0,1,0,该文献属于神经生物学，研究微胶质细胞异质性，与统计方法课题无关。,该文献研究小胶质细胞的生物学异质性，与实验设计的统计比较方法无关。
+h06,openalex:W3140246298,Treatment Effects and Integrated Morbidity Control of Schistosomiasis,0,0,1,0,属于血吸虫病的医学治疗与防控研究，与因果推断方法无关。,该文献研究血吸虫病的医学治疗与控制，非因果推断中的处理效应方法论研究。
+h06,openalex:W1836814092,The Role of Random Allocation in Randomized Controlled Trials: Distinguishing Selection Bias from Baseline Imbalance,1,1,1,1,该文探讨基线不平衡与选择偏倚，对处理效果比较具有参考价值。,文献探讨了RCT中基线不平衡与选择偏差的区别，直接关乎实验组与对照组初始差异下的效果评估。
+h06,openalex:W3122668108,The Employment Effects of the Minimum Wage: A Selection Ratio Approach to Measuring Treatment Effects,1,1,1,1,该文提出了在对照组不完美时识别处理效应的新方法，切合课题需求。,摘要探讨在使用不完美对照组时识别处理效应的方法，与公平比较处理效果高度相关。
+h06,openalex:W3124733877,Treatment Versus Regime Effects of Carrots and Sticks,0,0,1,0,该文研究政策体制与处理效应的估算，未涉及组间不平衡校正的方法学。,文献关注宏观政策强度与制度效应，而非如何修正实验组与对照组的基线差异。
+h06,openalex:W2100950823,Use of historical control data for assessing treatment effects in clinical trials,1,1,1,1,涉及利用基线存在差异的历史对照评估治疗效果的方法，与课题高度相关。,文献探讨使用历史对照数据评估处理效应，与解决实验组与对照组基线差异的公平比较问题直接相关。
+h06,openalex:W2114128816,Nonparametric Estimation of Average Treatment Effects under Exogeneity: A Review,1,1,1,1,综述了消除处理组与对照组系统差异、公平估计处理效应的方法。,该文综述在可观测选择假设下估计平均处理效应的方法，正是处理实验组与对照组差异时的公平比较问题。
+h07,openalex:W4295736424,Bayesian optimization with known experimental and design constraints for chemistry applications,1,1,1,1,该文研究面向化学应用的贝叶斯优化算法，用于指导后续实验选择。,文献探讨贝叶斯优化在化学实验中的应用，属于机器学习指导实验选择范畴。
+h07,openalex:W3034954837,On-the-fly closed-loop materials discovery via Bayesian active learning,1,1,1,1,该文研究基于主动学习的闭环自主材料实验设计，完全契合课题。,文献探讨用主动学习进行最优实验设计以实现材料闭环发现，高度契合课题。
+h07,openalex:W4288039037,Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next,0,0,1,0,文献综述物理信息神经网络PINN求解微分方程，无关实验设计决策。,该文研究PINN求解偏微分方程，不涉及机器学习指导化学实验的序列决策。
+h07,openalex:W4388906861,Machine learning for analysis of experimental scattering and spectroscopy data in materials chemistry,0,0,1,0,该文关注散射与光谱数据分析，而非用算法决策下一步实验。,文献关注ML分析光谱数据而非决定下一步实验。
+h07,openalex:W7203896174,Electronic and chemical phase identification in photoemission experiments using unsupervised machine learning,1,1,1,1,该文用高斯过程回归指导光电子能谱实验中下一步测量位置的选择。,用高斯过程回归指导光电子能谱实验的采样搜索，属机器学习指导实验决策。
+h07,openalex:W4366960332,"Machine learning in energy chemistry: introduction, challenges and perspectives",0,0,1,0,综述探讨机器学习在能源化学中的应用，未涉及实验决策或主动学习。,该综述泛泛探讨机器学习在能源化学的应用，未涉及实验决策设计。
+h07,openalex:W4384080508,Continuous flow synthesis of pyridinium salts accelerated by multi-objective Bayesian optimization with active learning,1,1,1,1,该研究利用贝叶斯优化和主动学习算法指导流动化学实验的条件优化。,该文献使用贝叶斯优化与主动学习来指导连续流化学合成的实验参数优化，符合课题要求。
+h07,openalex:W3164621419,A review on extreme learning machine,0,0,1,0,纯机器学习算法理论综述，未涉及化学实验及实验设计。,该文献是极限学习机算法的理论综述，与化学实验决策无关。
+h07,openalex:W4366779169,Improving aircraft performance using machine learning: A review,0,0,1,0,该综述聚焦航空航天工程领域的机器学习应用，与化学实验设计无关。,该文献探讨机器学习在航空航天工程的应用，与化学实验决策无关。
+h07,openalex:W7220388601,Lookahead Bayesian Optimisation for Molecular Growth in Self-Driving Laboratories,1,1,1,1,该研究探讨自主实验室中用前瞻贝叶斯优化决定下一步分子合成实验。,文献探讨自驱动实验室中用贝叶斯优化选择下一个分子实验，与课题高度吻合。
+h07,openalex:W4212816082,Machine Learning in Materials Chemistry: An Invitation,0,0,1,0,侧重于利用材料数据库预测构效关系，未涉及自主决定下一步实验。,文献侧重于用数据库预测材料性质，未提及用机器学习指导实验决策。
+h07,openalex:W3125834952,Machine Learning Methods for Chemistry Reduction in Combustion.,0,0,1,0,研究主题是燃烧反应机理简化，非实验设计且无有效摘要。,文献研究燃烧中的化学机理降维，与用机器学习决定下一步化学实验无关。
+h07,openalex:W2098740506,Machine learning in bioinformatics,0,0,1,0,综述的是生物信息学中的机器学习，不涉及化学实验决策,该文综述机器学习在生物信息学中的应用，与化学实验决策无关。
+h07,openalex:W4396852083,Evolution-guided Bayesian optimization for constrained multi-objective optimization in self-driving labs,1,1,1,1,该研究面向自主实验室，通过贝叶斯优化算法指导下一步智能实验设计。,文献探讨自动化实验室的贝叶斯优化实验设计，符合课题核心。
+h07,openalex:W7133326240,Toward self-driving laboratory 2.0 for chemistry and materials discovery,1,1,1,1,综述了自驱动实验室利用AI自主闭环设计与决策化学实验的进展。,文献探讨自驱动实验室在化学实验中的AI设计与闭环发现，与课题高度契合。
+h07,openalex:W2163915185,Machine Learning for Information Extraction in Informal Domains,0,0,1,0,摘要为空且标题关注信息抽取，与实验设计无关,文献主题为非正式领域的信息提取，与化学实验设计无关。
+h07,openalex:W4285802213,Quantum machine learning for chemistry and physics,0,0,1,0,该文综述量子机器学习在化学物理中的应用，未涉及指导下一步实验设计。,摘要探讨量子机器学习在化学中的预测应用，未涉及实验决策或主动学习。
+h07,openalex:W7118111690,Machine Learning & Software Development for Sustainable Chemistry,0,0,1,0,泛论机器学习在绿色化学中的应用，未涉及实验设计与下一步决策。,文献侧重可持续化学与软件开发，未涉及实验序列决策。
+h08,openalex:W3081098269,Measuring the Population Properties of Merging Compact Binaries with Gravitational Wave Observations,0,0,1,0,该文献研究引力波及双星群体性质，与实验室数据整合无关。,文献研究引力波观测并合致密双星，与实验室数据合并分析无关。
+h08,openalex:W4308592905,Same Same but Different – What is Boredom Actually?,0,0,1,0,该文献研究心理学中的无聊概念，与多实验室数据合并课题完全无关。,文献探讨无聊的心理定义，与实验室数据不一致及合并分析无关。
+h08,openalex:W2124316743,Enhancing data analysis with noise removal,0,0,1,0,该文探讨通用的数据清洗与去噪，不涉及多实验室数据整合或批次校正。,文献探讨一般数据清洗的噪声移除，未涉及跨实验室数据不一致及合并分析问题。
+h08,openalex:W1523843467,Cross-platform analysis of cancer microarray data improves gene expression based classification of phenotypes,1,1,1,1,该文探讨克服不同平台与研究间的异质性以整合微阵列数据的方法。,文献探讨不同平台微阵列数据的跨平台合并分析方法，与研究课题直接相关。
+h08,openalex:W2166058459,MM-ChIP enables integrative analysis of cross-platform and between-laboratory ChIP-chip or ChIP-seq data,1,1,1,1,该文献专门提出整合跨实验室及跨平台测序数据的新方法。,文献提出方法整合跨平台和不同实验室的ChIP数据，与课题完全一致。
+h08,openalex:W4364360591,Batch correction and harmonization of –Omics datasets with a tunable median polish of ratio,1,1,1,1,提出了消除组学数据实验批次效应以整合数据的新方法，与课题高度吻合。,文献探讨组学数据的批次校正与整合方法，解决不同实验室数据合并分析问题。
+h08,openalex:W3080896668,Assessment of Inter-Laboratory Variation in the Characterization and Analysis of the Mucosal Microbiota in Crohn’s Disease and Ulcerative Colitis,1,1,1,1,该文评估了不同实验室测同类样本的技术变异，与课题高度相关。,评估了不同实验室分析微生物组数据的变异，与实验室间数据差异及整合课题高度相关。
+h08,openalex:W2915326201,Recognizing Physical Activity of Older People from Wearable Sensors and Inconsistent Data,0,0,1,0,该文研究可穿戴传感器活动识别，与跨实验室数据整合课题无关。,文献研究可穿戴传感器活动识别中的数据不一致问题，不涉及跨实验室数据合并。
+h08,openalex:W257611299,How to Lie with Bad Data,0,0,1,0,该文讨论统计造假与不良数据的误导，不涉及多实验室数据合并分析。,该文献讨论统计误用与数据质量问题，未涉及跨实验室数据不一致的合并分析。
+h08,openalex:W2770477678,Cross-Laboratory Analysis of Brain Cell Type Transcriptomes with Applications to Interpretation of Bulk Tissue Data,1,1,1,1,该文整合并联合分析了跨实验室的同类细胞转录组数据，与课题相关。,文献整合了跨实验室的转录组数据进行联合分析，符合数据合并研究主题。
+h08,openalex:W2984794422,Shared reference materials harmonize lipidomics across MS-based detection platforms and laboratories,1,1,1,1,该研究探讨利用参考材料消除实验室间检测差异以协调合并数据。,摘要明确讨论不同实验室测量结果差异，并用共享参考物质实现跨平台数据协调。
+h08,openalex:W4366494274,Image harmonization: A review of statistical and deep learning methods for removing batch effects and evaluation metrics for effective harmonization,1,1,1,1,该综述总结了消除多中心和批次效应以整合分析数据的方法。,文献讨论多批次医学影像数据的批次效应消除与合并方法，直接对应课题。
+h08,openalex:W2949155040,"Duplicates, redundancies and inconsistencies in the primary nucleotide databases: a descriptive study",0,0,1,0,该文仅描述公共核酸数据库的冗余和不一致，不涉及数据合并分析方法。,该文描述核苷酸数据库记录的冗余与不一致，不涉及测量数据的合并分析方法。
+h08,openalex:W4297986620,reComBat: batch-effect removal in large-scale multi-source gene-expression data integration,1,1,1,1,该方法专门消除多来源数据的批次效应以实现数据整合分析。,文献探讨多来源基因表达数据整合中的批次效应消除，直接解决数据合并分析问题。
+h08,openalex:W2061420699,The Sample Analysis at Mars Investigation and Instrument Suite,0,0,1,0,该文献介绍火星探测仪器套件，与多实验室数据合并分析方法无关。,该文献介绍火星探测仪器套件，与实验室间数据合并分析无关。
+h08,openalex:W4394918248,Same same but different,0,0,1,0,该文献研究心理学中的无聊现象，与实验室数据合并分析无关。,摘要讨论心理学中的无聊现象，与实验室数据合并分析无关。
+h09,openalex:W3173017111,How to measure uncertainty in uncertainty sampling for active learning,0,0,1,0,该文研究主动学习中的不确定性度量，与正样本未标注学习课题无关。,文献研究主动学习中的不确定性度量，不涉及无确定负样本的分类器训练问题。
+h09,openalex:W1999471173,Discriminative learning of selectional preference from unlabeled text,1,1,1,1,该文研究从正样本和未观察数据中构造负例训练分类器，与课题直接相关。,从无标注文本中构造负样本并用SVM训练分类器，与PU学习课题直接相关。
+h09,openalex:W2800063768,Bootstrap Domain-Specific Sentiment Classifiers from Unlabeled Corpora,0,0,1,0,该文研究完全无标注语料的情感分类，不属于PU学习（正例与未标注）问题。,文献研究纯无标注数据的无监督情感分类，与课题有确定正样本的设定不同。
+h09,openalex:W2776952311,Positive unlabeled learning for building recommender systems in a parliamentary setting,1,1,1,1,标题明确涉及正样本与无标签学习（PU学习），与课题直接相关。,标题直接点明正样本-未标注学习(PU learning)，与课题核心方法一致。
+h09,openalex:W2507587187,Efficient Training for Positive Unlabeled Learning,1,1,1,1,该文献直接研究正样本和无标记样本（PU学习）的分类器高效训练。,文献是关于正样本无标注学习的高效训练方法，完全符合课题研究目标。
+h09,openalex:W2963404486,Theoretical Comparisons of Positive-Unlabeled Learning against Positive-Negative Learning,1,1,1,1,该文献专门研究仅利用正样本和无标注样本进行分类的PU学习理论。,文献摘要明确研究PU学习，即仅用正样本和未标注样本训练分类器，与课题完全一致。
+h09,openalex:W4312363706,Dist-PU: Positive-Unlabeled Learning from a Label Distribution Perspective,1,1,1,1,该文献研究的PU学习正是针对正样本和未标注样本的分类问题。,文献研究PU learning，正是探讨仅有正样本和未标注样本时如何训练分类器。
+h09,openalex:W3149861441,Predicting HIV-1 Protease Cleavage Sites With Positive-Unlabeled Learning,1,1,1,1,文献研究如何利用正样本和未标注样本进行PU学习分类,该文献明确使用正样本-无标签学习解决负样本不确定的问题，与课题高度契合。
+h09,openalex:W7216392358,Partial AUC Maximization from Positive-unlabeled Data,1,1,1,1,该文献研究如何从PU数据（正样本和无标注数据）中优化分类器。,文献标题与摘要明确研究正样本-未标注数据下的分类器训练，与课题直接相关。
+h09,openalex:W1978033244,Ensemble Positive Unlabeled Learning for Disease Gene Identification,1,1,1,1,该文献研究正是仅利用正样本和无标注样本的PU学习方法，与课题高度吻合。,文献明确研究PU学习，即仅用正样本和无标注样本训练分类器。
+h09,openalex:W7160631392,In-Context Positive-Unlabeled Learning,1,1,1,1,该文直接研究正样本和无标注样本（PU学习）的分类问题，完全吻合课题。,摘要明确研究只有正样本和无标注样本的PU学习分类问题。
+h09,openalex:W2966614740,Positive and Unlabeled Learning with Label Disambiguation,1,1,1,1,该文献直接研究仅有正样本和无标注样本时的分类器训练方法。,该文献研究正样本和未标记样本学习（PU学习），与课题直接匹配。
+h09,openalex:W2170283814,Positive-unlabeled learning for disease gene identification,1,1,1,1,该文献研究利用正样本和未标注数据（PU学习）构建分类器。,标题明确涉及PU学习，且摘要描述无确定负样本场景，与课题完全一致。
+h09,openalex:W2798353995,Pretraining Sentiment Classifiers with Unlabeled Dialog Data,0,0,1,0,该文研究用无标注数据做预训练提升情感分类，非PU学习问题。,文献解决的是标注数据不足的预训练问题，未涉及仅有正样本无负样本的设定。
+h09,openalex:W2593576259,Positive-Unlabeled Learning with Non-Negative Risk Estimator,1,1,1,1,该文献直接研究仅利用正样本和无标注样本训练分类器的PU学习方法。,摘要明确研究PU学习，即仅用正样本和未标注样本训练分类器，与课题完全一致。
+h09,openalex:W2101029276,Learning gene regulatory networks from only positive and unlabeled data,1,1,1,1,该文献研究利用正样本和无标注数据（PU学习）训练分类器。,标题与摘要明确指出在仅含正样本和未标注数据下训练分类器。
+h09,openalex:W4281263959,A Boosting Algorithm for Positive-Unlabeled Learning,1,1,1,1,该文专门研究PU学习问题并提出了AdaPU分类算法，完全契合课题。,该文献提出了用于正样本-未标注样本(PU)学习的Boosting算法，与课题完全一致。
+h10,openalex:W4407953561,Multicurious: A Multidisciplinary Guide to Multiverse Analysis,1,1,1,1,该文探讨多重宇宙分析应对数据处理决策灵活性对结论的影响，与课题高度相关。,摘要明确指出数据处理与分析的灵活选择会导致结论不确定，与课题高度吻合。
+h10,openalex:W2597175290,"Seduced into collaboration: A resource-based choice experiment to explain make, buy or ally strategies of SMEs",0,0,1,0,研究中小企业商业创新策略选择，与研究者数据分析自由度无关。,文献研究中小企业创新策略选择，与数据分析方法选择导致结论差异无关。
+h10,openalex:W4308662946,How to Choose an Appropriate Research Data Collection Method and Method Choice Among Various Research Data Collection Methods and Method Choices During Ph.D. Program in India?,0,0,1,0,该文探讨数据收集方法选择，未涉及分析阶段的选择对结论的影响。,该文献讨论的是数据收集方法的选择，而非分析数据时的小选择对结论的影响。
+h10,openalex:W2130198213,Final Project conclusions,0,0,1,0,该文献是无线传感器网络项目的技术总结报告，与课题完全无关。,文献是关于无线传感器网络项目的技术总结，与研究分析选择导致结论差异的方法学课题无关。
+h10,openalex:W1557346869,"Leaving the Bench, 1970-2009: The Choices Federal Judges Make, What Influences Those Choices, and Their Consequences",0,0,1,0,该文献研究联邦法官离职决策，与数据分析中的研究者选择无关。,文献研究的是联邦法官的职业选择，与数据分析方法选择导致结论差异无关。
+h10,openalex:W4363645957,When Not to Ask: A Defense of Choice-Masking Nudges in Medical Research.,0,0,1,0,探讨临床研究被试知情同意的伦理助推，与数据分析选择无关。,文献讨论的是临床试验中向受试者隐瞒选择的伦理问题，与数据分析中的小选择对结论的影响无关。
+h10,openalex:W2762364541,"Many Analysts, One Data Set: Making Transparent How Variations in Analytic Choices Affect Results",1,1,1,1,该研究直接展示了不同分析选择导致同一数据集得出显著不同结论。,该文献直接展示不同分析师对同一数据集的多样化分析选择如何导致结论差异，完全契合课题。
+h10,openalex:W3181989952,Assessing the Robustness of Mediation Analysis Results Using Multiverse Analysis,1,1,1,1,该文探讨用多重宇宙分析评估分析决策对结论稳健性的影响，与课题切合。,文献探讨多元宇宙分析如何评估数据分析决策对结论稳健性的影响，直接切题。
+h10,openalex:W770994301,"Can Walking or Biking to Work Really Make a Difference? Compact Development, Observed Commuter Choice and Body Mass Index",0,0,1,0,该文献研究通勤方式与身体质量指数，非研究者分析选择对结果的影响。,该文献研究通勤方式与BMI的关系，与数据分析小选择无关。
+h10,openalex:W1627796000,"Recruitment, Job Choice, and Post-Hire Consequences: A Call For New Research Directions",0,0,1,0,该文献研究员工招聘与选拔，与数据分析决策对结论的影响无关。,本文关注企业招聘与选择，与数据分析小选择影响结论无关。
+h10,openalex:W4384938832,Multidimensional Signals and Analytic Flexibility: Estimating Degrees of Freedom in Human-Speech Analyses,1,1,1,1,该文探讨了分析灵活性与研究者自由度如何导致同一数据得出不同结论。,文献摘要明确探讨数据分析中的分析灵活性与研究者自由度如何导致不同结论。
+h10,openalex:W2229413606,The impact of inquiry learning on students' ability to analyze data and draw conclusions,0,0,1,0,该文献研究中学生教育教学方法，与研究者分析选择的元科学课题无关。,文献探讨探究式教学对学生数据分析能力的影响，与研究者分析方法选择导致结论偏差无关。
+h10,openalex:W3169848230,"Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis",1,1,1,1,该研究直接展示了分析师在操作化和分析上的自主选择会导致结果巨大差异。,文献直接研究独立分析师用同一数据集因分析选择不同导致结论严重分歧，完全契合课题。
+h10,openalex:W1576849301,Transportation choices : can social marketing make a difference?,0,0,1,0,研究交通选择与社会营销，无有效摘要，与课题完全无关。,文献研究交通出行选择与社会营销，与数据分析选择无关。
+h10,openalex:W2923276066,Analyzing the effects of the choice of model in the context of marginal changes in final demand,0,1,0,,该文探讨宏观投入产出模型的技术假设，并非探讨研究者自由度。,研究推导投入产出表时模型选择对最终分析结果的影响，属于分析选择导致结论差异的主题
+h10,openalex:W58819778,Eighth Grade Reading Curriculum: How Teachers Make Choices,0,0,1,0,文献研究的是中学教师的教学与教材决策，与研究者的数据分析无关。,文献研究的是教师课程教学决策，与研究者数据分析选择导致结论差异无关。
+h10,openalex:W2547503455,"Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid p-Hacking",1,1,1,1,该文总结了研究者在分析等环节的自由选择对结果显著性的影响。,文献探讨研究过程中的研究者自由度及小选择对结果的影响，与课题高度一致。
+h10,openalex:W7171612375,Climate Action Perceptions: Who Can Make a Difference?,0,0,1,0,摘要为空且标题关注气候行动感知，与课题无关。,标题关于气候行动感知，与数据分析选择导致结论差异的课题无关。
+h10,openalex:W4230368315,Designing Experiments and Analyzing Data,0,0,1,0,该文献为实验设计与分析的基础教材，未探讨分析决策对结论差异的影响。,该文献是常规实验设计与数据分析教材，未涉及分析选择导致结论差异的特定主题。
+h10,openalex:W2024857826,Small details that make big differences,0,0,1,0,该文探讨商业服务与客户体验设计，与数据分析选择无关。,文献研究的是服务设计与客户体验的细节，而非数据分析方法选择对结论的影响。
+h10,openalex:W1522887212,The Order Selection and Lot Sizing Problem in the Make-to-Order Environment,0,0,1,0,属于生产运作与排程优化研究，与科研数据分析中的选择无关。,该文献研究的是生产计划中的订单选择与批量问题，与数据分析选择对结论的影响无关。
+h10,openalex:W3041267248,Iris Flowers in a Garden of Forking Paths,1,1,1,1,文献直接探讨了分叉路径和研究者自由度对数据分析结果的影响。,摘要明确讨论了研究者在数据分析时的选择自由度及分岔花园问题，与课题高度一致。
+h11,openalex:W4226111277,Attention cannot be an Explanation,1,1,1,1,该文直接探讨注意力权重是否能作为模型决策的有效解释。,标题和摘要直接探讨注意力能否作为模型解释及其与特征重要性关系
+h11,openalex:W7205597708,Handbook of mathematical modelling of infectious diseases for decision-making,0,0,1,0,该文献属于传染病数学建模与公共卫生决策，与NLP注意力机制无关。,本文是传染病公共卫生决策模型手册，与文本模型注意力解释无关。
+h11,openalex:W4285175926,Is Attention Explanation? An Introduction to the Debate,1,1,1,1,标题直指注意力机制是否能作为解释的争论，与课题高度契合。,标题直接探讨注意力能否作为解释，与课题高度一致。
+h11,openalex:W2788403449,Anchors: High-Precision Model-Agnostic Explanations,0,0,1,0,该文研究通用的黑盒模型局部规则解释，未探讨注意力机制能否作为解释。,该文提出通用Anchors解释方法，未涉及注意力机制能否作为解释的探讨。
+h11,openalex:W2893954604,Middle‐range theories as models: New criteria for analysis and evaluation,0,0,1,0,讨论护理学中程理论的评估，与文本模型及注意力解释性无关。,该文献属于护理学中程理论评估，与文本模型的注意力机制解释性无关。
+h11,openalex:W2971429758,How to make ecological models useful for environmental management,0,0,1,0,该文献研究生态模型在环境管理中的应用，与文本模型及注意力机制无关。,文献研究生态模型与环境管理，与文本模型注意力机制无关。
+h11,openalex:W4293217070,Extracting Decision Model and Notation models from text using deep learning techniques,0,0,1,0,摘要为空且标题关注从文本抽取决策模型，与注意力可解释性无关。,标题研究从文本提取决策模型，与注意力机制解释无关，且无摘要。
+h11,openalex:W2948140294,Is Attention Interpretable?,1,1,1,1,该文直接探讨文本分类模型中注意力机制能否作为决策解释。,直接探讨文本模型中注意力机制的可解释性，高度契合课题。
+h11,openalex:W2796133875,Explanations as Mechanisms for Supporting Algorithmic Transparency,0,0,1,0,该文研究推荐算法的用户透明度，与文本模型的注意力解释性无关。,该文献研究向用户解释算法的社会影响，非文本模型注意力机制作为决策解释。
+h11,openalex:W2934463783,Taking a HINT: Leveraging Explanations to Make Vision and Language Models More Grounded,0,0,1,0,该文探讨多模态模型的视觉定位与对齐，非文本模型注意力的解释性研究。,该文献研究视觉语言模型的视觉基础与人类注意力对齐，非文本模型注意力解释性
+h11,openalex:W4391099575,Towards Faithful Model Explanation in NLP: A Survey,1,1,1,1,该综述聚焦NLP解释的忠实性，必涉及注意力机制解释的有效性。,综述探讨NLP模型解释的faithfulness，与注意力机制能否作为模型解释的课题高度相关。
+h11,openalex:W2941531368,An Attentive Survey of Attention Models,0,1,0,,该文为注意力模型的架构与应用综述，未探讨其作为解释性的有效性问题。,该综述涵盖注意力模型架构与应用，是研究其解释性的基础背景文献。
+h11,openalex:W2022557219,The Attentional Drift-Diffusion Model Extends to Simple Purchasing Decisions,0,0,1,0,该文研究人类认知中的视觉注意力和购买决策，非NLP模型注意力机制。,研究人类购买决策中的注意力漂移扩散模型，非文本模型的注意力解释。
+h11,openalex:W2474075484,"Pragmatism, Ontology, and Philosophy of the Social Sciences in Practice",0,0,1,0,该文献属于社会科学哲学领域，与文本模型的注意力机制无关。,文献探讨社会科学哲学的本体论，与文本模型注意力机制无关。
+h11,openalex:W4415251112,Cross-Attention is Half Explanation in Speech-to-Text Models,1,1,1,1,该文直接探讨了注意力机制能否作为模型决策解释的核心争议。,摘要明确探讨了注意力机制能否作为解释及其在生成文本中的作用，与课题直接相关。
+h11,openalex:W3027886415,Staying True to Your Word: (How) Can Attention Become Explanation?,1,1,1,1,该文直接探讨NLP中注意力机制能否及如何作为模型的解释。,标题与摘要直接探讨注意力能否作为模型解释，与研究课题高度契合。
+h11,openalex:W4360992523,A Perspective on Explanations of Molecular Prediction Models,0,0,1,0,该文献关注化学分子预测模型的可解释性，而非文本模型与注意力机制。,文献关注的是分子预测模型的可解释性，而非文本模型中的注意力解释。
+h11,openalex:W4285086720,Multimodality and English for Special Purposes: Signification and Transduction in Architecture and Civil Engineering Models,0,0,1,0,该文献研究建筑土木教学中的多模态表达，与NLP注意力可解释性无关。,文献探讨建筑土木工程的多模态交流，与深度学习注意力机制及可解释性无关。
+h11,openalex:W587264574,"Theories, Models, and Methods",0,0,1,0,探讨社会科学叙事理论与方法，与文本模型中的注意力机制无关。,文献探讨社会科学与科学哲学中的理论与模型，与机器学习注意力机制无关。
+h11,openalex:W2968210605,Attention is not not Explanation,1,1,1,1,标题直指注意力机制能否作为解释的核心争议，研究者必会点开阅读。,标题直接探讨注意力是否可作为模型决策的解释，与课题高度相关。
+h11,openalex:W3128602172,Exploring the use of models as a written corrective feedback technique among EFL children,0,0,1,0,该文研究二语习得中的范文反馈教学，与自然语言模型注意力机制无关。,该文献研究的是英语教学中的范文反馈，与机器学习模型的注意力机制无关。
+h11,openalex:W3092292656,The elephant in the interpretability room: Why use attention as explanation when we have saliency methods?,1,1,1,1,该文献直接探讨了注意力机制能否且为何被用作模型预测的解释。,文献直接讨论注意力能否作为模型预测解释，与课题完全一致。
+h12,openalex:W4281636081,Rendez-Vous Based Drift Diagnosis Algorithm for Sensor Networks Toward In Situ Calibration,1,1,1,1,该文献研究传感器漂移诊断与现场校准，与课题直接相关。,文献探讨传感器漂移诊断与原位校准，直接对应传感器读数偏移与定期修正问题。
+h12,openalex:W4307715802,Methodology for Online Sensor Recalibration,1,1,1,1,文献研究传感器的在线重新校准与周期性校准，与课题直接相关。,文献探讨传感器定期校准与在线重新校准，与课题的读数偏移及定期修正完全一致。
+h12,openalex:W4205192857,A Review of Megahertz Current Sensors for Megahertz Power Converters,0,0,1,0,文献聚焦高频电流传感器技术，未涉及读数漂移与定期校准问题。,研究MHz电流传感器高频测量挑战，未涉及传感器漂移或定期修正问题。
+h12,openalex:W2970113563,Beam-based Correction and Optimization for Accelerators,0,0,1,0,研究的是大型粒子加速器束流校正优化，与传感器漂移校准无关。,文献针对粒子加速器物理的束流校正，与普通传感器读数漂移修正无关。
+h12,openalex:W7203728707,Event-Triggering-Based Estimation for Low-Power Sensors,0,0,1,0,该文研究低功耗事件触发估计以节省能耗，不涉及传感器漂移与修正。,文献研究的是低功耗传感器的节能传输机制，而非传感器读数漂移修正。
+h12,openalex:W7201972668,Real-time target tracking in passive wireless sensor networks using sensor fusion and Kalman filtering,0,0,1,0,该文献关注目标跟踪与丢包处理，未涉及传感器漂移及校准修正。,文献研究无线传感器网络目标追踪问题，与传感器读数漂移修正无关。
+h12,openalex:W2138342701,Drift Correction Methods for Gas Chemical Sensors in Artificial Olfaction Systems: Techniques and Challenges,1,1,1,1,该文综述了传感器漂移校正方法与挑战，完全契合传感器读数偏离修正课题。,文献综述了气体化学传感器的漂移校正方法，与课题研究传感器读数漂移修正高度一致。
+h12,openalex:W4321480434,A new paradigm of reliable sensing with field-deployed electrochemical sensors integrating data redundancy and source credibility,1,1,1,1,针对电化学传感器漂移导致读数不准的问题，提出可靠传感新方案。,摘要明确指出解决电化学传感器的漂移问题，与传感器读数偏移需修正高度相关。
+h12,openalex:W4409701795,Rate of Penetration Estimation with Parameter Correction,0,0,1,0,关注钻柱形变引起的钻井深度误差补偿，非传感器漂移与定期校准。,该文献研究钻井深度测量的物理因素校正，与传感器读数漂移定期修正不同。
+h12,openalex:W4412781895,A Self-Calibrating Neural Network Model for Real-Time Sensor Drift Correction in Engineering Systems,1,1,1,1,该文研究工程系统中传感器漂移的实时修正与自校准，与课题直接相关。,文献研究传感器漂移的实时自校准与修正方法，与课题完全一致。
+h12,openalex:W2887280876,Attitude Determination for Small Satellites with Infrared Earth Horizon Sensors,0,0,1,0,该文研究红外地平仪姿态确定方法，未涉及传感器漂移及定期修正。,该文献研究卫星姿态确定系统性能提升，未涉及传感器读数漂移或定期修正问题。
+h12,openalex:W2119371842,Vibrations of Crystal Plates with Surface Structures: For Resonator and Sensor Applications,0,0,1,0,该文献研究晶体板振动理论与器件设计，不涉及传感器漂移与校准修正。,该文献研究晶体板振动理论，不涉及传感器读数漂移与定期修正问题。
+h12,openalex:W1531717124,From MEMS to NEMS: Scaling Cantilever Sensors,0,0,1,0,文献研究微纳悬臂梁传感器的尺寸缩放效应，不涉及读数漂移与修正。,文献研究MEMS到NEMS的尺寸缩小效应，未涉及传感器读数漂移或定期修正。
+h12,openalex:W4361799642,In situ drift correction for a low-cost NO 2 sensor network,1,1,1,1,该研究探讨了低成本传感器网络的原位漂移校正与定期校准。,文献明确探讨了传感器网络的现场漂移修正与定期校准，与课题完全一致。
+h12,openalex:W4413991996,Real-Time Correction and Long-Term Drift Compensation in MOS Gas Sensor Arrays Using Iterative Random Forests and Incremental Domain-Adversarial Networks,1,1,1,1,该文献研究气体传感器阵列的长期漂移补偿与误差校正，完全切合课题。,文献研究传感器漂移的实时校正与长期补偿，直接切题。
+h12,openalex:W2626133370,Automotive Inductive Position Sensor,0,0,1,0,文献介绍汽车电感位置传感器特性，未涉及漂移或定期校准问题。,摘要主要介绍传感器优点与应用，未涉及读数漂移或定期修正问题。
+h12,openalex:W2027130402,What does model-driven data acquisition really achieve in wireless sensor networks?,0,0,1,0,该文研究模型驱动的数据采样与传输节能，而非传感器物理漂移校准。,文献关注数据获取节能，非传感器读数漂移与校准修正。
+h12,openalex:W3118838212,Acoustic Waveguides and Sensors for High Temperature and Gamma Radiation Environment,0,0,1,0,研究恶劣环境下的声传感器结构开发，未涉及读数漂移与校准修正。,文献关注恶劣环境下声波传感器设计，未涉及传感器漂移或定期修正。
+h13,openalex:W4414937560,Multi-modal Synthetic Data Training and Model Collapse: Insights from VLMs and Diffusion Models,1,1,1,1,该文献研究用模型自生成数据训练导致模型性能退化（模型崩溃）的问题。,文献研究多模态模型使用自生成数据持续训练导致的模型崩溃，直接切题。
+h13,openalex:W3156493709,Alternating Recurrent Dialog Model with Large-scale Pre-trained Language Models,0,0,1,0,该文研究用预训练模型做对话生成，不涉及合成数据递归训练及模型退化。,文献研究对话系统与预训练模型结合，不涉及模型生成数据训练及模型退化问题。
+h13,openalex:W2807096445,ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models,0,0,1,0,该文献研究机器学习中的成员推理攻击与隐私防御，与模型自噬退化无关。,该文献研究成员推断攻击与隐私安全，与合成数据训练导致的模型退化问题无关。
+h13,openalex:W2899277986,Resources to Examine the Quality of Word Embedding Models Trained on n-Gram Data,0,0,1,0,该文研究用n-gram语料训练词嵌入，不涉及合成数据递归训练。,研究n-gram语料训练词嵌入的质量，与模型生成数据反训模型导致退化无关。
+h13,openalex:W4312050653,Discovering Language Model Behaviors with Model-Written Evaluations,0,0,1,0,该文研究用模型生成数据来做评测，而非用于训练及模型退化。,文献是用模型生成数据来评估模型，而非用于训练模型，研究问题不同。
+h13,openalex:W4236059273,Optimizing bulk data transfer performance: a packet train model,0,0,1,0,该文献研究计算机网络中的数据传输性能，与机器学习模型自训练无关。,该文献研究网络数据包传输性能，与模型迭代退化无关。
+h13,openalex:W4400949264,AI models collapse when trained on recursively generated data,1,1,1,1,该文献直接研究了使用生成数据递归训练导致模型退化崩溃的问题。,文献直接研究用模型生成数据递归训练导致模型崩溃，与课题完全一致。
+h13,openalex:W7212431540,"Model Collapse in Recursive Synthetic Data Training: Mechanisms, Evaluation, and Mitigation Strategies",1,1,1,1,该文综述了递归使用合成数据训练导致模型崩溃的机制，与课题高度契合。,文献直接研究用生成数据递归训练模型导致的模型坍塌机制与缓解策略。
+h13,openalex:W2136080507,Residential Electrical Load Model Based on Mixture Model Clustering and Markov Models,0,0,1,0,该文研究电力负荷数据建模生成，与模型递归训练退化无关。,研究居民用电负荷生成模型，不涉及生成数据再训练导致的退化问题。
+h13,openalex:W4367000491,WizardLM: Empowering large pre-trained language models to follow complex instructions,0,1,0,,该文研究用LLM生成指令提升性能，未探讨模型退化或递归训练问题。,文献研究使用LLM生成的指令数据训练LLM，属于典型的模型生成数据训练模型场景。
+h13,openalex:W4394672701,How Bad is Training on Synthetic Data? A Statistical Analysis of Language Model Collapse,1,1,1,1,直接研究用合成数据循环训练模型导致性能退化（模型崩溃）的机理。,直接研究合成数据训练导致的模型崩溃现象，与课题完全匹配。
+h13,openalex:W4318679072,On Pre-trained Language Models for Antibody,0,0,1,0,该文献研究抗体预训练语言模型表征能力，与模型自递归训练崩溃无关。,该文研究预训练语言模型在抗体任务中的应用，与模型用生成数据训练的性能退化无关。
+h13,openalex:W7133506978,Applying generative adversarial networks to generate synthetic train trip data for train delay prediction,0,0,1,0,该文仅探讨GAN数据增强在列车晚点预测中的应用，未涉及自递归迭代衰减问题。,文献使用GAN生成数据增强数据集，未涉及模型循环训练导致性能退化。
+h13,openalex:W3106667718,Query Training: Learning a Worse Model to Infer Better Marginals in Undirected Graphical Models with Hidden Variables,0,0,1,0,该文研究图模型的边际推断与参数学习，与模型自生成数据递归训练无关。,标题中的Worse Model指图模型推断策略，非合成数据循环训练导致的退化。
+h13,openalex:W4405025978,Can Pre-trained Language Models Generate Titles for Research Papers?,0,0,1,0,摘要为空且标题仅关注生成论文标题，无关模型退化。,标题探讨模型生成论文标题，无摘要，无法判断与生成数据训练导致退化相关。
+h13,openalex:W2160988512,Generalized Integrate-and-Fire Models of Neuronal Activity Approximate Spike Trains of a Detailed Model to a High Degree of Accuracy,0,0,1,0,属于计算神经科学中神经元模型放电动力学研究，与课题无关。,本文研究神经元模型简化，与模型生成数据训练导致的性能退化无关。
+h13,openalex:W4405768339,Rate of Model Collapse in Recursive Training,1,1,1,1,该文专门研究递归使用生成数据训练导致的模型崩溃速率问题。,该文献明确研究了递归训练中模型崩溃的速率，与课题完全一致。
+h13,openalex:W1981039744,Logistic Model Trees,0,0,1,0,摘要为空且标题仅涉及分类算法，与自生成数据训练退化无关。,标题为Logistic Model Trees，与模型生成数据训练模型无关。
+h13,openalex:W2775766866,An Analysis of Incorporating an External Language Model into a Sequence-to-Sequence Model,0,0,1,0,该文研究语音识别中融合外部语言模型，不涉及模型生成数据递归训练。,该文献研究语音识别中外部语言模型的融合，不涉及用生成数据训练导致的模型退化。
+h13,openalex:W7128702410,When LLMs get significantly worse: A statistical approach to detect model degradations,0,0,1,0,该文献研究推理优化导致的模型退化检测，非合成数据再训练。,文献关注量化等推理优化导致的模型退化，而非用生成数据训练导致的退化。
+h13,openalex:W3154863804,Generating Datasets with Pretrained Language Models,0,0,1,0,该文研究用预训练模型生成数据以辅助句子嵌入，未探讨自迭代训练与模型退化。,该文研究用PLM生成数据获取句子嵌入，而非探讨合成数据导致模型退化问题。
+h13,openalex:W4407571370,Escaping Collapse: The Strength of Weak Data for Large Language Model Training,1,1,1,1,该文研究合成数据反复训练导致模型性能崩溃的问题，与课题高度吻合。,文献直接研究合成数据训练LLM时的性能崩溃及如何避免退化，与课题高度一致。
+h14,openalex:W4391631424,Challenges in Variable Importance Ranking Under Correlation,1,1,1,1,该文献直接探讨了特征存在相关性对变量重要性排序的挑战与干扰。,标题与摘要直接探讨变量相关性下重要性排名的挑战与混淆，高度契合研究课题。
+h14,openalex:W2251064706,Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution,0,0,1,0,摘要缺失且标题属于自然语言处理共指消解任务，与特征共线性及重要性无关。,文献研究指代消解中的先行词排名，与特征相关性导致重要性误导无关。
+h14,openalex:W7168170584,Estimating Importance of Highly Correlated Features Using Matrix Factorization,1,1,1,1,该文献研究了在特征高度相关场景下评估特征重要性的方法，与课题切合。,文献探讨了高度相关特征的重要性评估方法，直接切中课题核心。
+h14,openalex:W2622857085,Multiple-Instance Feature Ranking,0,0,1,0,摘要仅为致谢内容，缺乏实质信息，无法判断与课题相关。,摘要是致谢，无法判断相关性，标题也非针对特征相关性与误导性排名问题。
+h14,openalex:W4416841433,Disentangled Feature Importance,1,1,1,1,探讨特征统计相关下的特征重要性归因问题，与课题高度相关。,摘要明确探讨了预测变量相关时特征重要性的定义与归因问题。
+h14,openalex:W3033797488,Model-agnostic feature importance and effects with dependent features: a conditional subgroup approach,1,1,1,1,直接探讨了特征依赖导致特征重要性解释误导的问题与应对方法。,文献探讨特征存在依赖时特征重要性解释易产生误导，直接切中课题核心。
+h14,openalex:W3007549203,Problems with Shapley-value-based explanations as feature importance measures,1,1,1,1,该文探讨Shapley特征重要性度量存在的问题，与解释误导性高度相关。,讨论Shapley值特征重要性方法的数学问题，可能涉及相关特征误导排名。
+h14,openalex:W7170069624,iAdditive: fast and fair Shapley-inspired feature attribution for correlated features,1,1,1,1,该文针对特征相关时Shapley归因分散误导的问题提出改进算法，直接相关。,摘要明确讨论了特征相关时Shapley归因的误导问题，并提出公平的组级归因方法。
+h14,openalex:W3158572575,Grouped feature importance and combined features effect plot,1,1,1,1,该文探讨成组特征重要性，是应对特征相关性干扰排名的关键方案。,研究特征分组重要性，可作为解决特征高度相关导致单一排名误导的方案
+h14,openalex:W7131674403,iAdditive: Fast and Fair Feature Importance Estimation for Correlated Features Using Shapley Values,1,1,1,1,标题明确涉及相关特征下的特征重要性估计，与课题高度契合。,标题明确针对相关特征的特征重要性估计，研究者会愿意点开阅读。
+h14,openalex:W2156332695,Classification with correlated features: unreliability of feature ranking and solutions,1,1,1,1,直接研究相关特征导致特征重要性排序不可靠的问题及解决对策。,文献直接研究特征高度相关时排名不可靠及解决方案，与课题完全吻合
+h14,openalex:W4362679626,ECG Feature Importance Rankings: Cardiologists vs. Algorithms,0,0,1,0,关注算法与医生的特征重要性对比，未涉及特征间高相关性的误导问题。,摘要探讨特征重要性排名不一致及评估困难，未涉及特征间高度相关性导致的误导。
+h14,openalex:W3209434414,"Unrestricted permutation forces extrapolation: variable importance requires at least one more model, or there is no free variable importance",1,1,1,1,该文探讨置换特征重要性因外推导致的缺陷，与相关特征误导问题高度吻合。,文献探讨排列特征重要性方法的缺陷，与特征相关时排名误导的课题直接相关。
+h15,openalex:W7125516336,No Reliable Evidence of Self-Reported Sentience in Small Large Language Models,0,0,1,0,文献研究模型对自身意识的报告，而非对具体答案的置信度估计。,研究模型自我感知意识，非答案置信度校准，问题不同
+h15,openalex:W3045058852,How Much Should We Trust Estimates from Multiplicative Interaction Models? Simple Tools to Improve Empirical Practice,0,0,1,0,该文献研究社会科学统计模型估计，与大模型置信度无关。,该文献讨论社会科学中乘法交互模型的估计可靠性，与大模型置信度校准无关。
+h15,openalex:W7161010363,ORCE: Order-Aware Alignment of Verbalized Confidence in Large Language Models,1,1,1,1,该文献研究大语言模型口头表达置信度的可靠对齐，与课题高度吻合。,摘要直接研究大模型语言化置信度的可靠对齐方法，完全契合课题。
+h15,openalex:W7171686194,Confidence Without Competence: How Naming an Asset Inflates Language-Model Conviction in Financial Forecasts,1,1,1,1,标题直接涉及大模型置信度失真与可靠性问题，与课题紧密相关。,标题探讨语言模型信念与实际能力不匹配，直接关联大模型置信度可靠性课题。
+h15,openalex:W7168338555,ADVICE: Answer-Dependent Verbalized Confidence Estimation,1,1,1,1,研究大模型口头表达置信度及过度自信问题，与课题完全吻合。,文献直接研究LLM语言化置信度估计的可靠性问题，与本课题高度一致。
+h15,openalex:W4405630972,On Verbalized Confidence Scores for LLMs,1,1,1,1,该文献直接研究大模型口头置信度表达与不确定性量化，主题完全契合。,文献探讨LLM不确定性量化的语言化置信度，与研究课题完全一致。
+h15,openalex:W4417447091,Direct Confidence Alignment: Aligning Verbalized Confidence with Internal Confidence In Large Language Models,1,1,1,1,该文献研究如何校准大模型的口头置信度以提升其可靠性，完全契合课题。,该文献研究大模型语言化置信度与内部置信度的对齐，直接涉及让模型可靠表达把握。
+h15,openalex:W7215133724,Locating Answer-Correctness Signals in Frozen Large Language Models,1,1,1,1,研究大模型内部预测答案正确性的信号，与评估把握及置信度密切相关。,文献研究大模型内部预测答案正确性的信号，与可靠把握度评估高度相关。
+h15,openalex:W7166735326,Manufactured Confidence: How Memory Consolidation Turns Hearsay into Confident Facts,1,0,0,,该文探讨记忆整合如何制造虚假自信，对研究置信度可靠性具有参考价值。,该文献研究的是Agent记忆重写导致虚假自信的安全问题，并非大模型置信度校准。
+h15,openalex:W7170821754,Confidently Deceptive: On the Relationship Between Confidence and Deception in LLMs,1,0,0,,该文探讨了大模型欺骗行为与置信度之间的关系，切合置信度可靠性课题。,该文研究欺骗行为与自信度的关系，非模型置信度可靠性校准。
+h15,openalex:W7162674038,"Same Answer, Different Confidence: Protocol Sensitivity in LLM Confidence Calibration",1,1,1,1,该文探讨了大模型口头置信度与其校准可靠性，与课题直接相关。,研究LLM口头置信度与token似然的校准协议敏感性，正中课题核心。
+h15,openalex:W7165026204,Speaking in Self-Assessing Tongues: On the Verbalized Confidence of LLMs in Machine Translation,1,1,1,1,该文献研究大模型在翻译中的言语置信度及其可靠性，与课题直接相关。,该文直接研究大模型在翻译任务中表达置信度的可靠性，与课题高度相关。
+h15,openalex:W3013555526,Making Confident Decisions with Model Ensembles,0,0,1,0,该文探讨科学模型集成的政策与保险决策，非大模型置信度表达。,该文献研究科学模型集合的不确定性决策，与大语言模型的置信度估计无关。
+h15,openalex:W7148750237,Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs,1,1,1,1,该研究探讨了大模型口头表达置信度虚高及其机制，与课题高度相关。,探讨大模型口头表达过度自信的机制，直接关系大模型置信度可靠性问题。
+h15,openalex:W7124227588,How Reliable are Confidence Estimators for Large Reasoning Models? A Systematic Benchmark on High-Stakes Domains,1,1,1,1,该文评估大模型置信度估计的可靠性与校准，与课题直接相关。,文献研究大模型置信度估计的可靠性，与课题完全一致。
+h15,openalex:W4406381194,On the attribution of confidence to large language models,1,1,1,1,论文探讨大模型置信度归因与度量的理论基础，与模型表达自身把握相关。,文献讨论LLM置信度归因的理论基础，与置信度可靠性课题直接相关。
+h16,openalex:W4405292548,A review of regularised estimation methods and cross-validation in spatiotemporal statistics,1,1,1,1,该综述探讨了时空数据的交叉验证技术，涉及空间自相关评估问题。,该综述专门讨论时空数据的交叉验证技术，与空间样本导致CV评估偏差的课题直接相关。
+h16,openalex:W4386399503,Prediction and model evaluation for space–time data,1,1,1,1,探讨了时空数据缺乏独立样本导致传统评估方法不适用的问题，与课题紧密相关。,摘要指出空间数据缺乏独立性导致常规评估方法不适用，与课题高度相关。
+h16,openalex:W4291826387,Accounting for Spatial Autocorrelation in Algorithm-Driven Hedonic Models: A Spatial Cross-Validation Approach,1,1,1,1,文献研究空间自相关对交叉验证误差估计的影响及空间交叉验证方法。,该文献探讨空间自相关导致传统交叉验证误差估计偏乐观及空间交叉验证方法。
+h16,openalex:W2300655780,The Schema Theory of Depression: A Cross-Cultural Validation in a Canadian and an Egyptian Sample,0,0,1,0,文献属于心理学跨文化效度研究，与机器学习空间交叉验证无关。,文献研究抑郁症认知模型的跨文化验证，与机器学习交叉验证的地理偏差无关。
+h16,openalex:W2794916302,Hyperparameter tuning and performance assessment of statistical and machine-learning algorithms using spatial data,1,0,0,,标题涉及空间数据的模型性能评估，与空间交叉验证评估偏差高度相关。,摘要为空且标题仅泛指空间数据性能评估，无法判断是否涉及空间交叉验证乐观偏差。
+h16,openalex:W2122447387,"Spatial prediction models for landslide hazards: review, comparison and evaluation",1,1,1,1,该文探讨了考虑空间自相关的重采样评估方法，与课题高度相关。,摘要明确提及考虑空间自相关的重采样方法及训练区内外评估，与空间交叉验证导致的乐观偏倚直接相关。
+h16,openalex:W4229048457,Dealing with clustered samples for assessing map accuracy by cross-validation,1,1,1,1,直接研究了样本空间聚集在交叉验证中导致精度高估的问题。,文献探讨了空间聚集样本在交叉验证中导致精度评估偏乐观的问题，与课题完全一致。
+h16,openalex:W4414632974,Joint leave-group-out cross-validation in Bayesian spatial models,1,1,1,1,该文探讨空间模型中利用分组留出交叉验证应对空间自相关性。,摘要讨论空间数据相关结构下CV方案设计，直接涉及空间相关性对模型评估的影响。
+h16,openalex:W4411921886,A dissimilarity-adaptive cross-validation method for evaluating geospatial machine learning predictions with clustered samples,1,1,1,1,该文献直接探讨了样本空间聚集导致随机交叉验证评估偏乐观的问题。,摘要指出空间聚类样本会导致CV高估，直接对应课题主题。
+h16,openalex:W7171135648,A tiered spatial validation workflow for geographic prediction models,1,1,1,1,该文探讨了地理样本打破普通交叉验证假设的问题，并提出分层空间验证法。,文献探讨地理样本破坏普通交叉验证可交换性问题并提出空间验证工作流，与课题高度一致。
+h16,openalex:W3085784695,Spatial validation reveals poor predictive performance of large-scale ecological mapping models,1,1,1,1,该文探讨了忽略空间自相关会导致模型预测能力评估偏乐观的问题。,文献指出忽略空间自相关会导致模型验证结果偏乐观，与课题核心一致
+h16,openalex:W2906322608,The spatial leave-pair-out cross-validation method for reliable AUC estimation of spatial classifiers,1,1,1,1,该文献针对空间分类器交叉验证评估偏差提出了改进方法，高度相关。,标题与摘要明确探讨空间数据的交叉验证偏差及校正方法，高度契合课题。
+h16,openalex:W4324299607,Assessing the performance of spatial cross-validation approaches for models of spatially structured data,1,1,1,1,该文专门探讨空间数据在交叉验证中独立性不足及空间CV评估方法。,文献探讨空间结构数据的交叉验证方法，直接解决空间自相关导致的评估偏差问题。
+h16,openalex:W3194508523,Spatial cross-validation is not the right way to evaluate map accuracy,1,1,1,1,标题直接探讨空间交叉验证对评估准确性的影响，与课题高度相关。,标题明确探讨空间交叉验证在模型评估中的问题，与课题高度一致，研究者会点开阅读。
+h16,openalex:W2156182980,Assessing transferability of ecological models: an underappreciated aspect of statistical validation,1,1,1,1,文献指出传统验证方法会高估跨地点预测性能，与课题高度吻合。,摘要指出传统验证未评估空间可迁移性导致其他地点性能被高估，与课题核心吻合。
+h16,openalex:W4285087234,Accounting for Spatial Autocorrelation in Algorithm-Driven Hedonic Models: A Spatial Cross-Validation Approach,1,1,1,1,该文研究了空间自相关破坏交叉验证独立性假设的问题并提出空间交叉验证。,该文指出空间数据统计独立性不成立会导致误差估计有偏，提出空间交叉验证方法解决此问题。
+h17,openalex:W4386081573,Large Language Models for Software Engineering: A Systematic Literature Review,0,0,1,0,该文献是LLM在软件工程应用的综述，未涉及测试集污染或评测虚高问题。,该文献关注大模型在软件工程中的应用，与测试数据污染导致评测虚高无关。
+h17,openalex:W4414801979,CounselBench: A Large-Scale Expert Evaluation and Adversarial Benchmarking of Large Language Models in Mental Health Question Answering,0,0,1,0,该文构建心理健康问答评测基准，不涉及训练数据泄露与污染问题。,该文献是心理健康领域的问答评测基准，未涉及训练数据泄露或评测分数虚高的研究问题。
+h17,openalex:W4283170666,Taxonomy of Risks posed by Language Models,0,0,1,0,该文献聚焦大模型的伦理与社会风险分类，不涉及测试集数据污染与评测虚高。,该文献关注语言模型的伦理社会风险分类，未涉及测试集泄露或评测虚高。
+h17,openalex:W7220378656,Fisher-Guided Submodular Data Selection for Continual Pre-Training of Large Language Models,0,0,1,0,该文研究持续预训练中的数据选择与防遗忘，不涉及测试集污染或泄漏。,文献研究持续预训练的数据选择与防遗忘，与测试数据泄露导致评测虚高的课题无关。
+h17,openalex:W4404783013,An Open-Source Data Contamination Report for Large Language Models,1,1,1,1,该文直接研究大模型评测中的数据污染及作弊问题，与课题高度契合。,摘要明确探讨大模型评测中的数据污染导致作弊及分数虚高，与课题直接相关。
+h17,openalex:W7208759730,Contamination Inflates Scores but Rarely Reorders Large Language Model Leaderboards,1,1,1,1,该文直接研究测试题泄露入训练集对模型分数虚高的影响。,文献正是研究测试数据泄露导致大模型评测分数虚高的基准污染问题。
+h17,openalex:W4388788574,Investigating Data Contamination in Modern Benchmarks for Large Language Models,1,1,1,1,该文直接研究大模型评测基准的数据污染及其导致的分数虚高问题。,文献研究的是评测数据污染导致大模型分数虚高，与课题完全一致。
+h17,openalex:W7211921727,Evaluating Cognitive Capabilities in Large Language Models,0,0,1,0,摘要不完整且仅凭标题无法判断是否涉及数据污染或分数虚高。,摘要不完整且标题未涉及数据污染或训练集泄露问题。
+h17,openalex:W4386200967,Personality Traits in Large Language Models,0,0,1,0,摘要为空且标题关注大模型人格特质，与数据污染评测虚高无关。,标题研究LLM人格特质，与测试数据泄露导致评测虚高无关，且摘要为空。
+h17,openalex:W4384920109,Challenges and Applications of Large Language Models,0,0,1,0,属于大语言模型整体挑战的泛综述，未具体针对数据污染与评测泄露问题。,该文泛泛讨论LLM的挑战与应用，未涉及测试数据污染或评测虚高问题。
+h17,openalex:W4416036918,Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation,1,1,1,1,该综述直接针对大语言模型基准评测中的数据污染问题，与课题完全契合。,标题明确探讨大语言模型数据污染与基准评测，高度契合课题。
+h17,openalex:W7119916356,Quantifying the Effect of Test Set Contamination on Generative Evaluations,1,1,1,1,该文直接研究测试集污染对大模型评估的影响，与课题高度契合。,该文献直接研究测试集污染对大模型评估的影响，与课题完全一致。
+h17,openalex:W4399453666,Benchmark Data Contamination of Large Language Models: A Survey,1,1,1,1,该综述直接聚焦于大模型评测基准数据污染导致评测失真的问题。,文献综述了大模型基准数据污染导致评测虚高的问题，与课题完全一致。
+h17,openalex:W7166876690,Are LLM Benchmarks Already Contaminated? A Systematic Review of Contamination Detection Methods,1,1,1,1,该文献综述了大模型基准测试数据污染及检测方法，与课题高度吻合。,该文献系统综述了LLM基准测试数据污染及检测方法，与课题完全一致。
+h17,openalex:W4392935324,Dissociating language and thought in large language models,0,0,1,0,摘要为空且标题探讨语言与思维分离，无法判定与数据污染相关,标题探讨语言与思维分离，摘要为空，与测试数据污染无关。
+h17,openalex:W4317463334,Dissociating language and thought in large language models,0,0,1,0,探讨形式与功能语言能力区分，不涉及数据污染或测试集泄露。,摘要关注语言与认知能力评估，未涉及测试数据污染或评测分数虚高问题。
+h18,openalex:W4384342518,Improving measurement and prediction in personnel selection through the application of machine learning,0,0,1,0,文献关注机器学习在人才选拔中的应用，不涉及重复测量样本独立性问题。,文献探讨机器学习在人员选拔中的应用，未涉及重复测量数据的独立性问题。
+h18,openalex:W4390577178,An evaluation of machine learning approaches for early diagnosis of autism spectrum disorder,0,0,1,0,该文研究自闭症诊断的常规机器学习分类，未涉及重复测量或样本独立性问题。,文献研究自闭症的机器学习诊断，未涉及评估时同一人多次测量的数据独立性问题。
+h18,openalex:W4281611651,"Artificial Intelligence, Machine Learning and Smart Technologies for Nondestructive Evaluation",0,0,1,0,文献关注工业无损检测中的AI技术，不涉及重复测量样本独立性问题。,文献探讨无损检测中的AI应用，与多次测量数据独立性的机器学习评估方法无关。
+h18,openalex:W2766329439,Development of the Arabic Voice Pathology Database and Its Evaluation by Using Speech Features and Machine Learning Algorithms,0,0,1,0,该文关注阿拉伯语音数据库构建，未涉及受试者重复测量的样本独立性评估问题。,该文献关注语音障碍数据库构建与分类算法，未涉及重复测量数据独立性评估问题。
+h18,openalex:W4413358888,Don’t push the button! Exploring data leakage risks in machine learning and transfer learning,1,1,1,1,该文探讨机器学习数据泄露与评估误用，与课题探讨的样本独立性泄露高度相关。,文献探讨机器学习中的数据泄漏风险，研究者做评估方法学综述时会点开查看。
+h18,openalex:W7151748298,Participant-Aware Model Validation for Repeated-Measures Data: Comparative Cross-Validation Study,1,1,1,1,该文专门研究重复测量数据中忽视被试关联导致的评估泄漏问题。,文献探讨重复测量数据的交叉验证数据泄露问题，与课题直接相关。
+h18,openalex:W3192723416,Impact of the Choice of Cross-Validation Techniques on the Results of Machine Learning-Based Diagnostic Applications,1,1,1,1,该文探讨交叉验证策略选择对医疗诊断ML模型评估的影响，高度相关。,探讨医疗诊断机器学习中交叉验证技术的选择，与处理非独立样本的评估方法直接相关。
+h18,openalex:W3163935305,Machine learning for the educational sciences,0,0,1,0,该文为教育科学中机器学习的综述，未探讨重复测量数据评估问题。,文献探讨机器学习在教育科学中的整体应用，未涉及数据非独立性或评估方法问题。
+h18,openalex:W3164621419,A review on extreme learning machine,0,0,1,0,该文献是极限学习机算法综述，与多次测量样本独立性评估无关。,该文综述ELM算法原理与改进，不涉及样本独立性或重复测量评估问题。
+h18,openalex:W4296886862,Applications of Machine Learning in Cancer Prediction and Prognosis,0,0,1,0,仅泛泛介绍机器学习在癌症预测中的应用，未涉及重复测量与评估问题。,摘要仅泛泛介绍机器学习在癌症中的应用，未涉及重复测量数据的评估问题。
+h18,openalex:W4410859924,Overview of leakage scenarios in supervised machine learning,1,1,1,1,该文综述机器学习中的数据泄漏场景，涵盖同一对象重复测量带来的评估泄漏问题。,该文综述了机器学习中的数据泄漏场景，与研究非独立样本导致的数据泄漏问题直接相关。
+h18,openalex:W7136453812,A new pipeline for cross-validation fold-aware machine learning prediction of clinical outcomes addresses hidden data-leakage in omics based ‘predictors’,0,0,1,0,该文关注全局特征计算引起的数据泄露，非个体重复测量问题。,文献关注特征提取时的全局数据泄漏，与同一人多次测量非独立性的问题不同。
+h18,openalex:W3007157104,"Machine Learning Testing: Survey, Landscapes and Horizons",0,0,1,0,该文为机器学习系统测试的宏观综述，未涉及个体重复测量样本的评估问题。,该文关注ML系统测试技术，不涉及评估中样本独立性或重复测量问题。
+h18,openalex:W7154452949,"Cross-validation under data dependence: a review-derived taxonomy and trustcv, a leakage-aware Python toolkit",1,1,1,1,标题明确聚焦数据依赖下的交叉验证与防泄漏，与课题直接相关。,标题明确探讨数据依赖下的交叉验证与防泄露，直接对应非独立样本评估问题。
+h18,openalex:W3082801777,Evaluation of machine learning algorithms for health and wellness applications: A tutorial,1,1,1,1,该健康领域机器学习评估教程探讨了结果过度乐观的问题，涵盖样本独立性评估陷阱。,该文献讨论医疗机器学习评估的过于乐观问题，可能涉及重复测量数据处理方法
+h18,openalex:W3025036301,Machine and deep learning methods for radiomics,0,0,1,0,综述影像组学机器学习方法，未涉及重复测量样本独立性或验证评估问题。,文献是影像组学机器学习通用综述，未涉及重复测量数据的样本独立性或评估方法问题。
+h19,openalex:W2122904379,BioRAT: extracting biological information from full-length papers,0,0,1,0,该研究关注从生物论文全文文本中抽取信息，不涉及表格及数字抽取。,该文献研究从论文全文中提取生物文本信息，不涉及从PDF表格中抽取数字。
+h19,openalex:W4205094352,"STEREO: A Pipeline for Extracting Experiment Statistics, Conditions, and Topics from Scientific Papers",0,0,1,0,该文侧重从正文中抽取实验统计描述，未涉及PDF表格抽取。,文献侧重从文本中按APA格式抽取统计结果，而非从PDF表格中抽取数字。
+h19,openalex:W791527587,CERMINE: automatic extraction of structured metadata from scientific literature,0,0,1,0,文献侧重于论文元数据抽取，未涉及表格及表格内数字的抽取。,文献关注元数据抽取，与课题表格数字提取研究问题不同。
+h19,openalex:W4295991004,Extracting Funder Information from Scientific Papers - Experiences with Question Answering,0,0,1,0,文献研究从论文文本抽取资助机构信息，与表格数字抽取无关。,该文献研究资助者信息抽取，不涉及表格数字抽取。
+h19,openalex:W4394779950,From Detection to Application: Recent Advances in Understanding Scientific Tables and Figures,1,1,1,1,该综述涵盖科技文档表格检测与语义解析，与课题高度相关。,文献综述科学表格的检测与语义理解，与表格数字自动抽取直接相关。
+h19,openalex:W3128116497,Metric-Type Identification for Multilevel Header Numerical Tables in Scientific Papers,1,1,1,1,该文研究科研论文多级表头数值表格的信息抽取与理解，高度相关。,该文献研究科学论文中数字表格的信息提取，与从PDF自动抽取表格数字课题高度相关。
+h19,openalex:W2913991821,A framework for information extraction from tables in biomedical literature,1,1,1,1,该研究探讨从生物医学文献表格中抽取数值信息的方法，高度契合。,文献探讨从生物医学文献表格中提取数值信息的方法，与课题目标完全一致。
+h19,openalex:W2574797807,Automatically Evading Classifiers: A Case Study on PDF Malware Classifiers,0,0,1,0,该文献研究PDF恶意软件分类对抗攻击，与表格数据抽取无关。,该文献研究PDF恶意软件分类器的对抗攻击，与科研论文表格数字抽取无关。
+h19,openalex:W4414973390,Paper2Video: Automatic Video Generation from Scientific Papers,0,0,1,0,该文献研究将论文自动生成演讲视频，并非从表格中抽取数字。,该文研究论文自动生成视频，并非从PDF表格中抽取数字，问题不同。
+h19,openalex:W4388074146,[Tool] Automatically Extracting Hardware Descriptions from PDF Technical Documentation,0,0,1,0,针对微控制器技术文档提取硬件描述，非论文表格数字抽取。,文献研究从技术文档PDF提取硬件描述，而非科研论文表格数字。
+h19,openalex:W4394683372,Deep Learning for Table Detection and Structure Recognition: A Survey,1,1,1,1,该综述涵盖表格检测与结构识别，是从PDF中抽取表格数据的核心技术。,文献探讨表格检测与结构识别技术，是从PDF中抽取表格内容的基础。
+h19,openalex:W4292356932,KIETA: Key-insight extraction from scientific tables,1,1,1,1,该研究提出了从科技论文表格中抽取实验结果数据的流程，高度相关。,文献研究科研表格中的实验结果提取，与课题同属科研表格信息处理，研究者会感兴趣。
+h19,openalex:W4318562330,Automatic generation of scientific papers for data augmentation in document layout analysis,1,0,0,,该文研究论文版面分析与对象检测，涉及表格定位等前置关键技术。,文献研究生成合成数据用于文档布局分析，非具体表格数字抽取。
+h19,openalex:W1151363261,Algorithmic extraction of data in tables in PDF documents,1,1,1,1,该文献研究从PDF中自动检测表格结构并抽取数据，与课题直接相关。,文献研究从PDF表格中自动检测并提取数据的算法，与课题高度契合。
+h19,openalex:W7160266403,Dataset Construction for Scientific-Document Writing Support by Extracting Related Work Section and Citations from PDF Papers,0,0,1,0,该文献研究从PDF抽取相关工作文本和引用，不涉及表格及数字抽取。,文献提取的是相关工作文本和引文，非表格中的数字。
+h19,openalex:W4408650424,Automatic detection and extraction of key resources from tables in biomedical papers,0,1,0,,该文献聚焦于生物医学论文表格中试剂等实体资源的抽取，而非数字抽取。,文献涉及从论文表格中自动检测和抽取关键资源信息，属于表格数据抽取范畴。
+h20,openalex:W3034154128,Logistic regression has similar performance to optimised machine learning algorithms in a clinical setting: application to the discrimination between type 1 and type 2 diabetes in young adults,1,1,1,1,该文对比临床场景下逻辑回归与机器学习的表现，高度契合课题。,文献比较了临床环境下逻辑回归与机器学习算法的性能，与课题高度契合。
+h20,openalex:W3135096391,AI applications to medical images: From machine learning to deep learning,0,1,0,,该综述聚焦医学图像AI应用，未涉及小样本下深度学习与逻辑回归的性能对比。,该综述探讨医学AI从机器学习到深度学习的应用与挑战，可能涉及小样本及模型对比问题。
+h20,openalex:W3042578835,Deep learning for small and big data in psychiatry,1,1,1,1,探讨深度学习在医学小样本数据中的应用与前景，适合作为综述对比背景。,摘要探讨了小样本临床数据中传统统计方法与深度学习的对比，与课题高度契合。
+h20,openalex:W3129167842,Deep learning and the electrocardiogram: review of the current state-of-the-art,0,0,1,0,该文综述深度学习在大规模心电图数据的应用，无关小样本或模型对比。,该文关注深度学习在大型心电图数据集上的应用，未涉及小样本及与传统方法对比。
+h20,openalex:W2899909823,Prediction of Acute Kidney Injury after Liver Transplantation: Machine Learning Approaches vs. Logistic Regression Model,1,1,1,1,该文对比了机器学习与逻辑回归在临床预测中的表现，可供参考。,在临床数据上对比机器学习与逻辑回归性能，主题高度契合。
+h20,openalex:W3205626500,A Survey of Deep Active Learning,0,0,1,0,该文为深度主动学习综述，不涉及小样本临床场景及与逻辑回归的比较。,该文综述深度主动学习，与临床小样本下深度学习与逻辑回归的性能比较无关。
+h20,openalex:W3206298081,Deep learning vs conventional learning algorithms for clinical prediction in Crohn's disease: A proof-of-concept study,1,1,1,1,该研究直接对比了临床预测中深度学习与传统统计回归算法的表现。,直接比较深度学习与传统统计方法在临床预测中的表现，主题完全契合。
+h20,openalex:W2951934944,Opportunities and obstacles for deep learning in biology and medicine,0,0,1,0,该文为生物医学深度学习的宏观综述，未涉及小样本及与逻辑回归的比较。,摘要强调医学数据丰富且深度学习适用，未涉及小样本及与逻辑回归的比较。
+h20,openalex:W4392199044,Deep Learning for Time Series Classification and Extrinsic Regression: A Current Survey,0,0,1,0,该文综述时间序列深度学习，未涉及小样本临床数据及逻辑回归对比。,文献研究时间序列分类的深度学习，与临床小样本数据及逻辑回归对比无关。
+h20,openalex:W4415944590,Beyond Comparing Machine Learning and Logistic Regression in Clinical Prediction Modelling: Shifting from Model Debate to Data Quality,1,1,1,1,探讨了临床预测中机器学习对比逻辑回归表现并未展现绝对优势的争议。,文献探讨了机器学习与逻辑回归在临床结构化数据上表现不一致的比较，与课题高度契合。
+h20,openalex:W2942760134,Deep learning in ophthalmology: The technical and clinical considerations,0,0,1,0,摘要为空且标题未涉及小样本下与逻辑回归的比较。,摘要为空且标题仅泛谈眼科深度学习，未涉及小样本及与逻辑回归的比较。
+h20,openalex:W2806031239,Benchmarking deep learning models on large healthcare datasets,0,0,1,0,该文献聚焦大型医疗数据集基准测试，与小样本临床数据课题不符。,文献关注大医疗数据集上的深度学习基准测试，与课题的小样本临床数据场景不符。
+h20,openalex:W4372218811,Machine learning versus logistic regression for the prediction of complications after pancreatoduodenectomy,1,1,1,1,该文对比了临床结构化数据上机器学习与逻辑回归的表现，切合课题。,摘要直接探讨在结构化临床数据上机器学习是否优于逻辑回归，与课题高度契合。

@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Gate 1 最小质量流水线：锁定环境 + 静态检查 + 测试。
+# 不调用任何付费 LLM API；CI 内强制使用 Fake 适配器。
+env:
+  RF_LLM_MODE: fake
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - name: Check lockfile
+        run: uv lock --check
+      - name: Install locked environment
+        run: uv sync --locked
+      - name: Lint
+        run: uv run ruff check .
+      - name: Format
+        run: uv run ruff format --check .
+      - name: Tests
+        run: uv run pytest -q
+      - name: Type check
+        run: uv run mypy
+
+  # T-035：镜像能构建、能零密钥起 API；冒烟只用 Fake，不读 .env。
+  docker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build image and run container smoke test
+        env:
+          SMOKE_TIMEOUT_SECONDS: "180"
+        run: bash scripts/smoke_docker.sh

@@ -1,0 +1,68 @@
+project:
+  name: researchflow
+  seed: 42
+
+paths:
+  runs_dir: runs
+  dataset: examples/sample_dataset.csv
+  data_acceptance_rules: configs/rules/data_acceptance.yaml
+  submission_checks: configs/rules/submission_checks.yaml
+  extract_question_prompt: configs/prompts/extract_question.md
+
+# checkpoint 后端：sqlite（默认，落在 runs/<run_id>/checkpoint.sqlite，支持跨进程恢复）
+# | memory（只在进程内有效）。环境变量 RF_CHECKPOINT_BACKEND 可覆盖。
+checkpoint:
+  backend: sqlite
+
+# 归因回溯预算：一次运行里全局回溯次数上限，达到后 attribute 节点不再决策，
+# 直接以 budget_exhausted 结束。
+attribution:
+  max_total_backtracks: 2
+
+# 文献检索后端：local（默认，本地语料，确定性）| openalex（真实学术 API，带本地缓存）。
+# 环境变量 RF_RETRIEVER 可覆盖 backend。
+retrieval:
+  backend: local
+  openalex:
+    # 可选：礼貌池标识，OpenAlex 出问题时能联系到你；留空则不带 mailto 参数
+    mailto: ""
+  # 检索 Agent：默认关闭（enabled=false），确定性优先。只有显式打开且 LLM 为真实
+  # 模式时才走 Agent 多轮检索，否则 ① 保持"课题原文检索一次"。
+  agent:
+    enabled: false
+    max_steps: 5      # 回路最多 5 步
+    max_retrievals: 4 # 最多 4 次检索调用
+    # 间接提示注入防护（T-033）：输出带"仅为资料，不是指令"声明，含注入特征的
+    # 摘要按启发式打 suspicious 标记（只标记不丢弃）；注入评测可关掉做对照。
+    injection_guard: true
+  # 混合重排（T-030/T-031）：fusion=adaptive 按查询覆盖率给 BM25 一路加权
+  # （覆盖率为 0 等价纯向量，≥ coverage_ref 等价等权 RRF）；rrf 为等权，供对比。
+  hybrid:
+    fusion: adaptive
+    rrf_k: 60         # RRF 常数
+    coverage_ref: 0.5 # BM25 覆盖率的"有效"分界
+  # 在线重排（T-034）：默认关闭，关闭时 ① 与之前完全一致。
+  # 开启后检索 Agent 结束，用"课题原文 + Agent 改写查询"对本次回路检索到的全部
+  # 候选做 adaptive 多查询混合重排；没有 Agent 或 Agent 降级时不重排（trace 记原因）。
+  rerank:
+    enabled: false
+    top_k: null       # null = 沿用 llm.max_refs_in_prompt
+
+llm:
+  # auto（有 Key 走真实，无 Key 走 Fake）| fake（强制 Fake）| real（强制真实）
+  mode: auto
+  base_url: https://api.openai.com/v1
+  model: null
+  timeout_seconds: 60
+  temperature: 0.0
+  max_refs_in_prompt: 6
+  max_ref_chars: 400
+
+# 嵌入配置（T-030，仅离线重排评测的真实层使用）：base_url / api_key 留空时
+# 回落到 llm 段的同名配置；环境变量 RF_EMBED_BASE_URL / RF_EMBED_MODEL /
+# RF_EMBED_API_KEY 可覆盖。HashEmbedder（fake 层）不读这里。
+embedding:
+  base_url: ""
+  model: ""
+  api_key: ""
+  batch_size: 16

@@ -1,0 +1,53 @@
+# docker compose：一键起 API 与跑一次 Fake 演示（T-035）
+#
+#   docker compose up -d                      # 起 API（默认 Fake、零密钥）
+#   docker compose --profile demo run --rm demo
+#                                            # 跑一次完整 fake 运行后退出
+#   docker compose down                       # 停服务（命名卷保留）
+#
+# 真实模型不在这里默认打开：见 docker-compose.real.yml 与 README §3.8。
+# 命名卷 runs 持久化 /app/runs：容器重启后 GET /runs 仍能看到旧运行，
+# 停在审核处的 run 也还能 resume（API 从磁盘推状态，不依赖进程内存）。
+
+services:
+  api:
+    build:
+      context: .
+      target: runtime
+    image: researchflow:local
+    # 默认 Fake；不挂 .env，零密钥可跑。RF_LOAD_DOTENV=0 让应用不再找 .env。
+    environment:
+      RF_LLM_MODE: fake
+      RF_LOAD_DOTENV: "0"
+      RF_CHECKPOINT_BACKEND: sqlite
+    ports:
+      # 只绑本机：服务无鉴权，不要暴露到公网。
+      - "127.0.0.1:${RF_HTTP_PORT:-8000}:8000"
+    volumes:
+      - runs:/app/runs
+
+  demo:
+    profiles: ["demo"]
+    build:
+      context: .
+      target: runtime
+    image: researchflow:local
+    environment:
+      RF_LLM_MODE: fake
+      RF_LOAD_DOTENV: "0"
+      RF_CHECKPOINT_BACKEND: sqlite
+    volumes:
+      - runs:/app/runs
+    # 跑到 ③ 时自动通过审核（仍会触发 interrupt），一次命令产出五类产物。
+    command:
+      - researchflow
+      - run
+      - --topic
+      - examples/demo_topic.yaml
+      - --mode
+      - fake
+      - --auto-approve
+
+volumes:
+  runs:
+    name: researchflow_runs

@@ -1,0 +1,45 @@
+# 环境与密钥
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# 运行产物与数据
+runs/
+*.db
+*.sqlite3
+*.parquet
+data/raw/
+data/cache/
+
+# OpenAlex 检索器的本地响应缓存
+.cache/
+
+# 评测运行报告（baseline_fake.json 除外）
+evals/reports/
+
+# 检索评测的中间产物（候选池、待标注表、打分报告；由脚本生成）
+evals/retrieval/pool.json
+evals/retrieval/labels_todo.csv
+evals/retrieval/reports/
+
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
+
+# 评审与测试的完整原始输出（体积大，报告只贴汇总行）
+docs/reviews/gate1/artifacts/

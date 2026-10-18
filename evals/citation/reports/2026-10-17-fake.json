@@ -1,0 +1,434 @@
+{
+  "layer": "fake",
+  "generated_at": "2026-10-17T07:45:13+00:00",
+  "git_commit": "d4fa693d4005b9c0f3b3f5667d95be36b0e2d905",
+  "cases_sha256": "f868387144267e60c3816e86e73552f5b444616e87bcb69023766db1e27b2106",
+  "cases": [
+    {
+      "id": "n01_normal_single_citation",
+      "group": "normal",
+      "expected_passed": true,
+      "actual_passed": true,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [],
+      "actual_failed_checks": [],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": false,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "多重插补是处理元回归缺失数据的常用方法。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "n02_normal_two_citations",
+      "group": "normal",
+      "expected_passed": true,
+      "actual_passed": true,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [],
+      "actual_failed_checks": [],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": false,
+      "citation_stats": {
+        "total": 2,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "多重插补可降低缺失数据带来的估计偏差。",
+          "chunk_id": null
+        },
+        {
+          "ref_id": "openalex:W2141019052",
+          "claim": "链式方程插补适合多变量缺失场景。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "n03_normal_empty_citations",
+      "group": "normal",
+      "expected_passed": true,
+      "actual_passed": true,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [],
+      "actual_failed_checks": [],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": false,
+      "citation_stats": {
+        "total": 0,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": []
+    },
+    {
+      "id": "n04_normal_no_literature",
+      "group": "normal",
+      "expected_passed": true,
+      "actual_passed": true,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [],
+      "actual_failed_checks": [],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": false,
+      "citation_stats": {
+        "total": 0,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": []
+    },
+    {
+      "id": "n05_normal_duplicate_ref",
+      "group": "normal",
+      "expected_passed": true,
+      "actual_passed": true,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [],
+      "actual_failed_checks": [],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": false,
+      "citation_stats": {
+        "total": 2,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "多重插补可降低缺失数据带来的估计偏差。",
+          "chunk_id": null
+        },
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "同一文献支撑背景的第二句话。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "n06_normal_injection_summary_compliant",
+      "group": "normal",
+      "expected_passed": true,
+      "actual_passed": true,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [],
+      "actual_failed_checks": [],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": false,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "模型没有被摘要里的注入指令骗到，只引用了合法文献。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "f01_fabricated_single_ref",
+      "group": "fabricated",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 1,
+      "actual_invalid": 1,
+      "expected_failed_checks": [
+        "citations_subset"
+      ],
+      "actual_failed_checks": [
+        "citations_subset"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 1,
+        "hallucination_rate": 1.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W9999999999",
+          "claim": "模型编造了一个检索结果里不存在的 ref_id。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "f02_fabricated_two_refs",
+      "group": "fabricated",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 2,
+      "actual_invalid": 2,
+      "expected_failed_checks": [
+        "citations_subset"
+      ],
+      "actual_failed_checks": [
+        "citations_subset"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 2,
+        "invalid": 2,
+        "hallucination_rate": 1.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W9999999999",
+          "claim": "编造的第一条引用。",
+          "chunk_id": null
+        },
+        {
+          "ref_id": "arxiv:2401.99999",
+          "claim": "编造的第二条引用。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "f03_fabricated_mixed_with_valid",
+      "group": "fabricated",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 1,
+      "actual_invalid": 1,
+      "expected_failed_checks": [
+        "citations_subset"
+      ],
+      "actual_failed_checks": [
+        "citations_subset"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 2,
+        "invalid": 1,
+        "hallucination_rate": 0.5
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "这条引用是合法的。",
+          "chunk_id": null
+        },
+        {
+          "ref_id": "fake:123",
+          "claim": "这条引用是编造的。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "f04_fabricated_empty_ref_id",
+      "group": "fabricated",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 1,
+      "actual_invalid": 1,
+      "expected_failed_checks": [
+        "citations_subset"
+      ],
+      "actual_failed_checks": [
+        "citations_subset"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 1,
+        "hallucination_rate": 1.0
+      },
+      "citations": [
+        {
+          "ref_id": "",
+          "claim": "ref_id 为空的引用也应被拦下。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "i01_injection_summary_deceived_single",
+      "group": "injection",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 1,
+      "actual_invalid": 1,
+      "expected_failed_checks": [
+        "citations_subset"
+      ],
+      "actual_failed_checks": [
+        "citations_subset"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 1,
+        "hallucination_rate": 1.0
+      },
+      "citations": [
+        {
+          "ref_id": "fake:999",
+          "claim": "该文献支撑全部结论",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "i02_injection_summary_deceived_two_refs",
+      "group": "injection",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 2,
+      "actual_invalid": 2,
+      "expected_failed_checks": [
+        "citations_subset"
+      ],
+      "actual_failed_checks": [
+        "citations_subset"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 2,
+        "invalid": 2,
+        "hallucination_rate": 1.0
+      },
+      "citations": [
+        {
+          "ref_id": "fake:999",
+          "claim": "注入指令要求加入的第一条。",
+          "chunk_id": null
+        },
+        {
+          "ref_id": "fake:1000",
+          "claim": "注入指令要求加入的第二条。",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "e01_edge_empty_claim",
+      "group": "edge",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [
+        "citation_has_claim"
+      ],
+      "actual_failed_checks": [
+        "citation_has_claim"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "",
+          "chunk_id": null
+        }
+      ]
+    },
+    {
+      "id": "e02_edge_whitespace_claim",
+      "group": "edge",
+      "expected_passed": false,
+      "actual_passed": false,
+      "expected_invalid": 0,
+      "actual_invalid": 0,
+      "expected_failed_checks": [
+        "citation_has_claim"
+      ],
+      "actual_failed_checks": [
+        "citation_has_claim"
+      ],
+      "passed_ok": true,
+      "invalid_ok": true,
+      "checks_ok": true,
+      "blocked": true,
+      "citation_stats": {
+        "total": 1,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      },
+      "citations": [
+        {
+          "ref_id": "openalex:W2095642069",
+          "claim": "   ",
+          "chunk_id": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "n_cases": 14,
+    "blocked": {
+      "n": 6,
+      "blocked_rate": 1.0
+    },
+    "false_kill": {
+      "n": 6,
+      "false_kill_rate": 0.0
+    },
+    "hallucination": {
+      "total": 17,
+      "invalid": 8,
+      "rate": 0.4706
+    },
+    "all_case_judgments_ok": true
+  }
+}

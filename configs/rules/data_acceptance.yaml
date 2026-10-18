@@ -1,0 +1,9 @@
+# ③ 数据准入硬阈值
+required_columns: [x1, x2, x3, y]
+max_missing_rate: 0.05
+max_dropped_ratio: 0.5
+min_rows: 30
+ranges:
+  x1: { min: 0, max: 10 }
+  x2: { min: -10, max: 10 }
+  x3: { min: 0, max: 5 }

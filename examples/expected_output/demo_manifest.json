@@ -1,0 +1,237 @@
+{
+  "run_id": "<run_id>",
+  "run_dir": "runs/<run_id>",
+  "status": "ok",
+  "created_at": null,
+  "topic": "科研数据质量与线性回归可复现性评估",
+  "llm_mode": "fake",
+  "step_status": {
+    "retrieval": "ok",
+    "extraction": "ok",
+    "data_prepare": "ok",
+    "data_review": "ok",
+    "compute": "ok",
+    "chart": "ok",
+    "writing": "ok",
+    "validation": "ok"
+  },
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 0,
+      "error": null,
+      "llm_usage": null
+    },
+    {
+      "step": "extraction",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 0,
+      "error": null,
+      "llm_usage": {"prompt_tokens": 469, "completion_tokens": 180, "total_tokens": 649, "attempts": 1}
+    },
+    {
+      "step": "data_prepare",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 3,
+      "error": null,
+      "llm_usage": null
+    },
+    {
+      "step": "data_review",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 3,
+      "error": null,
+      "llm_usage": null
+    },
+    {
+      "step": "compute",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 3,
+      "error": null,
+      "llm_usage": null
+    },
+    {
+      "step": "chart",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 48,
+      "error": null,
+      "llm_usage": null
+    },
+    {
+      "step": "writing",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 0,
+      "error": null,
+      "llm_usage": {"prompt_tokens": 202, "completion_tokens": 293, "total_tokens": 495, "attempts": 1}
+    },
+    {
+      "step": "validation",
+      "status": "ok",
+      "attempt": 1,
+      "started_at": "<iso8601>",
+      "duration_ms": 0,
+      "error": null,
+      "llm_usage": null
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "cleaned_data",
+      "path": "cleaned_candidate.csv",
+      "checksum": "<sha256>",
+      "produced_by": "data_review",
+      "attempt": 1
+    },
+    {
+      "kind": "compute_result",
+      "path": "compute_result.json",
+      "checksum": "<sha256>",
+      "produced_by": "compute",
+      "attempt": 1
+    },
+    {
+      "kind": "chart",
+      "path": "chart.png",
+      "checksum": "<sha256>",
+      "produced_by": "chart",
+      "attempt": 1
+    },
+    {
+      "kind": "draft",
+      "path": "draft.md",
+      "checksum": "<sha256>",
+      "produced_by": "writing",
+      "attempt": 1
+    },
+    {
+      "kind": "validation_report",
+      "path": "validation_report.json",
+      "checksum": "<sha256>",
+      "produced_by": "validation",
+      "attempt": 1
+    }
+  ],
+  "review_log": [
+    {
+      "stage": "data_review",
+      "decision": "approve",
+      "reason": "auto-approve（脚本化复现，非人工决策）",
+      "reviewer": "cli",
+      "timestamp": "2026-09-30T05:27:22",
+      "subject_checksum": "<sha256: 候选文件 cleaned_candidate.csv>",
+      "raw_checksum": "<sha256: 原始 examples/sample_dataset.csv>",
+      "attempt": 1
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "metric:r2",
+        "passed": true,
+        "detail": "r2=0.9978",
+        "owner_step": "compute"
+      },
+      {
+        "name": "section:背景",
+        "passed": true,
+        "detail": "已包含",
+        "owner_step": "writing"
+      },
+      {
+        "name": "section:方法",
+        "passed": true,
+        "detail": "已包含",
+        "owner_step": "writing"
+      },
+      {
+        "name": "section:结果",
+        "passed": true,
+        "detail": "已包含",
+        "owner_step": "writing"
+      },
+      {
+        "name": "section:局限",
+        "passed": true,
+        "detail": "已包含",
+        "owner_step": "writing"
+      },
+      {
+        "name": "draft_min_chars",
+        "passed": true,
+        "detail": "528 / 200",
+        "owner_step": "writing"
+      },
+      {
+        "name": "artifact:cleaned_data",
+        "passed": true,
+        "detail": "存在",
+        "owner_step": "data_review"
+      },
+      {
+        "name": "artifact:chart",
+        "passed": true,
+        "detail": "存在",
+        "owner_step": "chart"
+      },
+      {
+        "name": "artifact:draft",
+        "passed": true,
+        "detail": "存在",
+        "owner_step": "writing"
+      },
+      {
+        "name": "forbidden_tokens",
+        "passed": true,
+        "detail": "无",
+        "owner_step": "writing"
+      },
+      {
+        "name": "min_rows",
+        "passed": true,
+        "detail": "58 / 30",
+        "owner_step": "data_prepare"
+      }
+    ],
+    "summary": "全部硬规则通过"
+  },
+  "error": null,
+  "termination": null,
+  "terminal_reason": "",
+  "compute_summary": "linear_regression 在 58 行样本上完成拟合，测试集 R²=0.9978，RMSE=0.3289",
+  "llm_usage": {
+    "calls": [
+      {
+        "step": "extraction",
+        "response_model": "ResearchQuestion",
+        "usage": {"prompt_tokens": 469, "completion_tokens": 180, "total_tokens": 649, "attempts": 1}
+      },
+      {
+        "step": "writing",
+        "response_model": "DraftContent",
+        "usage": {"prompt_tokens": 202, "completion_tokens": 293, "total_tokens": 495, "attempts": 1}
+      }
+    ],
+    "by_step": {
+      "extraction": {"prompt_tokens": 469, "completion_tokens": 180, "total_tokens": 649, "attempts": 1},
+      "writing": {"prompt_tokens": 202, "completion_tokens": 293, "total_tokens": 495, "attempts": 1}
+    },
+    "total": {"prompt_tokens": 671, "completion_tokens": 473, "total_tokens": 1144, "attempts": 2}
+  },
+  "note": "脱敏基线：run_id 与 checksum 使用占位符，用于核对产物结构与硬规则结果"
+}

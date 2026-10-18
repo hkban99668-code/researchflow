@@ -1,0 +1,218 @@
+{
+  "layer": "real",
+  "llm_scope": "writing",
+  "model": "deepseek/deepseek-v4-flash",
+  "generated_at": "2026-10-16T22:52:53+00:00",
+  "git_commit": "81961f74e5ba50b6056f9088c076a8998d459512",
+  "pool_sha256": "6a4e56f25c4015b6f00f3bfc505a394973f3cf975f4ab7fb233923b2aa844814",
+  "cases": [
+    {
+      "id": "t01",
+      "topic": "缺失值插补方法对回归系数估计偏差的影响",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t02",
+      "topic": "线性回归中离群值的检测与稳健估计",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t03",
+      "topic": "计算研究的可复现性与工作流工具",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t04",
+      "topic": "对数变换在偏态响应变量回归中的应用",
+      "n_refs": 5,
+      "citation_stats": {
+        "total": 5,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t05",
+      "topic": "特征选择对小样本回归模型泛化能力的影响",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t06",
+      "topic": "交叉验证与留出法在模型评估中的偏差比较",
+      "n_refs": 5,
+      "citation_stats": {
+        "total": 5,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t07",
+      "topic": "深度学习医学影像分割的不确定性估计",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 7,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t08",
+      "topic": "大语言模型工具调用与智能体框架",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t09",
+      "topic": "检索增强生成中的引用忠实度评估",
+      "n_refs": 5,
+      "citation_stats": {
+        "total": 5,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t10",
+      "topic": "大语言模型作为评委的偏差与校准",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t11",
+      "topic": "人机协同的数据标注质量控制",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t12",
+      "topic": "数据质量评估框架与指标",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t13",
+      "topic": "自动化机器学习中的超参数优化方法",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t14",
+      "topic": "时间序列异常检测方法综述",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t15",
+      "topic": "因果推断中的倾向得分匹配方法",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 7,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t16",
+      "topic": "统计显著性检验中的 p 值操纵与多重比较",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t17",
+      "topic": "科学文献检索中的查询扩展与改写",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t18",
+      "topic": "稠密向量检索与 BM25 的混合检索效果",
+      "n_refs": 5,
+      "citation_stats": {
+        "total": 5,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t19",
+      "topic": "机器学习模型的可解释性方法 SHAP 与 LIME 比较",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    },
+    {
+      "id": "t20",
+      "topic": "小样本条件下回归模型的不确定性量化",
+      "n_refs": 6,
+      "citation_stats": {
+        "total": 6,
+        "invalid": 0,
+        "hallucination_rate": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "n_topics": 20,
+    "hallucination": {
+      "total": 118,
+      "invalid": 0,
+      "rate": 0.0
+    }
+  }
+}

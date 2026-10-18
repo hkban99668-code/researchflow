@@ -1,0 +1,1157 @@
+{
+  "layer": "real",
+  "llm_scope": "agent",
+  "split": "test",
+  "model": "qwen3.7-flash-2026-07-15",
+  "extra_body": {},
+  "repeat": 1,
+  "max_total_tokens": 300000,
+  "budget_exhausted_early": false,
+  "generated_at": "2026-10-10T14:02:14+00:00",
+  "git_commit": "eb165acfcb936e6cdf93aad9f5be0a069117552f",
+  "cases_sha256": "a9c7fc05faf925297fa3006b5bcf849ec4df4ae073e2290cb299b4e135b623ce",
+  "cases": [
+    {
+      "id": "F-CLEAN-01",
+      "fault": "clean",
+      "group": "clean",
+      "split": "test",
+      "expected": {
+        "termination": "ok",
+        "error_code": null,
+        "target_step": null
+      },
+      "actual_termination": "ok",
+      "termination_ok": true,
+      "decision": null,
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": false,
+      "recovered": true,
+      "repeat_correct": 0,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-CLEAN-02",
+      "fault": "clean",
+      "group": "clean",
+      "split": "test",
+      "expected": {
+        "termination": "ok",
+        "error_code": null,
+        "target_step": null
+      },
+      "actual_termination": "ok",
+      "termination_ok": true,
+      "decision": null,
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": false,
+      "recovered": true,
+      "repeat_correct": 0,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-DUP-01",
+      "fault": "duplicate_rows",
+      "group": "clean",
+      "split": "test",
+      "expected": {
+        "termination": "ok",
+        "error_code": null,
+        "target_step": null
+      },
+      "actual_termination": "ok",
+      "termination_ok": true,
+      "decision": null,
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": false,
+      "recovered": true,
+      "repeat_correct": 0,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-DUP-02",
+      "fault": "duplicate_rows",
+      "group": "clean",
+      "split": "test",
+      "expected": {
+        "termination": "ok",
+        "error_code": null,
+        "target_step": null
+      },
+      "actual_termination": "ok",
+      "termination_ok": true,
+      "decision": null,
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": false,
+      "recovered": true,
+      "repeat_correct": 0,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-MISS-01",
+      "fault": "high_missing",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-MISS-02",
+      "fault": "high_missing",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-MISS-03",
+      "fault": "high_missing",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-DROP-01",
+      "fault": "drop_column",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-DROP-02",
+      "fault": "drop_column",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-RENAME-01",
+      "fault": "rename_column",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-RENAME-02",
+      "fault": "rename_column",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-RANGE-01",
+      "fault": "x_out_of_range",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-RANGE-02",
+      "fault": "x_out_of_range",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-RANGE-03",
+      "fault": "x_out_of_range",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-ROWS-01",
+      "fault": "too_few_rows",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-ROWS-02",
+      "fault": "too_few_rows",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-TYPE-01",
+      "fault": "type_pollution",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-TYPE-02",
+      "fault": "type_pollution",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-003",
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-003",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-ALGO-01",
+      "fault": "unknown_algorithm",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-004",
+        "target_step": "compute"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "compute",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-004",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-ALGO-02",
+      "fault": "unknown_algorithm",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "escalated",
+        "error_code": "RF-004",
+        "target_step": "compute"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": true,
+      "decision": {
+        "action": "escalate",
+        "target_step": "compute",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "节点报错走规则层转人工：RF-004",
+        "source": "rule"
+      },
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": true
+    },
+    {
+      "id": "F-EMPTY-01",
+      "fault": "empty_retrieval",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "empty",
+        "error_code": null,
+        "target_step": "retrieval"
+      },
+      "actual_termination": "empty",
+      "termination_ok": true,
+      "decision": null,
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": null,
+      "recovered": false,
+      "repeat_correct": 0,
+      "n_repeats": 1,
+      "baseline_attribution_ok": null
+    },
+    {
+      "id": "F-EMPTY-02",
+      "fault": "empty_retrieval",
+      "group": "single_step",
+      "split": "test",
+      "expected": {
+        "termination": "empty",
+        "error_code": null,
+        "target_step": "retrieval"
+      },
+      "actual_termination": "empty",
+      "termination_ok": true,
+      "decision": null,
+      "tool_calls": [],
+      "agent_tokens": 0,
+      "agent_latency_ms": 0,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": null,
+      "recovered": false,
+      "repeat_correct": 0,
+      "n_repeats": 1,
+      "baseline_attribution_ok": null
+    },
+    {
+      "id": "F-OUT-02",
+      "fault": "y_outliers",
+      "group": "cross_step",
+      "split": "test",
+      "expected": {
+        "termination": "budget_exhausted",
+        "error_code": null,
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "ok",
+      "termination_ok": false,
+      "decision": {
+        "action": "backtrack",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": "iqr",
+          "y_outlier_k": 1.5,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "诊断：目标列 y 存在极端离群值（max=644.5，远超 Q3+1.5*IQR≈40），导致全量数据上线性回归 R² 仅 0.1185。但去掉 8 个离群值后（k=1.5 和 k=3 均移除 8 行），R² 恢复至 0.9563，特征与目标之间的线性关系依然很强（x1 相关系数 0.84，x2 相关系数 -0.64）。因此根因是离群值未被处理，调整 data_prepare 的 y_outlier_strategy 为 iqr、y_outlier_k 为 1.5 应能修复。",
+        "source": "agent"
+      },
+      "tool_calls": [
+        {
+          "name": "read_validation_report",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "inspect_column",
+          "arguments": {
+            "column": "y"
+          },
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "feature_target_relation",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "propose_backtrack",
+          "arguments": {
+            "target_step": "data_prepare",
+            "patch": {
+              "y_outlier_strategy": "iqr",
+              "y_outlier_k": 1.5,
+              "test_size": null,
+              "seed": null
+            },
+            "reason": "诊断：目标列 y 存在极端离群值（max=644.5，远超 Q3+1.5*IQR≈40），导致全量数据上线性回归 R² 仅 0.1185。但去掉 8 个离群值后（k=1.5 和 k=3 均移除 8 行），R² 恢复至 0.9563，特征与目标之间的线性关系依然很强（x1 相关系数 0.84，x2 相关系数 -0.64）。因此根因是离群值未被处理，调整 data_prepare 的 y_outlier_strategy 为 iqr、y_outlier_k 为 1.5 应能修复。"
+          },
+          "ok": true,
+          "error_code": null
+        }
+      ],
+      "agent_tokens": 12895,
+      "agent_latency_ms": 15488,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": true,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-OUT-04",
+      "fault": "y_outliers",
+      "group": "cross_step",
+      "split": "test",
+      "expected": {
+        "termination": "budget_exhausted",
+        "error_code": null,
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "ok",
+      "termination_ok": false,
+      "decision": {
+        "action": "backtrack",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": "iqr",
+          "y_outlier_k": 1.5,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "目标列y存在极端值（max=702.475，std=92.25，中位数仅9.98），导致全量数据R²低至0.07。feature_target_relation显示：去掉2个离群值（k=1.5或k=3均移除2行）后，R²从0.0737跃升至0.998，x1和x2的相关系数也从接近0变为0.85和-0.59。说明特征与目标之间原本存在很强的线性关系，被极端值掩盖。通过设置y_outlier_strategy=\"iqr\"、y_outlier_k=1.5裁剪离群值，预期可恢复模型性能至R²≥0.8。",
+        "source": "agent"
+      },
+      "tool_calls": [
+        {
+          "name": "read_validation_report",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "inspect_column",
+          "arguments": {
+            "column": "y"
+          },
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "feature_target_relation",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "propose_backtrack",
+          "arguments": {
+            "target_step": "data_prepare",
+            "patch": {
+              "y_outlier_strategy": "iqr",
+              "y_outlier_k": 1.5
+            },
+            "reason": "目标列y存在极端值（max=702.475，std=92.25，中位数仅9.98），导致全量数据R²低至0.07。feature_target_relation显示：去掉2个离群值（k=1.5或k=3均移除2行）后，R²从0.0737跃升至0.998，x1和x2的相关系数也从接近0变为0.85和-0.59。说明特征与目标之间原本存在很强的线性关系，被极端值掩盖。通过设置y_outlier_strategy=\"iqr\"、y_outlier_k=1.5裁剪离群值，预期可恢复模型性能至R²≥0.8。"
+          },
+          "ok": true,
+          "error_code": null
+        }
+      ],
+      "agent_tokens": 12784,
+      "agent_latency_ms": 15752,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": true,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-OUT-06",
+      "fault": "y_outliers_offset",
+      "group": "cross_step",
+      "split": "test",
+      "expected": {
+        "termination": "budget_exhausted",
+        "error_code": null,
+        "target_step": "data_prepare"
+      },
+      "actual_termination": "ok",
+      "termination_ok": false,
+      "decision": {
+        "action": "backtrack",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": "iqr",
+          "y_outlier_k": 1.5,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "诊断：目标列y存在明显离群值（min=-36.75，std=14.23，k=1.5口径下有6个离群值）。全量数据R²=0.50看似偏低，但在k=1.5去掉6个离群值后R²飙升至0.998，且x1与y的相关系数从0.48提升至0.85，说明特征与目标之间的线性关系本身很强，只是被极端值严重拉低。因此回溯到data_prepare步骤，启用IQR离群值处理策略，设置y_outlier_k=1.5以去除这6个极端值，预期可修复r2不达标的问题。",
+        "source": "agent"
+      },
+      "tool_calls": [
+        {
+          "name": "read_validation_report",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "inspect_column",
+          "arguments": {
+            "column": "y"
+          },
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "feature_target_relation",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "propose_backtrack",
+          "arguments": {
+            "target_step": "data_prepare",
+            "patch": {
+              "y_outlier_strategy": "iqr",
+              "y_outlier_k": 1.5,
+              "test_size": null,
+              "seed": null
+            },
+            "reason": "诊断：目标列y存在明显离群值（min=-36.75，std=14.23，k=1.5口径下有6个离群值）。全量数据R²=0.50看似偏低，但在k=1.5去掉6个离群值后R²飙升至0.998，且x1与y的相关系数从0.48提升至0.85，说明特征与目标之间的线性关系本身很强，只是被极端值严重拉低。因此回溯到data_prepare步骤，启用IQR离群值处理策略，设置y_outlier_k=1.5以去除这6个极端值，预期可修复r2不达标的问题。"
+          },
+          "ok": true,
+          "error_code": null
+        }
+      ],
+      "agent_tokens": 12754,
+      "agent_latency_ms": 16132,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": true,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-NOISE-02",
+      "fault": "y_noise",
+      "group": "human",
+      "split": "test",
+      "expected": {
+        "termination": "budget_exhausted",
+        "error_code": null,
+        "target_step": "human"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": false,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "硬规则校验失败原因：r2=-0.72 < 0.8。诊断发现全量数据上特征(x1,x2,x3)与目标(y)的线性关系极弱（R²=0.10），各特征相关系数均接近0。即使去掉唯一离群值(k=1.5)，R²仅从0.10微升至0.11，证明问题不在离群值，而是特征与目标之间本身缺乏有效关系。调整y_outlier_*、test_size、seed等白名单参数均无法恢复特征-目标关系，故转人工处理。",
+        "source": "agent"
+      },
+      "tool_calls": [
+        {
+          "name": "read_validation_report",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "inspect_column",
+          "arguments": {
+            "column": "y"
+          },
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "feature_target_relation",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "escalate_to_human",
+          "arguments": {
+            "reason": "硬规则校验失败原因：r2=-0.72 < 0.8。诊断发现全量数据上特征(x1,x2,x3)与目标(y)的线性关系极弱（R²=0.10），各特征相关系数均接近0。即使去掉唯一离群值(k=1.5)，R²仅从0.10微升至0.11，证明问题不在离群值，而是特征与目标之间本身缺乏有效关系。调整y_outlier_*、test_size、seed等白名单参数均无法恢复特征-目标关系，故转人工处理。",
+            "suspected_step": "data_prepare"
+          },
+          "ok": true,
+          "error_code": null
+        }
+      ],
+      "agent_tokens": 7460,
+      "agent_latency_ms": 14765,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-SHUFFLE-01",
+      "fault": "y_shuffled",
+      "group": "human",
+      "split": "test",
+      "expected": {
+        "termination": "budget_exhausted",
+        "error_code": null,
+        "target_step": "human"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": false,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "硬规则校验失败原因：r2=-0.0812 < 0.8。经诊断：(1) 目标列 y 无离群值（outliers_k15=0, outliers_k30=0），调整 y_outlier_* 无效；(2) 特征与目标的全量 R²=0.0663，robust_by_k=1.5 和 k=3 的 R² 同样为 0.0663 且去点数为 0，说明特征与目标之间的线性关系本身极弱，并非极端值导致。调整 compute 侧参数（test_size/seed）无法恢复已破坏的数据关系。此问题需人工介入评估数据质量或重新构建特征工程。",
+        "source": "agent"
+      },
+      "tool_calls": [
+        {
+          "name": "read_validation_report",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "inspect_column",
+          "arguments": {
+            "column": "y"
+          },
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "feature_target_relation",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "escalate_to_human",
+          "arguments": {
+            "reason": "硬规则校验失败原因：r2=-0.0812 < 0.8。经诊断：(1) 目标列 y 无离群值（outliers_k15=0, outliers_k30=0），调整 y_outlier_* 无效；(2) 特征与目标的全量 R²=0.0663，robust_by_k=1.5 和 k=3 的 R² 同样为 0.0663 且去点数为 0，说明特征与目标之间的线性关系本身极弱，并非极端值导致。调整 compute 侧参数（test_size/seed）无法恢复已破坏的数据关系。此问题需人工介入评估数据质量或重新构建特征工程。",
+            "suspected_step": "data_prepare"
+          },
+          "ok": true,
+          "error_code": null
+        }
+      ],
+      "agent_tokens": 13076,
+      "agent_latency_ms": 15800,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    },
+    {
+      "id": "F-SHUFFLE-03",
+      "fault": "y_shuffled",
+      "group": "human",
+      "split": "test",
+      "expected": {
+        "termination": "budget_exhausted",
+        "error_code": null,
+        "target_step": "human"
+      },
+      "actual_termination": "escalated",
+      "termination_ok": false,
+      "decision": {
+        "action": "escalate",
+        "target_step": "data_prepare",
+        "patch": {
+          "y_outlier_strategy": null,
+          "y_outlier_k": null,
+          "test_size": null,
+          "seed": null
+        },
+        "reason": "诊断结论：目标列y与特征(x1,x2,x3)之间的线性关系本身已很弱，无法通过调整清洗参数恢复。具体证据：(1) y列无离群值（k=1.5和k=3口径下outliers均为0），因此y_outlier_strategy/y_outlier_k参数无效；(2) 全量数据上R²=0.059，且k=1.5和k=3的robust R²同样为0.059（rows_removed=0），说明去掉极端值前后R²完全一致——因为根本没有极端值可去；(3) 各特征与y的Pearson相关系数极低（x1≈-0.005, x2≈0.05, x3≈0.23），表明特征与目标之间几乎不存在可解释的线性关系。测试集R²=0.0412低于阈值0.8的根本原因是数据本身的特征-目标关系薄弱，而非清洗或划分参数问题。此问题需人工介入检查数据质量或重新设计特征。",
+        "source": "agent"
+      },
+      "tool_calls": [
+        {
+          "name": "read_validation_report",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "inspect_column",
+          "arguments": {
+            "column": "y"
+          },
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "feature_target_relation",
+          "arguments": {},
+          "ok": true,
+          "error_code": null
+        },
+        {
+          "name": "escalate_to_human",
+          "arguments": {
+            "reason": "诊断结论：目标列y与特征(x1,x2,x3)之间的线性关系本身已很弱，无法通过调整清洗参数恢复。具体证据：(1) y列无离群值（k=1.5和k=3口径下outliers均为0），因此y_outlier_strategy/y_outlier_k参数无效；(2) 全量数据上R²=0.059，且k=1.5和k=3的robust R²同样为0.059（rows_removed=0），说明去掉极端值前后R²完全一致——因为根本没有极端值可去；(3) 各特征与y的Pearson相关系数极低（x1≈-0.005, x2≈0.05, x3≈0.23），表明特征与目标之间几乎不存在可解释的线性关系。测试集R²=0.0412低于阈值0.8的根本原因是数据本身的特征-目标关系薄弱，而非清洗或划分参数问题。此问题需人工介入检查数据质量或重新设计特征。",
+            "suspected_step": "data_prepare"
+          },
+          "ok": true,
+          "error_code": null
+        }
+      ],
+      "agent_tokens": 12614,
+      "agent_latency_ms": 13329,
+      "model": "qwen3.7-flash-2026-07-15",
+      "extra_body": {},
+      "attribution_ok": true,
+      "recovered": false,
+      "repeat_correct": 1,
+      "n_repeats": 1,
+      "baseline_attribution_ok": false
+    }
+  ],
+  "summary": {
+    "n_cases": 28,
+    "budget_exhausted_early": false,
+    "attribution_ok": {
+      "overall": 1.0,
+      "single_step": 1.0,
+      "cross_step": 1.0,
+      "human": 1.0
+    },
+    "attribution_ok_baseline": {
+      "overall": 0.7273,
+      "single_step": 1.0,
+      "cross_step": 0.0,
+      "human": 0.0
+    },
+    "recovered": {
+      "overall": 0.25,
+      "clean": 1.0,
+      "single_step": 0.0,
+      "cross_step": 1.0,
+      "human": 0.0
+    },
+    "escalate": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "invalid_args_rate": 0.0,
+    "tokens": {
+      "avg": 2556.5,
+      "total": 71583
+    }
+  }
+}

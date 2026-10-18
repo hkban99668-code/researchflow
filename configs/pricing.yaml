@@ -1,0 +1,38 @@
+# 模型价格表：`currency` 是默认计价币种；`models` 下是 模型名 → 每百万输入/输出 token 的价格。
+# 每个模型可用自己的 `currency` 覆盖默认币种（T-027）；没写的模型回落到顶部 `currency`。
+# 价格由项目维护者按服务商价格表填写；查不到价格时整条留 null，成本记 null（不猜）。
+# 价格来源（2026-10-14 查询，页面未标日期，服务商可能随时调整）：
+# - 阿里云百炼（北京地域，人民币，标准价）：https://help.aliyun.com/zh/model-studio/model-pricing
+# - DeepSeek 官方（美元）：https://api-docs.deepseek.com/quick_start/pricing
+# 口径：峰谷价分档的取峰时价（保守估计），谷时价写在各自注释里。
+currency: USD
+models:
+  qwen3.7-flash-2026-07-15:
+    currency: CNY
+    # 百炼标准价：单次请求输入 ≤32K 档为 0.2 / 0.8；32K–256K 档为 0.6 / 2.4，本表取 ≤32K 档。
+    input_per_m: 0.2
+    output_per_m: 0.8
+  deepseek-v4-flash-0731:
+    currency: CNY
+    # 百炼峰时价（北京时间 08:00–22:00）；谷时价为 1.5 / 4.5。
+    input_per_m: 3
+    output_per_m: 9
+  deepseek-v4.1-flash:
+    currency: CNY
+    # 百炼峰时价（同上）；谷时价为 1 / 4。
+    input_per_m: 2
+    output_per_m: 8
+  deepseek-flash:
+    currency: USD
+    # DeepSeek 官方峰时价（未命中输入；峰时为 UTC 周一至周五 01–04、06–10）；谷时价为 0.15 / 0.6。
+    # 缓存命中输入另有 $0.006（峰）/ $0.003（谷），本表按未命中口径取峰时价。
+    input_per_m: 0.3
+    output_per_m: 1.2
+  # 百炼嵌入模型（T-034）：按百炼标准价，查询日期与来源同上，价格待核实。
+  # 输出不单独计费，按 0 记；用量单位是输入 token（每百万）。
+  text-embedding-v4:
+    currency: CNY
+    input_per_m: 0.5
+    output_per_m: 0
+  # Command Code 渠道：官方定价页只列订阅套餐，无公开按量价格，成本记"未配置"。
+  deepseek/deepseek-v4-flash: null
